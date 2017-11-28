@@ -8,6 +8,9 @@ let x = Rust::from("Python");
 A quick reference guide for the **Pythonista** in process of becoming a **Rustacean**. 
 
 
+![image_2017-11-28_08-03-59](https://user-images.githubusercontent.com/458654/33350327-50e76baa-d485-11e7-8a6e-b3dd0c337046.png)
+
+
 ### Monty Python - Season 3 - Episode 49
 
 [The sketch](http://montypython.50webs.com/scripts/Series_3/49.htm)
