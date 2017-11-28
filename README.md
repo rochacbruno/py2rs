@@ -383,7 +383,7 @@ age = 80
 name = 'daffy'
 weight = 62.3
 loons = ['bugs', 'daffy', 'taz']
-ages = {  # Correct for 2017
+ages = {  # Ages for 2017
     'daffy': 80,
     'bugs': 79,
     'taz': 63,
@@ -401,7 +401,7 @@ fn main() {
     let weight = 62.3;
     let mut loons = vec!["bugs", "daffy", "taz"];
 
-    let mut ages = HashMap::new();   // Correct for 2017
+    let mut ages = HashMap::new();  // Ages for 2017
     ages.insert("daffy", 80);
     ages.insert("bugs", 79);
     ages.insert("taz", 63);
@@ -481,11 +481,28 @@ Create new dictionaries (hash maps), adding new keys and values, changing values
 **Python**
 
 ```python
-ages = {  # Correct for 2017
+
+# Creating a new dict and populating it
+ages = {}
+ages['daffy'] = 80
+ages['bugs'] = 79
+ages['taz'] = 63
+
+# or doing the same using a for loop
+ages = {}
+for name, age in [("daffy", 80), ("bugs", 79), ("taz", 63)]:
+    ages[name] = age
+
+# or initializing from a list
+ages = dict([("daffy", 80), ("bugs", 79), ("taz", 63)])
+
+# or passing key values on creation
+ages = {  # Ages for 2017
     'daffy': 80,
     'bugs': 79,
     'taz': 63,
 }
+
 ages['elmer'] = 80
 print(ages['bugs'])  # 79
 print('bugs' in ages)  # True
@@ -502,19 +519,40 @@ for name, age in ages.items():  # Keys & values
 **Rust**
 
 ```rust
+use std::iter::FromIterator;
+use std::collections::HashMap;
+
 fn main() {
 
-    let mut ages = HashMap::new();  // correct for 2017
+    // Creating a new HashMap and populating it
+    let mut ages = HashMap::new();  // Ages for 2017
     ages.insert("daffy", 80);
     ages.insert("bugs", 79);
     ages.insert("taz", 63);
 
-    // or initializing from an Array:
-    let mut ages: HashMap<&str, i32> =  // correct for 2017
+    // or doing the same using a loop
+    let mut ages = HashMap::new();
+    for &(name, age) in [("daffy", 80), ("bugs", 79), ("taz", 63)].iter() {
+        // For non-Copy data, remove & and use iter().clone()
+        ages.insert(name, age);
+    }
+
+    // or initializing from Array
+    let mut ages: HashMap<&str, i32> =  // Ages for 2017
         [("daffy", 80), 
          ("bugs", 79), 
          ("taz", 63)]
         .iter().cloned().collect();
+
+    // or initializing from Vec (Iterator)
+    let mut ages: HashMap<&str, i32> =  // Ages for 2017
+        HashMap::from_iter(
+            vec![
+               ("daffy", 80),
+               ("bugs", 79),
+               ("taz", 63)
+            ]
+        );
 
     ages.insert("elmer", 80);
     println!("{}", ages["bugs"]);  // 79

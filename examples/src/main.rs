@@ -1,5 +1,5 @@
+use std::iter::FromIterator;
 use std::collections::HashMap;
-
 
 fn types_and_declarations() {
     let age = 80;
@@ -8,7 +8,7 @@ fn types_and_declarations() {
     let mut loons = vec!["bugs", "daffy", "taz"];
     loons.push("foo");
 
-    let mut ages = HashMap::new();   // Correct for 2017
+    let mut ages = HashMap::new(); 
     ages.insert("daffy", 80);
     ages.insert("bugs", 79);
     ages.insert("taz", 63);
@@ -36,17 +36,35 @@ fn list_slice() {
 
 
 fn dict_map() {
-    let mut ages = HashMap::new();  // correct for 2017
+    // Creating a new HashMap and populating it
+    let mut ages = HashMap::new();  // Ages for 2017
     ages.insert("daffy", 80);
     ages.insert("bugs", 79);
     ages.insert("taz", 63);
 
-    // or initializing from an Array:
-    let mut ages: HashMap<&str, i32> =  // correct for 2017
+    // or doing the same using a loop
+    let mut ages = HashMap::new();
+    for &(name, age) in [("daffy", 80), ("bugs", 79), ("taz", 63)].iter() {
+        // For non-Copy data, remove & and use iter().clone()
+        ages.insert(name, age);
+    }
+
+    // or initializing from Array
+    let mut ages: HashMap<&str, i32> = 
         [("daffy", 80), 
          ("bugs", 79), 
          ("taz", 63)]
         .iter().cloned().collect();
+
+    // or initializing from Vec (Iterator)
+    let mut ages: HashMap<&str, i32> = 
+        HashMap::from_iter(
+            vec![
+               ("daffy", 80),
+               ("bugs", 79),
+               ("taz", 63)
+            ]
+        );
 
     ages.insert("elmer", 80);
     println!("{}", ages["bugs"]);  // 79
