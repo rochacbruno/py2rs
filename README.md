@@ -8,7 +8,6 @@ let x = Rust::from("Python");
 A quick reference guide for the **Pythonista** in process of becoming a **Rustacean**. 
 
 
-
 ### Monty Python - Season 3 - Episode 49
 
 [The sketch](http://montypython.50webs.com/scripts/Series_3/49.htm)
@@ -95,16 +94,18 @@ Time to put your new knowledge in action solving some exercices.
 
 ## Getting updated
 
-Now I assume your are addicted to **Rust** and you want to be updated about averything 
+Now I assume you are addicted to **Rust** and you want to be updated about averything 
 around it, here are some good links to follow.
 
 1) This Week in Rust Newsletter  
    https://this-week-in-rust.org/   
    https://twitter.com/thisweekinrust 
-2) Reddit  
+2) Awesome Rust Newsletter  
+   https://rust.libhunt.com/
+3) Reddit  
    http://reddit.com/r/rust   (serious sub-reddit)  
    http://reddit.com/r/rustjerk (almost memes only)  
-3) Official Twitter  
+4) Official Twitter  
   https://twitter.com/rustlang
 
 ## Interact with other Rustaceans
@@ -1092,6 +1093,8 @@ Explanation comes here.
 ## Credits
 
 Created by [Bruno Rocha](http://about.me/rochacbruno) [@rochacbruno](http://github.com/rochacbruno) inspired by https://www.353.solutions/py2go/index.html
+
+First published in [BrunoRocha.org](http://brunorocha.org/python/py2rs-from-python-to-rust-reference-guide.html)
 
 With contributions by:
 
