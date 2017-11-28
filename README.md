@@ -36,12 +36,12 @@ Ok...watch it later... let's learn some Rust now...
 - [Interacting with Rustacean Communities](https://github.com/rochacbruno/py2rs#interact-with-other-rustaceans)
 - [Additional learning Resources](https://github.com/rochacbruno/py2rs#additional-learning-resources)
 - [Curious Facts](https://github.com/rochacbruno/py2rs#facts)
-- [Glossary of terms](https://github.com/rochacbruno/py2rs#glossary-of-terms)
-- [General fact comparison](https://github.com/rochacbruno/py2rs#general)
-- [Environment Tools](https://github.com/rochacbruno/py2rs#environment-tools)
-- [Libraries and Frameworks](https://github.com/rochacbruno/py2rs#libraries-and-frameworks)
-- [Applications](https://github.com/rochacbruno/py2rs#applications)
-- [Code comparison Python X Rust implementations](https://github.com/rochacbruno/py2rs#show-me-the-code)
+- [py2rs: Glossary of terms](https://github.com/rochacbruno/py2rs#glossary-of-terms)
+- [py2rs: General fact comparison](https://github.com/rochacbruno/py2rs#general)
+- [py2rs: Environment Tools](https://github.com/rochacbruno/py2rs#environment-tools)
+- [py2rs: Libraries and Frameworks](https://github.com/rochacbruno/py2rs#libraries-and-frameworks)
+- [py2rs: Applications](https://github.com/rochacbruno/py2rs#applications)
+- [py2rs: Code comparison Python X Rust implementations](https://github.com/rochacbruno/py2rs#show-me-the-code)
 - [Credits](https://github.com/rochacbruno/py2rs#credits)
 
 
@@ -261,7 +261,7 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | [celery]()                                         | Distributed Computation          | [Antimony](https://github.com/antimonyproject/antimony)                                               |
 | [boto]()                                           | AWS clients                      | [rusoto](https://github.com/rusoto/rusoto)                                                            |
 | [AstroPy]()                                        | Astronomy                        | [atro-rust](https://github.com/saurvs/astro-rust)                                                     |
-| [Numpy]()                                        | Numeric                          | [?]()                                                     |
+| [Numpy]()                                          | Numeric                          | [?]()                                                                                                 |
  
 
 ## Applications
@@ -276,6 +276,16 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | [Quokka](http://quokkaproject.org) | CMS                                              | [NIckel CMS](https://github.com/irony-rust/nickel-cms) |
 
 
+
+## Useful crates
+
+Add Pythonic features to Rust
+
+| Python            | definition                  | Rust                                      |
+| ----------------- | --------------------------- | ----------------------------------------- |
+| `dict(foo="bar")` | Create a dictionary/hashmap | [maplit](https://crates.io/crates/maplit) |
+
+
 ## Show me The code
 
 From **Python** to **Rust** by examples  
@@ -288,7 +298,7 @@ From **Python** to **Rust** by examples
 **Python**
 
 ```bash
-$ mkdir my_python_program.py 
+$ touch my_python_program.py 
 ```
 
 
@@ -512,6 +522,26 @@ fn main() {
     }
 
 }
+```
+
+#### Pythonic alternative to dict/map in Rust
+
+You can use the [maplit](https://crates.io/crates/maplit) crate to load `hashmap!` macro to have an efficient sugared (a.k.a Pythonic) syntax!
+
+```bash
+cargo install maplit
+```
+
+then
+
+```rust
+#[macro_use] extern crate maplit;
+
+let map = hashmap!{
+    "daffy" => 80,
+    "bugs" => 79,
+    "taz" => 63,
+};
 ```
 
 ---
