@@ -809,7 +809,9 @@ Read a text file and iterate its lines printing the content, properly close the 
 **Python**
 
 ```python
-with open('song.txt') as fp:
+from pathlib import Path
+
+with open(Path("/tmp/song.txt")) as fp:
     #  Iterate over lines
     for line in fp:
         print(line.strip())
@@ -818,6 +820,20 @@ with open('song.txt') as fp:
 **Rust**
 
 ```rust
+use std::io::{BufReader, BufRead};
+use std::fs::File;
+use std::path::Path;
+
+
+fn main () {
+    let fp = File::open(Path::new("/tmp/song.txt")).unwrap();
+    let file = BufReader::new(&fp);
+    for line in file.lines() {
+        //  Iterate over lines
+        println!("{}", line.unwrap());
+    }
+}
+
 ```
 
 ---

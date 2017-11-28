@@ -94,6 +94,21 @@ fn maplit_crate() {
 }
 
 
+
+fn read_file() {
+    use std::io::{BufReader, BufRead};
+    use std::fs::File;
+    use std::path::Path;
+
+    let fp = File::open(Path::new("/tmp/song.txt")).unwrap();
+    let file = BufReader::new(&fp);
+    for line in file.lines() {
+        println!("{}", line.unwrap());
+    } 
+
+}
+
+
 fn main() {
     println!("Hello, world!");
     types_and_declarations();
@@ -101,4 +116,5 @@ fn main() {
     list_slice();
     dict_map();
     maplit_crate();
+    read_file();
 }
