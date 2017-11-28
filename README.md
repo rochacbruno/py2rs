@@ -45,8 +45,6 @@ Ok...watch it later... let's learn some Rust now...
 - [py2rs: Code comparison Python X Rust implementations](https://github.com/rochacbruno/py2rs#show-me-the-code)
 - [Credits](https://github.com/rochacbruno/py2rs#credits)
 
-
-
 ## Getting Started with Rust
 
 Assuming you already know what is [**Rust**](http://rust-lang.org) and already 
@@ -82,8 +80,6 @@ decided to start learning it. Here are some steps for you to follow:
 6) Patterns and Good Practices  
    * **Rust Patterns** https://github.com/rust-unofficial/patterns
    * **API Guidelines** https://rust-lang-nursery.github.io/api-guidelines/
-
-
 
 ## Exercices
 
@@ -179,16 +175,16 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 
 
 ## General
-| Python                                                                       | definition                         | Rust                                                                      |
+| Python                                                                       | Definition                         | Rust                                                                      |
 | ---------------------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------- |
-| [PEP8]()                                                                     | Guidelines and conventions         | [RustAPI Guidelines](https://rust-lang-nursery.github.io/api-guidelines/) |
-| [PEPS]()                                                                     | Enhancement Proposals / RFC        | [Rust RFCs]()                                                             |
-| [PSF]()                                                                      | Organization / Foundation          | [Mozilla Research]()                                                      |
-| [PyCon]()                                                                    | Main Conference                    | [RustConf]()                                                              |
-| [Guido Van Rossum]()                                                         | Creator                            | [Graydon Hoare]()                                                         |
+| [PEP8](https://www.python.org/dev/peps/pep-0008/)                            | Guidelines and conventions         | [RustAPI Guidelines](https://rust-lang-nursery.github.io/api-guidelines/) |
+| [PEPS](https://www.python.org/dev/peps/)                                     | Enhancement Proposals / RFC        | [Rust RFCs](https://github.com/rust-lang/rfcs)                            |
+| [PSF](https://www.python.org/psf/)                                           | Organization / Foundation          | [Mozilla Research](https://research.mozilla.org/)                         |
+| [PyCon](https://www.pycon.org/)                                              | Main Conference                    | [RustConf](http://rustconf.com/)                                          |
+| [Guido Van Rossum](https://twitter.com/gvanrossum)                           | Creator                            | [Graydon Hoare](https://twitter.com/graydon_pub)                          |
 | 1989                                                                         | First appeared                     | 2010                                                                      |
 | 1991                                                                         | First Release                      | 2012                                                                      |
-| [PSF]()                                                                      | License                            | Apache 2.0 and MIT                                                        |
+| [PSF](https://docs.python.org/3/license.html)                                | License                            | Apache 2.0 and MIT                                                        |
 | C                                                                            | Implemented in                     | Rust                                                                      |
 | .py, .pyw, .pyc                                                              | File Extensions                    | .rs, .rlib                                                                |
 | http://github.com/python/cpython                                             | Repository                         | https://github.com/rust-lang/rust                                         |
@@ -198,86 +194,86 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 
 ## Environment Tools
 
-| Python                                                    | Definition                              | Rust                                                                       |
-| --------------------------------------------------------- | --------------------------------------- | -------------------------------------------------------------------------- |
-| `requirements.txt`                                        | Official dependency tracker file        | `Cargo.toml`                                                               |
-| `setup.py`                                                | Official installator / distributor file | `Cargo.toml`                                                               |
-| [PyPI]()                                                  | Library Repositoty                      | [Crates.io](http://crates.io)                                              |
-| [pip]()                                                   | Library installation                    | [Cargo]()                                                                  |
-| [setuptools]()                                            | Library distribution                    | [Cargo]()                                                                  |
-| [pbr](https://docs.openstack.org/pbr/latest/)             | Library distribution                    | [Cargo]()                                                                  |
-| [pipenv]()                                                | Dependency manager                      | [Cargo]()                                                                  |
-| [twine]()                                                 | Package uploader                        | [Cargo]() and [Semantic](https://github.com/semantic-rs/semantic-rs)       |
-| [virtualenv]()                                            | Isolated environments                   | [Cargo]()                                                                  |
-| [pyinstaller](https://github.com/pyinstaller/pyinstaller) | Generate Standalone Executables         | [Cargo]()                                                                  |
-| [pyenv]()                                                 | Install and manage versions of language | [rustup]()                                                                 |
-| [sphinx]()                                                | Generate documentation from code        | [rustdoc]() and [cargo]()                                                  |
-| [python]()                                                | Interpreter / Compiler                  | [rustc]() and [cargo]()                                                    |
-| [ipython]()                                               | REPL                                    | [?]()                                                                      |
-| [ipdb   ]()                                               | Debugger                                | [rust-gdb](https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb) |
+| Python                                                    | Definition                              | Rust                                                                                      |
+| --------------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `requirements.txt`                                        | Official dependency tracker file        | `Cargo.toml`                                                                              |
+| `setup.py`                                                | Official installator / distributor file | `Cargo.toml`                                                                              |
+| [PyPI](https://pypi.org/)                                 | Library Repositoty                      | [Crates.io](http://crates.io)                                                             |
+| [pip](https://pypi.python.org/pypi/pip)                   | Library installation                    | [Cargo](http://doc.crates.io/)                                                            |
+| [setuptools](https://pypi.python.org/pypi/setuptools)     | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
+| [pbr](https://docs.openstack.org/pbr/latest/)             | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
+| [pipenv](https://pypi.python.org/pypi/pipenv)             | Dependency manager                      | [Cargo](http://doc.crates.io/)                                                            |
+| [twine](https://pypi.python.org/pypi/twine)               | Package uploader                        | [Cargo](http://doc.crates.io/) and [Semantic](https://github.com/semantic-rs/semantic-rs) |
+| `venv` *                                                  | Isolated environments                   | [Cargo](http://doc.crates.io/)                                                            |
+| [pyinstaller](https://github.com/pyinstaller/pyinstaller) | Generate Standalone Executables         | [Cargo](http://doc.crates.io/)                                                            |
+| [pyenv](https://github.com/pyenv/pyenv-installer)         | Install and manage versions of language | [rustup](https://www.rustup.rs/)                                                          |
+| [sphinx](https://pypi.python.org/pypi/sphinx)             | Generate documentation from code        | [rustdoc](https://doc.rust-lang.org/stable/rustdoc/) and [Cargo](http://doc.crates.io/)   |
+| [python](http://python.org)                               | Interpreter / Compiler                  | [rustc](https://doc.rust-lang.org/1.1.0/rustc/) and [Cargo](http://doc.crates.io/)        |
+| [ipython](https://pypi.python.org/pypi/ipython)           | REPL                                    | [rusti](https://github.com/murarth/rusti)                                                 |
+| [ipdb](https://pypi.python.org/pypi/ipdb)                 | Debugger                                | [rust-gdb](https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb)                |
 
 ## Libraries and Frameworks
 
-| Python                                             | Definition                       | Rust                                                                                                  |
-| -------------------------------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| [urllib]()                                         | HTTP calls                       | [hyper]()                                                                                             |
-| [requests]()                                       | simplified HTTp calls            | [reqwest](https://github.com/seanmonstar/reqwest)                                                     |
-| [json]()                                           | JSON Parsing loading and dumping | [serde](https://github.com/serde-rs/serde)                                                            |
-| [pyYAML]()                                         | YAML Parsing loading and dumping | [serde](https://github.com/serde-rs/serde)                                                            |
-| [lxml]()                                           | XML Parsing loading and dumping  | [RustyXML](https://github.com/Florob/RustyXML)                                                        |
-| [csv]()                                            | CSV parsing                      | [rust-csv](https://github.com/BurntSushi/rust-csv)                                                    |
-| [datetime]() & [Dateutils]()                       | Date & time                      | [Chrono](https://github.com/chronotope/chrono)                                                        |
-| [click]() and [argparse]()                         | CLI Framework                    | [clap](https://github.com/kbknapp/clap-rs)                                                            |
-| [docopt]()                                         | CLi Framework                    | [docopt](https://github.com/docopt/docopt.rs)                                                         |
-| [re]()                                             | Regular Expressions              | [regex](https://github.com/rust-lang/regex)                                                           |
-| [subprocess]()                                     | Run external commands            | [crossbeam](https://github.com/crossbeam-rs/crossbeam) and [Rayon](https://github.com/rayon-rs/rayon) |
-| [logging]()                                        | Logging                          | [log](https://github.com/rust-lang-nursery/log)                                                       |
-| [Pathlib]()                                        | Path manipulation                | [fs]() and [fs_extra](https://github.com/webdesus/fs_extra)                                           |
-| [crypto]()                                         | crytography                      | [crypto](https://github.com/DaGenix/rust-crypto)                                                      |
-| [pickle]()                                         | Object Serialization             | [RON](https://github.com/ron-rs/ron)                                                                  |
-| [heapq]()                                          | Heap Queue                       | [?]()                                                                                                 |
-| [bottle]()                                         | Minimal Web Framework            | [Iron](https://github.com/iron/iron)                                                                  |
-| [flask]()                                          | Web Framework                    | [Rocket](https://github.com/SergioBenitez/Rocket)                                                     |
-| [django]()                                         | Full Stack Web Framrwork         | [Gotham](https://github.com/gotham-rs/gotham)                                                         |
-| [SQL Alchemy]()                                    | Relational Database ORM          | [Diesel](https://github.com/diesel-rs/diesel)                                                         |
-| [Pymongo]()                                        | Mongo DB driver                  | [mongodb](https://crates.io/keywords/mongodb)                                                         |
-| [Jinja 2]()                                        | Template Engine                  | [Tera](https://github.com/Keats/tera)                                                                 |
-| [pygtk](http://www.pygtk.org/)                     | GTk desktop development          | [gtk](https://github.com/gtk-rs/gtk)                                                                  |
-| [pyside](http://www.pyside.org/)                   | QT desktop development           | [rust-qt](https://github.com/rust-qt)                                                                 |
-| [pygame]()                                         | 2D UI library / gaming           | [Conrod](https://github.com/PistonDevelopers/conrod/) & [Piston](http://www.piston.rs/)               |
-| [unitest2]()                                       | Test framework                   | [Builtin]()                                                                                           |
-| [nose]()                                           | Test Runner                      | [Cargo]()                                                                                             |
-| [pytest]()                                         | Testing Framework and Runner     | [Polish](https://github.com/AlKass/polish)                                                            |
-| [Flake8]()                                         | Linter                           | [Clippy](https://github.com/rust-lang-nursery/rust-clippy)                                            |
-| [autopep8]()                                       | Auto formatter                   | [rustfmt]()                                                                                           |
-| [twisted]()                                        | Network application framework    | [libpnet](https://github.com/libpnet/libpnet)                                                         |
-| [asyncIO]()                                        | Async application framework      | [Tokio](https://github.com/tokio-rs/tokio) and [futures](https://github.com/alexcrichton/futures-rs)  |
-| [PIL]()                                            | Image Manipulation               | [Image](https://github.com/PistonDevelopers/image)                                                    |
-| [Beautiful Soup]()                                 | HTML Parser                      | [html5ever](https://github.com/servo/html5ever)                                                       |
-| [Hypothesis](http://hypothesis.works/)             | Data Driven test framework       | [proptest](https://github.com/altsysrq/proptest)                                                      |
-| [mock]()                                           | Test Mocking                     | [Mockito](https://github.com/lipanski/mockito)                                                        |
-| [bioPython]()                                      | Bioinformathics libraries        | [Rust Bio](https://github.com/rust-bio)                                                               |
-| [Dynaconf](http://github.com/rochacbruno/dynaconf) | Config management                | [Config](https://github.com/mehcode/config-rs)                                                        |
-| [Itertools]()                                      | Data Structure Iteration         | [Rust Itertools](https://github.com/bluss/rust-itertools)                                             |
-| [Geopython]()                                      | geo Spatial Data                 | [Geo Rust](https://github.com/georust)                                                                |
-| [ScikitLearn]()                                    | Machine Learning                 | [rusty-machine](https://github.com/AtheMathmo/rusty-machine)                                          |
-| [mistune]()                                        | Markdown / Common Mark Parser    | [cmark](https://github.com/google/pulldown-cmark)                                                     |
-| [celery]()                                         | Distributed Computation          | [Antimony](https://github.com/antimonyproject/antimony)                                               |
-| [boto]()                                           | AWS clients                      | [rusoto](https://github.com/rusoto/rusoto)                                                            |
-| [AstroPy]()                                        | Astronomy                        | [atro-rust](https://github.com/saurvs/astro-rust)                                                     |
-| [Numpy]()                                          | Numeric                          | [?]()                                                                                                 |
+| Python                                                                                            | Definition                       | Rust                                                                                                  |
+| ------------------------------------------------------------------------------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `urllib` *                                                                                        | HTTP calls                       | [hyper](https://crates.io/crates/hyper)                                                               |
+| [requests](https://pypi.python.org/pypi/requests)                                                 | simplified HTTp calls            | [reqwest](https://github.com/seanmonstar/reqwest)                                                     |
+| [json](https://pypi.python.org/pypi/json)                                                         | JSON Parsing loading and dumping | [serde](https://github.com/serde-rs/serde)                                                            |
+| [pyYAML](https://pypi.python.org/pypi/pyyaml)                                                     | YAML Parsing loading and dumping | [serde](https://github.com/serde-rs/serde)                                                            |
+| [lxml](https://pypi.python.org/pypi/lxml)                                                         | XML Parsing loading and dumping  | [RustyXML](https://github.com/Florob/RustyXML)                                                        |
+| `csv` *                                                                                           | CSV parsing                      | [rust-csv](https://github.com/BurntSushi/rust-csv)                                                    |
+| `datetime` *  & [Dateutils](https://pypi.python.org/pypi/dateutils)                               | Date & time                      | [Chrono](https://github.com/chronotope/chrono)                                                        |
+| [click](https://pypi.python.org/pypi/click) and [argparse](https://pypi.python.org/pypi/argparse) | CLI Framework                    | [clap](https://github.com/kbknapp/clap-rs)                                                            |
+| [docopt](https://pypi.python.org/pypi/docopt)                                                     | CLi Framework                    | [docopt](https://github.com/docopt/docopt.rs)                                                         |
+| `re` *                                                                                            | Regular Expressions              | [regex](https://github.com/rust-lang/regex)                                                           |
+| `subprocess` *                                                                                    | Run external commands            | [crossbeam](https://github.com/crossbeam-rs/crossbeam) and [Rayon](https://github.com/rayon-rs/rayon) |
+| `logging` *                                                                                       | Logging                          | [log](https://github.com/rust-lang-nursery/log)                                                       |
+| `Pathlib` *                                                                                       | Path manipulation                | [fs]() and [fs_extra](https://github.com/webdesus/fs_extra)                                           |
+| [cryptography](https://pypi.python.org/pypi/cryptography)                                         | crytography                      | [crypto](https://github.com/DaGenix/rust-crypto)                                                      |
+| `pickle` *                                                                                        | Object Serialization             | [RON](https://github.com/ron-rs/ron)                                                                  |
+| `heapq` *                                                                                         | Heap Queue                       | `BinaryHeap` *                                                                                        |
+| [bottle](https://pypi.python.org/pypi/bottle)                                                     | Minimal Web Framework            | [Iron](https://github.com/iron/iron)                                                                  |
+| [flask](https://pypi.python.org/pypi/flask)                                                       | Web Framework                    | [Rocket](https://github.com/SergioBenitez/Rocket)                                                     |
+| [django](https://pypi.python.org/pypi/django)                                                     | Full Stack Web Framrwork         | [Gotham](https://github.com/gotham-rs/gotham)                                                         |
+| [SQL Alchemy](https://pypi.python.org/pypi/sqlalchemy)                                            | Relational Database ORM          | [Diesel](https://github.com/diesel-rs/diesel)                                                         |
+| [Pymongo](https://pypi.python.org/pypi/pymongo)                                                   | Mongo DB driver                  | [mongodb](https://crates.io/keywords/mongodb)                                                         |
+| [Jinja 2](https://pypi.python.org/pypi/jinja2)                                                    | Template Engine                  | [Tera](https://github.com/Keats/tera)                                                                 |
+| [pygtk](http://www.pygtk.org/)                                                                    | GTk desktop development          | [gtk](https://github.com/gtk-rs/gtk)                                                                  |
+| [pyside](http://www.pyside.org/)                                                                  | QT desktop development           | [rust-qt](https://github.com/rust-qt)                                                                 |
+| [pygame](https://pypi.python.org/pypi/pygame)                                                     | 2D UI library / gaming           | [Conrod](https://github.com/PistonDevelopers/conrod/) & [Piston](http://www.piston.rs/)               |
+| [unitest2](https://pypi.python.org/pypi/unittest2)                                                | Test framework                   | [Builtin]()                                                                                           |
+| [nose](https://pypi.python.org/pypi/nose)                                                         | Test Runner                      | [Cargo](http://doc.crates.io/)                                                                        |
+| [pytest](https://pypi.python.org/pypi/pytest)                                                     | Testing Framework and Runner     | [Polish](https://github.com/AlKass/polish)                                                            |
+| [Flake8](https://pypi.python.org/pypi/flake8)                                                     | Linter                           | [Clippy](https://github.com/rust-lang-nursery/rust-clippy)                                            |
+| [autopep8](https://pypi.python.org/pypi/autopep8)                                                 | Auto formatter                   | [rustfmt]()                                                                                           |
+| [twisted](https://pypi.python.org/pypi/twisted)                                                   | Network application framework    | [libpnet](https://github.com/libpnet/libpnet)                                                         |
+| `AsyncIO` *                                                                                       | Async application framework      | [Tokio](https://github.com/tokio-rs/tokio) and [futures](https://github.com/alexcrichton/futures-rs)  |
+| [Pillow](https://pypi.python.org/pypi/pillow)                                                     | Image Manipulation               | [Image](https://github.com/PistonDevelopers/image)                                                    |
+| [Beautiful Soup](https://pypi.python.org/pypi/beautifulsoup4)                                     | HTML Parser                      | [html5ever](https://github.com/servo/html5ever)                                                       |
+| [Hypothesis](http://hypothesis.works/)                                                            | Data Driven test framework       | [proptest](https://github.com/altsysrq/proptest)                                                      |
+| [mock](https://pypi.python.org/pypi/mock)                                                         | Test Mocking                     | [Mockito](https://github.com/lipanski/mockito)                                                        |
+| [bioPython](https://pypi.python.org/pypi/biopython)                                               | Bioinformathics libraries        | [Rust Bio](https://github.com/rust-bio)                                                               |
+| [Dynaconf](http://github.com/rochacbruno/dynaconf)                                                | Config management                | [Config](https://github.com/mehcode/config-rs)                                                        |
+| `itertools` *                                                                                     | Data Structure Iteration         | [Rust Itertools](https://github.com/bluss/rust-itertools)                                             |
+| [Geopython](https://pypi.python.org/pypi/geopython)                                               | geo Spatial Data                 | [Geo Rust](https://github.com/georust)                                                                |
+| [ScikitLearn](https://pypi.python.org/pypi/scikit_learn)                                          | Machine Learning                 | [rusty-machine](https://github.com/AtheMathmo/rusty-machine)                                          |
+| [mistune](https://pypi.python.org/pypi/mistune)                                                   | Markdown / Common Mark Parser    | [cmark](https://github.com/google/pulldown-cmark)                                                     |
+| [celery](https://pypi.python.org/pypi/celery)                                                     | Distributed Computation          | [Antimony](https://github.com/antimonyproject/antimony)                                               |
+| [boto](https://pypi.python.org/pypi/boto)                                                         | AWS clients                      | [rusoto](https://github.com/rusoto/rusoto)                                                            |
+| [AstroPy](https://pypi.python.org/pypi/astropy)                                                   | Astronomy                        | [atro-rust](https://github.com/saurvs/astro-rust)                                                     |
+| [Numpy](https://pypi.python.org/pypi/numpy)                                                       | Numeric                          | [Numeric](https://crates.io/crates/numeric)                                                           |
  
 
 ## Applications
 
-| Python                             | Definition                                       | Rust                                                   |
-| ---------------------------------- | ------------------------------------------------ | ------------------------------------------------------ |
-| [Pelican]()                        | Static Site generator                            | [Cobalt](https://github.com/cobalt-org/cobalt.rs)      |
-| [ansible]()                        | Infra Orchestration                              | [realize]()                                            |
-| [mkdocs]()                         | Generate documentation and e-books from Markdown | [mdBook]()                                             |
-| [locust]()                         | HTTP load test                                   | [drill](https://github.com/fcsonline/drill)            |
-| [Nameko]()                         | Microservices Framework                          | [fractalide](https://github.com/fractalide/fractalide) |
-| [Quokka](http://quokkaproject.org) | CMS                                              | [NIckel CMS](https://github.com/irony-rust/nickel-cms) |
+| Python                                          | Definition                                       | Rust                                                   |
+| ----------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------ |
+| [Pelican](https://pypi.python.org/pypi/pelican) | Static Site generator                            | [Cobalt](https://github.com/cobalt-org/cobalt.rs)      |
+| [ansible](https://pypi.python.org/pypi/ansible) | Infra Orchestration                              | [realize](https://crates.io/crates/realize)            |
+| [mkdocs](https://pypi.python.org/pypi/mkdocs)   | Generate documentation and e-books from Markdown | [mdBook](https://crates.io/crates/mdbook)              |
+| [locust](https://pypi.python.org/pypi/locust)   | HTTP load test                                   | [drill](https://github.com/fcsonline/drill)            |
+| [Nameko](https://pypi.python.org/pypi/nameko)   | Microservices Framework                          | [fractalide](https://github.com/fractalide/fractalide) |
+| [Quokka CMS](http://quokkaproject.org)          | CMS                                              | [NIckel CMS](https://github.com/irony-rust/nickel-cms) |
 
 
 
@@ -285,11 +281,11 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 
 Add Pythonic features to Rust
 
-| Python            | definition                  | Rust                                      |
-| ----------------- | --------------------------- | ----------------------------------------- |
-| `{'foo': "bar"}` | Syntax to create a dict / hashmap | [maplit](https://crates.io/crates/maplit) |
+| Python                            | Definition                                 | Rust                                            |
+| --------------------------------- | ------------------------------------------ | ----------------------------------------------- |
+| `{'foo': "bar"}`                  | Syntax to create a dict / hashmap          | [maplit](https://crates.io/crates/maplit)       |
 | `__init__(self, value='default')` | Initializing instances with default values | [derive_new](https://github.com/nrc/derive-new) |
-
+| itertools `*stdlib`               | Extra iterators methods                    | [itertools](https://crates.io/crates/itertools) |
 
 ## Show me The code
 
