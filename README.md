@@ -287,7 +287,8 @@ Add Pythonic features to Rust
 
 | Python            | definition                  | Rust                                      |
 | ----------------- | --------------------------- | ----------------------------------------- |
-| `dict(foo="bar")` | Create a dictionary/hashmap | [maplit](https://crates.io/crates/maplit) |
+| `{'foo': "bar"}` | Syntax to create a dict / hashmap | [maplit](https://crates.io/crates/maplit) |
+| `__init__(self, value='default')` | Initializing instances with default values | [derive_new](https://github.com/nrc/derive-new) |
 
 
 ## Show me The code
@@ -595,22 +596,212 @@ let map = hashmap!{
 
 ---
 
-### While loop
+### set / HashSet
 
-Loop a range while it mets some condition.
+Create a `set` (a hash of unique keys), add new keys and compute `intersection`, `difference` and `union`
 
 **Python**
 
 ```python
-# Largest Fibonacci under 10,000
-a, b = 1, 1
-while b < 10000:
-    a, b = b, a + b
+
+# creating and populating
+colors = set()
+colors.add("red")
+colors.add("green")
+colors.add("blue")
+colors.add("blue")
+
+# using literal syntax
+colors = {'red', 'green', 'blue', 'blue'}
+
+# from an iterator
+colors = set(['red', 'green', 'blue', 'blue'])
+
+
+# deduplication
+print(colors)  # {"blue", "green", "red"}
+
+# operations
+colors = {'red', 'green', 'blue', 'blue'}
+flag_colors = {"red", "black"}
+
+# difference
+colors.difference(flag_colors)  # {'blue', 'green'}
+
+# symmetric difference
+colors.symmetric_difference(flag_colors)  # {'black', 'blue', 'green'}
+
+# intersection
+colors.intersection(flag_colors)  # {'red'}
+
+# unioin
+colors.intersection(flag_colors)  # {'black', 'blue', 'green', 'red'}
+
 ```
 
 **Rust**
 
 ```rust
+use std::collections::HashSet;
+use std::iter::FromIterator;
+
+fn main() {
+
+    // creating and populating - type inference
+    let mut colors = HashSet::new();
+    colors.insert("red");
+    colors.insert("green");
+    colors.insert("blue");
+    colors.insert("blue");
+
+    // from an iterator - explicit type
+    let mut colors: HashSet<&str> = HashSet::from_iter(vec!["red", "green", "blue", "blue"]);
+
+    // deduplication
+    println!("{:?}", colors); // {"blue", "green", "red"}
+
+    // Operations
+    let mut colors: HashSet<&str> = HashSet::from_iter(vec!["red", "green", "blue", "blue"]);
+    let mut flag_colors: HashSet<&str> = HashSet::from_iter(vec!["red", "black"]);
+
+    // difference
+    colors.difference(&flag_colors); // ["green", "blue"]
+
+    // symmetric difference
+    colors.symmetric_difference(&flag_colors); // ["blue", "green", "black"]
+
+    // intersection
+    colors.intersection(&flag_colors); // ["red"]
+
+    // union
+    colors.union(&flag_colors); // ["red", "blue", "green", "black"]
+}
+```
+
+or syntax sugared using [maplit](https://crates.io/crates/maplit) crate
+
+```rust
+#[macro_use] extern crate maplit;
+
+let colors = hashset!{"red", "green", "blue", "blue"};
+```
+
+---
+
+### while and for loops
+
+Looping until a condition is met or over an iterable object.
+
+**Python**
+
+```python
+# While loop
+
+counter = 0
+while counter < 10:
+    print(counter)
+    counter += 1
+
+# infinite while loop
+while True:
+    print("loop Forever!")
+
+# infinite ehile loop with break
+counter = 0
+while True:
+    print(counter)
+    counter += 1
+    if counter >= 10:
+        break
+
+
+# while loop with continue
+counter = 0
+while True:
+    counter += 1
+    if counter == 5:
+        continue
+    print(counter)
+    if counter >= 10:
+        break
+
+# For loop over a list
+for color in ["red", "green", "blue"]:
+    print(color)
+
+# Enumerating indexes
+for  i, color in enumerate(["red", "green", "blue"]):
+    print(f"{color} at index {i}")
+
+# For in a range
+for number in range(0, 100):
+    print(number)  # from 0 to 99
+
+```
+
+**Rust**
+
+```rust
+fn main() {
+
+    // While loop
+    let mut counter = 0;
+    while counter < 10 {
+        println!("{}", counter);
+        counter += 1;
+    }
+
+    // infinite while loop
+    loop {
+        println!("Loop forever!");
+    }
+
+    // infinite while loop with break
+    let mut counter = 0;
+    loop {
+        println!("{}", counter);
+        counter += 1;
+        if counter >= 10 { break; }
+    }
+
+    // infinite while loop with continue
+    let mut counter = 0;
+    loop {
+        counter += 1;
+        if counter == 5 { continue; }
+        println!("{}", counter);
+        if counter >= 10 { break; }
+    }
+
+    // for loop over a list
+    for color in ["red", "green", "blue"].iter() {
+        println!("{}", color);
+    }
+
+    // Enumerating indexes
+    for (i, color) in ["red", "green", "blue"].iter().enumerate() {
+        println!("{} at index {}", color, i);
+    }
+
+    // for in a range
+    for number in 0..100 {
+        println!("{}", number);  // from 0 to 99
+    }
+}
+```
+
+#### Loop Labels
+
+**Rust** has a looping feature which is not present on Python: **Loop labels**
+
+```rust
+'outer: for x in 0..10 {
+    'inner: for y in 0..10 {
+        if x % 2 == 0 { continue 'outer; } // continues the loop over x
+        if y % 2 == 0 { continue 'inner; } // continues the loop over y
+        println!("x: {}, y: {}", x, y);
+    }
+}
 ```
 
 ---
