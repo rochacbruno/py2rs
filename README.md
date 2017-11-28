@@ -231,6 +231,58 @@ From **Python** to **Rust** by examples
 
 > You can  copy-paste ans run the **Rust** examples in https://play.rust-lang.org/ and **Python** in https://repl.it/languages/python3 
 
+
+### Creating a new project
+
+**Python**
+
+```bash
+$ mkdir my_python_program.py 
+```
+
+
+**Rust**
+
+```bash
+$ cargo new my-rust-program
+```
+
+---
+
+### Installing new libraries/crates
+
+**Python**
+
+```bash
+$ pip install foo 
+```
+
+
+**Rust**
+
+```bash
+$ cargo install foo
+```
+
+---
+
+### Running / Compiling
+
+**Python**
+
+```bash
+$ python my_python_program.py 
+```
+
+
+**Rust**
+
+```bash
+$ cargo run
+```
+
+---
+
 ### Hello World
 
 **Python**
@@ -309,7 +361,7 @@ fn add(a: i32, b: i32) -> i32 {
 }
 ```
 
-
+---
 
 ### List/Slice
 
@@ -350,7 +402,7 @@ fn main() {
     }
 }
 ```
-
+---
 
 ### Dict/Map
 
@@ -411,6 +463,7 @@ fn main() {
 }
 ```
 
+---
 
 ### While loop
 
@@ -430,6 +483,7 @@ while b < 10000:
 ```rust
 ```
 
+---
 
 ### Files
 
@@ -449,7 +503,7 @@ with open('song.txt') as fp:
 ```rust
 ```
 
-
+---
 
 ### Exceptions/Return Error
 
@@ -476,7 +530,7 @@ except ValueError:
 ```rust
 ```
 
-
+---
 
 ### Concurrency
 
@@ -492,7 +546,7 @@ thr.start()
 ```rust
 ```
 
-
+---
 
 ### Communicating between threads
 
@@ -518,7 +572,7 @@ val = queue.get()
 ```rust
 ```
 
-
+---
 
 ### Sorting
 
@@ -544,6 +598,8 @@ names.sort(key=len)
 ```rust
 ```
 
+---
+
 ### Web app with Flask / Rocket
 
 **Python**
@@ -566,9 +622,22 @@ if __name__ == '__main__':
 **Rust**
 
 ```rust
+#![feature(plugin)]
+#![plugin(rocket_codegen)]
+
+extern crate rocket;
+
+#[get("/")]
+fn index() -> &'static str {
+    "Hello Rust"
+}
+
+fn main() {
+    rocket::ignite().mount("/", routes![index]).launch();
+}
 ```
 
-
+---
 
 ### HTTP Request with error handling
 
@@ -600,6 +669,7 @@ print(reply['origin'])
 ```rust
 ```
 
+---
 
 ### Encode and Decode JSON
 
@@ -621,6 +691,8 @@ json.dump(obj, stdout)
 ```
 
 
+---
+
 
 ### Print Object for Debug/Log 
 
@@ -639,6 +711,7 @@ print('{!r}'.format(daffy))
 ```rust
 ```
 
+---
 
 ### Object Orientation
 
@@ -663,6 +736,7 @@ grumy.greet('Grafield')
 ```rust
 ```
 
+---
 
 ### Template for new examples
 
@@ -680,6 +754,7 @@ Explanation comes here.
 // rust code goes here
 ```
 
+---
 
 ## Credits
 
