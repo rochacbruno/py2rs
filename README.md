@@ -1,7 +1,37 @@
+# py2rs
+## From Python into Rust 
+
+```rust
+let x = Rust::from("Python");
+```
+
+A quick reference guide for the **Pythonista** in process of becoming a **Rustacean**. 
+
+
+
+### Monty Python - Season 3 - Episode 49
+
+[The sketch](http://montypython.50webs.com/scripts/Series_3/49.htm)
+
+```
+Mrs. Jalin: George.
+Mr. Jalin: Yes, Gladys.
+Mrs. Jalin: There's a man at the door with a moustache.
+Mr. Jalin: Tell him I've already got one. (Mrs. Jalin hits him hard with a newspaper) 
+          All right, all right. What's he want then?
+Mrs. Jalin: He says do we want a documentary on crustaceans.
+Mr. Jalin: Crustaceans!
+Mrs. Jalin: Yes.
+Mr. Jalin: What's he mean, crustaceans?
+Mrs. Jalin: CRUSTACEANS!! GASTROPODS! LAMELLIBRANCHS! CEPHALOPODS!
+...
+Ok...watch it later... let's learn some Rust now...
+```
+
 ## Getting Started with Rust
 
 Assuming you already know what is [**Rust**](http://rust-lang.org) and already 
-decided to start learning it here are some steps for you to follow:
+decided to start learning it. Here are some steps for you to follow:
 
 1) Take a tour of **Rust Syntax** and **Coding Style**  
    https://learnxinyminutes.com/docs/rust/
@@ -57,8 +87,8 @@ around it, here are some good links to follow.
    https://this-week-in-rust.org/   
    https://twitter.com/thisweekinrust 
 2) Reddit  
-   http://reddit.com/r/rust   (serious sub-reddit)
-   http://reddit.com/r/rustjerk (almost memes only)
+   http://reddit.com/r/rust   (serious sub-reddit)  
+   http://reddit.com/r/rustjerk (almost memes only)  
 3) Official Twitter  
   https://twitter.com/rustlang
 
@@ -86,6 +116,8 @@ Community links: https://www.rust-lang.org/en-US/community.html
 - Rust Design Patterns and Idioms https://github.com/rust-unofficial/patterns/
 - Idiomatic Rust https://github.com/mre/idiomatic-rust
 - GTK Rust Tutorial https://mmstick.github.io/gtkrs-tutorials/
+- Effective use of iterators http://hermanradtke.com/2015/06/22/effectively-using-iterators-in-rust.html
+- Red Hat Developers: Speed up Your Python with Rust https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust/
 
 ## Facts
 
@@ -102,7 +134,8 @@ Community links: https://www.rust-lang.org/en-US/community.html
 - The Rust mascot (unofficial) is called **Ferris** and it is a **crab** http://www.rustacean.net/  
   (There is no record of the official reason about being a crab, the reasonable history is that it was inspired by the **Rusty Crab** 
    a common species of crab and also a name of a famous restaurant.)
-- **More facts?** send a question here or send a Pull Request adding an interest fact to this list.
+
+> **More facts?** send a question here or send a Pull Request adding an interest fact to this list.
 
 ![ferris](http://www.rustacean.net/more-crabby-things/animated-ferris.gif)
 
@@ -229,7 +262,7 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 
 From **Python** to **Rust** by examples  
 
-> You can  copy-paste ans run the **Rust** examples in https://play.rust-lang.org/ and **Python** in https://repl.it/languages/python3 
+> You can  copy-paste and run the **Rust** examples in https://play.rust-lang.org/ and **Python** in https://repl.it/languages/python3 
 
 
 ### Creating a new project
