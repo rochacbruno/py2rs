@@ -195,10 +195,13 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | [Pyladies](), [AfroPython]()                                                 | Diversity and Inclusion initiative | [RustBridge](https://rustbridge.github.io/)                               |
 | [comp.lang.Python](https://groups.google.com/forum/#!forum/comp.lang.python) | Official Users Forum               | [users.rust-lang.org](https://users.rust-lang.org)                        |
 
+
 ## Environment Tools
 
 | Python                                                    | Definition                              | Rust                                                                       |
 | --------------------------------------------------------- | --------------------------------------- | -------------------------------------------------------------------------- |
+| `requirements.txt`                                        | Official dependency tracker file        | `Cargo.toml`                                                               |
+| `setup.py`                                                | Official installator / distributor file | `Cargo.toml`                                                               |
 | [PyPI]()                                                  | Library Repositoty                      | [Crates.io](http://crates.io)                                              |
 | [pip]()                                                   | Library installation                    | [Cargo]()                                                                  |
 | [setuptools]()                                            | Library distribution                    | [Cargo]()                                                                  |
@@ -296,12 +299,17 @@ From **Python** to **Rust** by examples
 
 ### Creating a new project
 
+Create a new project with baseic files, entry points, module initializer, dependency and installation artifacts.
+
 **Python**
 
 ```bash
-$ touch my_python_program.py 
+$ mkdir {pyproject,pyproject/src}
+$ touch {pyproject/src/{__init__.py,__main__.py,program.py},pyproject/{requirements.txt,setup.py}} 
+$ echo "-e ." >> pyproject/requirements.txt
+$ echo "from setuptools import setup" >> pyproject/setup.py
+$ echo "setup(author=..., name=...)" >> pyproject/setup.py
 ```
-
 
 **Rust**
 
@@ -529,8 +537,10 @@ fn main() {
 
 You can use the [maplit](https://crates.io/crates/maplit) crate to load `hashmap!` macro to have an efficient sugared (a.k.a Pythonic) syntax!
 
-```bash
-cargo install maplit
+```toml
+# Cargo.toml
+[dependencies]
+maplit = "*"
 ```
 
 then
