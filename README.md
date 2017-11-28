@@ -28,6 +28,24 @@ Mrs. Jalin: CRUSTACEANS!! GASTROPODS! LAMELLIBRANCHS! CEPHALOPODS!
 Ok...watch it later... let's learn some Rust now...
 ```
 
+## TOC
+
+- [Getting Started with Rust](https://github.com/rochacbruno/py2rs#getting-started-with-rust)
+- [Where to exercice](https://github.com/rochacbruno/py2rs#exercices)
+- [Where to be informed on news and updates](https://github.com/rochacbruno/py2rs#getting-updated)
+- [Interacting with Rustacean Communities](https://github.com/rochacbruno/py2rs#interact-with-other-rustaceans)
+- [Additional learning Resources](https://github.com/rochacbruno/py2rs#additional-learning-resources)
+- [Curious Facts](https://github.com/rochacbruno/py2rs#facts)
+- [Glossary of terms](https://github.com/rochacbruno/py2rs#glossary-of-terms)
+- [General fact comparison](https://github.com/rochacbruno/py2rs#general)
+- [Environment Tools](https://github.com/rochacbruno/py2rs#environment-tools)
+- [Libraries and Frameworks](https://github.com/rochacbruno/py2rs#libraries-and-frameworks)
+- [Applications](https://github.com/rochacbruno/py2rs#applications)
+- [Code comparison Python X Rust implementations](https://github.com/rochacbruno/py2rs#show-me-the-code)
+- [Credits](https://github.com/rochacbruno/py2rs#credits)
+
+
+
 ## Getting Started with Rust
 
 Assuming you already know what is [**Rust**](http://rust-lang.org) and already 
