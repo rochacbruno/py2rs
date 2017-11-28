@@ -41,6 +41,7 @@ Ok...watch it later... let's learn some Rust now...
 - [py2rs: Environment Tools](https://github.com/rochacbruno/py2rs#environment-tools)
 - [py2rs: Libraries and Frameworks](https://github.com/rochacbruno/py2rs#libraries-and-frameworks)
 - [py2rs: Applications](https://github.com/rochacbruno/py2rs#applications)
+- [py2rs: Useful Crates](https://github.com/rochacbruno/py2rs#useful-crates)
 - [py2rs: Code comparison Python X Rust implementations](https://github.com/rochacbruno/py2rs#show-me-the-code)
 - [Credits](https://github.com/rochacbruno/py2rs#credits)
 

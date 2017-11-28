@@ -1,0 +1,7 @@
+[package]
+name = "rs2py"
+version = "0.1.0"
+authors = ["Bruno Rocha <rochacbruno@gmail.com>"]
+
+[dependencies]
+maplit = "*"
