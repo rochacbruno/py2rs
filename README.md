@@ -1100,7 +1100,7 @@ class Cat:
 # ...
 
 grumy = Cat('Grumpy')
-grumy.greet('Grafield')
+grumy.greet('Garfield')  # Meow Garfield, I'm Grumpy
 ```
 
 **Rust**
@@ -1111,20 +1111,24 @@ struct Cat {
 }
 
 impl Cat {
-    pub fn new(name: String) -> Cat {
-        Cat {name}
-    }
 
-    pub fn greet(&self, other:String) {
-        println!("Meow {}, I'm {}", other, self.name);
+    pub fn new<S>(name: S) -> Cat where S: Into<String> {
+        Cat { name: name.into() }
     }
+    
+    pub fn greet<S: Into<String>>(&self, other:S) {
+        println!("Meow {}, I'm {}", other.into(), self.name);
+    }     
+    
 }
 
 fn main() {
-    let grumpy = Cat::new(String::from("Grumpy"));
-    grumpy.greet(String::from("Garfield"))
+    let grumpy = Cat::new("Grumpy");
+    grumpy.greet("Garfield");  // Meow Garfield, I'm Grumpy
 }
 ```
+
+> NOTE: In Rust, it is best to avoid `stringly types APIs` so in the above example it would be better if we do `let garfield = Cat::new("Garfield")` and then make `greet` to accept an instance of `Cat` as `other` argument. If you are interested [watch this](https://www.youtube.com/watch?v=0zOg8_B71gE).
 
 ---
 
