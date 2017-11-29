@@ -27,8 +27,9 @@ Mrs. Jalin: Yes.
 Mr. Jalin: What's he mean, crustaceans?
 Mrs. Jalin: CRUSTACEANS!! GASTROPODS! LAMELLIBRANCHS! CEPHALOPODS!
 ...
-Ok...watch it later... let's learn some Rust now...
 ```
+
+Ok... [watch it later...](https://www.youtube.com/watch?v=8R2zvE615dM) let's learn some Rust now...
 
 ## TOC
 
