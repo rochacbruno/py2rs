@@ -426,7 +426,16 @@ Defining a function that takes 2 integer arguments and returns its sum.
 
 ```python
 def add(a, b):
-    "Adds a to b"""
+    """Adds a to b"""
+    return a + b
+```
+**Python with typing annotations**
+
+It looks more similar to Rust.
+
+```python
+def add(a: int, b: int) -> int:
+    """Adds a to b"""
     return a + b
 ```
 
