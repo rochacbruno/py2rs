@@ -177,7 +177,7 @@ https://www.rust-lang.org/en-US/community.html
 - The Rust mascot (unofficial) is called **Ferris** and it is a **crab** http://www.rustacean.net/  
   (There is no record of the official reason about being a crab, the reasonable history is that it was inspired by the **Rusty Crab** 
    a common species of crab and also a name of a famous restaurant.)
-- To compliment your fellow Rustaceans don't say **~~cheers!~~**. Say **safe!** (**safe!** is also said when toasting with champagne in Rust conferences)
+- To compliment your fellow Rustaceans don't say **~~cheers!~~**. Say **safe!** (**safe!** is also said when toasting with champagne at Rust conferences)
 
 > **More facts? and curiosities** send a question here or send a Pull Request adding an interest fact to this list.
 
@@ -311,11 +311,12 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 
 Add Pythonic features to Rust
 
-| Python                            | Definition                                 | Rust                                            |
-| --------------------------------- | ------------------------------------------ | ----------------------------------------------- |
-| `{'foo': "bar"}`                  | Syntax to create a dict / hashmap          | [maplit](https://crates.io/crates/maplit)       |
-| `__init__(self, value='default')` | Initializing instances with default values | [derive_new](https://github.com/nrc/derive-new) |
-| itertools `*stdlib`               | Extra iterators methods                    | [itertools](https://crates.io/crates/itertools) |
+| Python                            | Definition                                         | Rust                                             |
+| --------------------------------- | -------------------------------------------------- | ------------------------------------------------ |
+| `{'foo': "bar"}`                  | Syntax to create a dict / hashmap                  | [maplit](https://crates.io/crates/maplit)        |
+| `__init__(self, value='default')` | Instance initialization (with some default values) | [derive_new](https://github.com/nrc/derive-new)  |
+| itertools `*stdlib`               | Extra iterators methods                            | [itertools](https://crates.io/crates/itertools)  |
+| `hashlib` *                       | Password Hashing                                   | [libpasta](https://github.com/libpasta/libpasta) |
 
 ## Show me The code
 
