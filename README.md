@@ -126,7 +126,12 @@ Community links: https://www.rust-lang.org/en-US/community.html
         * Telegram: https://t.me/rustlangbr
     * Rust BH
         * https://t.me/rustbh
-
+- Indonesia
+    * General
+        * FB Groups (Rustaceans Indonesia) : https://fb.com/groups/RustaceansID
+        * FB Groups (Rust ID)              : https://fb.com/groups/rustindo
+        * Telegram (Rust Indonesia)        : https://t.me/rustindonesia
+        
 - Add your country/city here, send a Pull Request.
 
 ## Additional learning resources
