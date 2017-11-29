@@ -265,7 +265,7 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | [mistune](https://pypi.python.org/pypi/mistune)                                                   | Markdown / Common Mark Parser    | [cmark](https://github.com/google/pulldown-cmark)                                                     |
 | [celery](https://pypi.python.org/pypi/celery)                                                     | Distributed Computation          | [Antimony](https://github.com/antimonyproject/antimony)                                               |
 | [boto](https://pypi.python.org/pypi/boto)                                                         | AWS clients                      | [rusoto](https://github.com/rusoto/rusoto)                                                            |
-| [AstroPy](https://pypi.python.org/pypi/astropy)                                                   | Astronomy                        | [atro-rust](https://github.com/saurvs/astro-rust)                                                     |
+| [AstroPy](https://pypi.python.org/pypi/astropy)                                                   | Astronomy                        | [astro-rust](https://github.com/saurvs/astro-rust)                                                     |
 | [Numpy](https://pypi.python.org/pypi/numpy)                                                       | Numeric                          | [Numeric](https://crates.io/crates/numeric)                                                           |
  
 
@@ -278,7 +278,7 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | [mkdocs](https://pypi.python.org/pypi/mkdocs)   | Generate documentation and e-books from Markdown | [mdBook](https://crates.io/crates/mdbook)              |
 | [locust](https://pypi.python.org/pypi/locust)   | HTTP load test                                   | [drill](https://github.com/fcsonline/drill)            |
 | [Nameko](https://pypi.python.org/pypi/nameko)   | Microservices Framework                          | [fractalide](https://github.com/fractalide/fractalide) |
-| [Quokka CMS](http://quokkaproject.org)          | CMS                                              | [NIckel CMS](https://github.com/irony-rust/nickel-cms) |
+| [Quokka CMS](http://quokkaproject.org)          | CMS                                              | [Nickel CMS](https://github.com/irony-rust/nickel-cms) |
 
 
 
@@ -301,7 +301,7 @@ From **Python** to **Rust** by examples
 
 ### Creating a new project
 
-Create a new project with baseic files, entry points, module initializer, dependency and installation artifacts.
+Create a new project with basic files, entry points, module initializer, dependency and installation artifacts.
 
 **Python**
 
