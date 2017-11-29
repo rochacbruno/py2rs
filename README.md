@@ -1070,6 +1070,8 @@ json.dump(obj, stdout)
 
 **Python**
 
+[playground](https://repl.it/repls/SourPaltryHorseshoecrab)
+
 ```python
 class Cat:
     def __init__(self, name):
@@ -1085,6 +1087,8 @@ grumy.greet('Garfield')  # Meow Garfield, I'm Grumpy
 ```
 
 **Rust**
+
+[playground](https://play.rust-lang.org/?gist=155c76fae5240e483858000e73e82f00&version=stable)
 
 ```rust
 struct Cat {
@@ -1163,11 +1167,15 @@ Explanation comes here.
 
 **Python**
 
+[playground](https://repl.it/repls/uniquelinkhere)
+
 ```python
 # python code goes here
 ```
 
 **Rust**
+
+[playground](https://play.rust-lang.org/?gist=uniquehashhere&version=stable)
 
 ```rust
 // rust code goes here
@@ -1184,3 +1192,8 @@ First published in [BrunoRocha.org](http://brunorocha.org/python/py2rs-from-pyth
 With contributions by:
 
 - Send a PR and include your name and links
+
+
+---
+
+![toasting-at-cargo-hall](https://user-images.githubusercontent.com/458654/33390506-35c4d43c-d51d-11e7-9591-f21c6b0770f6.png)
