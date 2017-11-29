@@ -1106,6 +1106,24 @@ grumy.greet('Grafield')
 **Rust**
 
 ```rust
+struct Cat {
+    name: String
+}
+
+impl Cat {
+    pub fn new(name: String) -> Cat {
+        Cat {name}
+    }
+
+    pub fn greet(&self, other:String) {
+        println!("Meow {}, I'm {}", other, self.name);
+    }
+}
+
+fn main() {
+    let grumpy = Cat::new(String::from("Grumpy"));
+    grumpy.greet(String::from("Garfield"))
+}
 ```
 
 ---
