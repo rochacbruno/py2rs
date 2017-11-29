@@ -84,21 +84,21 @@ decided to start learning it. Here are some steps for you to follow:
    * **Rust Patterns** https://github.com/rust-unofficial/patterns
    * **API Guidelines** https://rust-lang-nursery.github.io/api-guidelines/
 
-## Exercices
+## Exercises
 
-Time to put your new knowledge in action solving some exercices.
+Time to put your new knowledge in action solving some exercises.
 
 1) **Exercism.io**  
    Register a new account on exercism.io (using github auth)  
    Install exercism command line client on your computer  
-   Solve some exercices:  http://www.exercism.io/languages/rust/about 
+   Solve some exercises:  http://www.exercism.io/languages/rust/about 
 
 2) **Rust Playground**  
    Run Live Rust Code in the browser with https://play.rust-lang.org/
 
 ## Getting updated
 
-Now I assume you are addicted to **Rust** and you want to be updated about averything 
+Now I assume you are addicted to **Rust** and you want to be updated about everything 
 around it, here are some good links to follow.
 
 1) This Week in Rust Newsletter  
