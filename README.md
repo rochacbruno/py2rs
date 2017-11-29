@@ -116,9 +116,11 @@ around it, here are some good links to follow.
 
 > Don't be afraid, the Rustaceans are a very receptive species and are cozy with the Pythonistas.
 
-Community links: https://www.rust-lang.org/en-US/community.html
+### Main Community links
 
-### Local
+https://www.rust-lang.org/en-US/community.html
+
+### Local Communities
 
 - Brazil
     * General
@@ -143,11 +145,13 @@ Community links: https://www.rust-lang.org/en-US/community.html
 - GTK Rust Tutorial https://mmstick.github.io/gtkrs-tutorials/
 - Effective use of iterators http://hermanradtke.com/2015/06/22/effectively-using-iterators-in-rust.html
 - Red Hat Developers: Speed up Your Python with Rust https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust/
+- What's a reference in Rust? (The best article to understand `'lifetimes` and `&`) https://jvns.ca/blog/2017/11/27/rust-ref/
 
 ## Facts
 
-- The language is named **Rust** because "rust is as close to the bare metal as you can get.",   
-  in metal theory **rust** is the chemical layer closest to bare metal.
+- The language is named **Rust** because **"rust is as close to the bare metal as you can get".**,   
+  in metal theory **rust** is the chemical layer closest to bare metal.  
+  (also [Wikipedia](https://en.wikipedia.org/wiki/Rust_(programming_language)) says that the name was *possibly* inspired by the name of a Fungi)
 - The Rust `trifecta` is 1) **Memory Safe**, 2) **Fast** 3) **Concurrent**
 - Rust can be used for web development http://www.arewewebyet.org/
 - Rust can be used for Gaming Development http://arewegameyet.com/
@@ -155,12 +159,27 @@ Community links: https://www.rust-lang.org/en-US/community.html
 - Lots of IDEs and Editors supports Rust https://areweideyet.com/  
   (VSCode is known to have the better support by now https://marketplace.visualstudio.com/items?itemName=kalitaalexey.vscode-rust)
 - Rust packages are called `Crates` and are installed by `Cargo` explore them at http://crates.io
-- In Rust there is no **class** but **Structs**, **Enums**, **Traits**, **functions** and **macros!**
+- In Rust there is no **Class** but **Structs**, **Enums**, **Traits**, **functions** and **macros!**
+- Rust compiler was first writen in **OCaml** then rewritten in Rust! (Rust is writen Rust!!!)
+- Rust type system is strongly inspired by **Haskell**
+- Rust **functional** style is inspired by **Erlang**
+- Rust type inference is inspired by **Python** and **Ruby**
+- The main **syntax** style is inspired by **C** and **C++**
+- There is no automated **Garbage Collector** so Rust frees memory based on Resource Aquisition RAII (a.k.a Ownership)
+- Rust has **Generic Types**!!!
+- As **Rust** is **close to bare metal** you can ship a program without the inclusion of **Rust's runtime** which makes easy to distribute programs (no need of dependencies and virtuelenvs management)
+- There are **Python** code in Rust! Rust build is [bootstrapped by Python](https://github.com/rust-lang/rust/blob/master/src/bootstrap/bootstrap.py)
+- Graydon Hoare (creator of Rust) is now working at **Apple** developing the **Swift** language
+- Rust is the developers **most loved language** according to **Stack Overflow Survey**
+- Rust is the most [**energy efficient**](https://sites.google.com/view/energy-efficiency-languages/results) language! and that is very important for environment, data center companies and maybe it can help saving your laptop and phone battery in near future. 
+- There is an Operating System written in **Rust** - https://www.redox-os.org/
+- Mozilla released the fastest version of Firefox (**quantum**) having many parts written on **Rust**
 - The Rust mascot (unofficial) is called **Ferris** and it is a **crab** http://www.rustacean.net/  
   (There is no record of the official reason about being a crab, the reasonable history is that it was inspired by the **Rusty Crab** 
    a common species of crab and also a name of a famous restaurant.)
+- To compliment your fellow Rustaceans don't say **~~cheers!~~**. Say **safe!** (**safe!** is also said when toasting with champagne in Rust conferences)
 
-> **More facts?** send a question here or send a Pull Request adding an interest fact to this list.
+> **More facts? and curiosities** send a question here or send a Pull Request adding an interest fact to this list.
 
 ![ferris](http://www.rustacean.net/more-crabby-things/animated-ferris.gif)
 
