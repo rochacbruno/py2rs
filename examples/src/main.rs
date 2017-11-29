@@ -126,6 +126,12 @@ impl Cat {
 }
 
 
+#[derive(Debug)]
+struct Actor {
+    name: String,
+    age: i32
+}
+
 
 fn main() {
     println!("Hello, world!");
@@ -138,4 +144,8 @@ fn main() {
 
     let grumpy = Cat::new("Grumpy");
     grumpy.greet("Garfield");
+
+
+    let daffy = Actor {name: "Daffy".into(), age: 80};
+    println!("{:#?}", daffy);
 }

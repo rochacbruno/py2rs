@@ -1065,26 +1065,6 @@ json.dump(obj, stdout)
 
 ---
 
-
-### Print Object for Debug/Log 
-
-**Python**
-
-```python
-daffy = Actor(
-    name='Daffy',
-    age=80,
-)
-print('{!r}'.format(daffy))
-```
-
-**Rust**
-
-```rust
-```
-
----
-
 ### Object Orientation
 
 **Python**
@@ -1130,7 +1110,51 @@ fn main() {
 
 > NOTE: In Rust, it is best to avoid `stringly types APIs` so in the above example it would be better if we do `let garfield = Cat::new("Garfield")` and then make `greet` to accept an instance of `Cat` as `other` argument. If you are interested [watch this](https://www.youtube.com/watch?v=0zOg8_B71gE).
 
+
 ---
+
+### Print Object for Debug/Log 
+
+Print formatted object debug information
+
+**Python**
+
+```python
+
+class Actor:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __repr__(self):
+      return str(self.__dict__)
+
+daffy = Actor(
+    name='Daffy',
+    age=80,
+)
+
+print('{!r}'.format(daffy))  # {'name': 'Daffy', 'age': 80}
+```
+
+**Rust**
+
+```rust
+#[derive(Debug)]
+struct Actor {
+    name: String,
+    age: i32
+}
+
+fn main() {
+    let daffy = Actor {name: "Daffy".into(), age: 80};
+    println!("{:#?}", daffy);   // Actor {name: "Daffy", age: 80 }
+}
+
+```
+
+---
+
 
 ### Template for new examples
 
