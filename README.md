@@ -163,7 +163,7 @@ https://www.rust-lang.org/en-US/community.html
 - Rust compiler was first writen in **OCaml** then rewritten in Rust! (Rust is writen Rust!!!)
 - Rust type system is strongly inspired by **Haskell**
 - Rust **functional** style is inspired by **Erlang**
-- Rust type inference is inspired by **Python** and **Ruby**
+- Rust type inference is mainly inspired by **ML** and also by **Python** and **Ruby**
 - The main **syntax** style is inspired by **C** and **C++**
 - There is no automated **Garbage Collector** so Rust frees memory based on Resource Aquisition RAII (a.k.a Ownership)
 - Rust has **Generic Types**!!!
@@ -223,23 +223,23 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 
 ## Environment Tools
 
-| Python                                                    | Definition                              | Rust                                                                                      |
-| --------------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `requirements.txt`                                        | Official dependency tracker file        | `Cargo.toml`                                                                              |
-| `setup.py`                                                | Official installator / distributor file | `Cargo.toml`                                                                              |
-| [PyPI](https://pypi.org/)                                 | Library Repositoty                      | [Crates.io](http://crates.io)                                                             |
-| [pip](https://pypi.python.org/pypi/pip)                   | Library installation                    | [Cargo](http://doc.crates.io/)                                                            |
-| [setuptools](https://pypi.python.org/pypi/setuptools)     | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
-| [pbr](https://docs.openstack.org/pbr/latest/)             | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
-| [pipenv](https://pypi.python.org/pypi/pipenv)             | Dependency manager                      | [Cargo](http://doc.crates.io/)                                                            |
-| [twine](https://pypi.python.org/pypi/twine)               | Package uploader                        | [Cargo](http://doc.crates.io/) and [Semantic](https://github.com/semantic-rs/semantic-rs) |
-| `venv` *                                                  | Isolated environments                   | [Cargo](http://doc.crates.io/)                                                            |
-| [pyinstaller](https://github.com/pyinstaller/pyinstaller) | Generate Standalone Executables         | [Cargo](http://doc.crates.io/)                                                            |
-| [pyenv](https://github.com/pyenv/pyenv-installer)         | Install and manage versions of language | [rustup](https://www.rustup.rs/)                                                          |
-| [sphinx](https://pypi.python.org/pypi/sphinx)             | Generate documentation from code        | [rustdoc](https://doc.rust-lang.org/stable/rustdoc/) and [Cargo](http://doc.crates.io/)   |
-| [python](http://python.org)                               | Interpreter / Compiler                  | [rustc](https://doc.rust-lang.org/1.1.0/rustc/) and [Cargo](http://doc.crates.io/)        |
-| [ipython](https://pypi.python.org/pypi/ipython)           | REPL                                    | [rusti](https://github.com/murarth/rusti)                                                 |
-| [ipdb](https://pypi.python.org/pypi/ipdb)                 | Debugger                                | [rust-gdb](https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb)                |
+| Python                                                                                                | Definition                              | Rust                                                                                      |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `requirements.txt`                                                                                    | Official dependency tracker file        | `Cargo.toml`                                                                              |
+| `setup.py`                                                                                            | Official installator / distributor file | `Cargo.toml`                                                                              |
+| [PyPI](https://pypi.org/)                                                                             | Library Repositoty                      | [Crates.io](http://crates.io)                                                             |
+| [pip](https://pypi.python.org/pypi/pip)                                                               | Library installation                    | [Cargo](http://doc.crates.io/)                                                            |
+| [setuptools](https://pypi.python.org/pypi/setuptools)                                                 | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
+| [pbr](https://docs.openstack.org/pbr/latest/)                                                         | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
+| [pipenv](https://pypi.python.org/pypi/pipenv)                                                         | Dependency manager                      | [Cargo](http://doc.crates.io/)                                                            |
+| [twine](https://pypi.python.org/pypi/twine)                                                           | Package uploader                        | [Cargo](http://doc.crates.io/) and [Semantic](https://github.com/semantic-rs/semantic-rs) |
+| `venv` *                                                                                              | Isolated environments                   | [Cargo](http://doc.crates.io/)                                                            |
+| [pyinstaller](https://github.com/pyinstaller/pyinstaller)                                             | Generate Standalone Executables         | [Cargo](http://doc.crates.io/)                                                            |
+| [pyenv](https://github.com/pyenv/pyenv-installer)                                                     | Install and manage versions of language | [rustup](https://www.rustup.rs/)                                                          |
+| [pydoc](https://docs.python.org/library/pydoc.html) and [sphinx](https://pypi.python.org/pypi/sphinx) | Generate documentation from code        | [rustdoc](https://doc.rust-lang.org/stable/rustdoc/) and [Cargo](http://doc.crates.io/)   |
+| [python](http://python.org)                                                                           | Interpreter / Compiler                  | [rustc](https://doc.rust-lang.org/1.1.0/rustc/) and [Cargo](http://doc.crates.io/)        |
+| [ipython](https://pypi.python.org/pypi/ipython)                                                       | REPL                                    | [rusti](https://github.com/murarth/rusti)                                                 |
+| [ipdb](https://pypi.python.org/pypi/ipdb)                                                             | Debugger                                | [rust-gdb](https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb)                |
 
 ## Libraries and Frameworks
 
