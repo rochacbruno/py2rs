@@ -462,7 +462,7 @@ def add(a: int, b: int) -> int:
 **Rust**
 
 ```rust
-// Adds a to b
+/// Adds a to b
 fn add(a: i32, b: i32) -> i32 {
   a + b
 }
