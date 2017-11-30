@@ -163,7 +163,7 @@ https://www.rust-lang.org/en-US/community.html
 - Rust compiler was first writen in **OCaml** then rewritten in Rust! (Rust is writen Rust!!!)
 - Rust type system is strongly inspired by **Haskell**
 - Rust **functional** style is inspired by **Erlang**
-- Rust type inference is inspired by **Python** and **Ruby**
+- Rust type inference is mainly inspired by **ML** and also by **Python** and **Ruby**
 - The main **syntax** style is inspired by **C** and **C++**
 - There is no automated **Garbage Collector** so Rust frees memory based on Resource Aquisition RAII (a.k.a Ownership)
 - Rust has **Generic Types**!!!
@@ -177,7 +177,7 @@ https://www.rust-lang.org/en-US/community.html
 - The Rust mascot (unofficial) is called **Ferris** and it is a **crab** http://www.rustacean.net/  
   (There is no record of the official reason about being a crab, the reasonable history is that it was inspired by the **Rusty Crab** 
    a common species of crab and also a name of a famous restaurant.)
-- To compliment your fellow Rustaceans don't say **~~cheers!~~**. Say **safe!** (**safe!** is also said when toasting with champagne in Rust conferences)
+- To compliment your fellow Rustaceans don't say **~~cheers!~~**. Say **safe!** (**safe!** is also said when toasting with champagne at Rust conferences)
 
 > **More facts? and curiosities** send a question here or send a Pull Request adding an interest fact to this list.
 
@@ -223,23 +223,23 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 
 ## Environment Tools
 
-| Python                                                    | Definition                              | Rust                                                                                      |
-| --------------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `requirements.txt`                                        | Official dependency tracker file        | `Cargo.toml`                                                                              |
-| `setup.py`                                                | Official installator / distributor file | `Cargo.toml`                                                                              |
-| [PyPI](https://pypi.org/)                                 | Library Repositoty                      | [Crates.io](http://crates.io)                                                             |
-| [pip](https://pypi.python.org/pypi/pip)                   | Library installation                    | [Cargo](http://doc.crates.io/)                                                            |
-| [setuptools](https://pypi.python.org/pypi/setuptools)     | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
-| [pbr](https://docs.openstack.org/pbr/latest/)             | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
-| [pipenv](https://pypi.python.org/pypi/pipenv)             | Dependency manager                      | [Cargo](http://doc.crates.io/)                                                            |
-| [twine](https://pypi.python.org/pypi/twine)               | Package uploader                        | [Cargo](http://doc.crates.io/) and [Semantic](https://github.com/semantic-rs/semantic-rs) |
-| `venv` *                                                  | Isolated environments                   | [Cargo](http://doc.crates.io/)                                                            |
-| [pyinstaller](https://github.com/pyinstaller/pyinstaller) | Generate Standalone Executables         | [Cargo](http://doc.crates.io/)                                                            |
-| [pyenv](https://github.com/pyenv/pyenv-installer)         | Install and manage versions of language | [rustup](https://www.rustup.rs/)                                                          |
-| [sphinx](https://pypi.python.org/pypi/sphinx)             | Generate documentation from code        | [rustdoc](https://doc.rust-lang.org/stable/rustdoc/) and [Cargo](http://doc.crates.io/)   |
-| [python](http://python.org)                               | Interpreter / Compiler                  | [rustc](https://doc.rust-lang.org/1.1.0/rustc/) and [Cargo](http://doc.crates.io/)        |
-| [ipython](https://pypi.python.org/pypi/ipython)           | REPL                                    | [rusti](https://github.com/murarth/rusti)                                                 |
-| [ipdb](https://pypi.python.org/pypi/ipdb)                 | Debugger                                | [rust-gdb](https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb)                |
+| Python                                                                                                | Definition                              | Rust                                                                                      |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `requirements.txt`                                                                                    | Official dependency tracker file        | `Cargo.toml`                                                                              |
+| `setup.py`                                                                                            | Official installator / distributor file | `Cargo.toml`                                                                              |
+| [PyPI](https://pypi.org/)                                                                             | Library Repositoty                      | [Crates.io](http://crates.io)                                                             |
+| [pip](https://pypi.python.org/pypi/pip)                                                               | Library installation                    | [Cargo](http://doc.crates.io/)                                                            |
+| [setuptools](https://pypi.python.org/pypi/setuptools)                                                 | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
+| [pbr](https://docs.openstack.org/pbr/latest/)                                                         | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
+| [pipenv](https://pypi.python.org/pypi/pipenv)                                                         | Dependency manager                      | [Cargo](http://doc.crates.io/)                                                            |
+| [twine](https://pypi.python.org/pypi/twine)                                                           | Package uploader                        | [Cargo](http://doc.crates.io/) and [Semantic](https://github.com/semantic-rs/semantic-rs) |
+| `venv` *                                                                                              | Isolated environments                   | [Cargo](http://doc.crates.io/)                                                            |
+| [pyinstaller](https://github.com/pyinstaller/pyinstaller)                                             | Generate Standalone Executables         | [Cargo](http://doc.crates.io/)                                                            |
+| [pyenv](https://github.com/pyenv/pyenv-installer)                                                     | Install and manage versions of language | [rustup](https://www.rustup.rs/)                                                          |
+| [pydoc](https://docs.python.org/library/pydoc.html) and [sphinx](https://pypi.python.org/pypi/sphinx) | Generate documentation from code        | [rustdoc](https://doc.rust-lang.org/stable/rustdoc/) and [Cargo](http://doc.crates.io/)   |
+| [python](http://python.org)                                                                           | Interpreter / Compiler                  | [rustc](https://doc.rust-lang.org/1.1.0/rustc/) and [Cargo](http://doc.crates.io/)        |
+| [ipython](https://pypi.python.org/pypi/ipython)                                                       | REPL                                    | [rusti](https://github.com/murarth/rusti)                                                 |
+| [ipdb](https://pypi.python.org/pypi/ipdb)                                                             | Debugger                                | [rust-gdb](https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb)                |
 
 ## Libraries and Frameworks
 
@@ -311,11 +311,12 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 
 Add Pythonic features to Rust
 
-| Python                            | Definition                                 | Rust                                            |
-| --------------------------------- | ------------------------------------------ | ----------------------------------------------- |
-| `{'foo': "bar"}`                  | Syntax to create a dict / hashmap          | [maplit](https://crates.io/crates/maplit)       |
-| `__init__(self, value='default')` | Initializing instances with default values | [derive_new](https://github.com/nrc/derive-new) |
-| itertools `*stdlib`               | Extra iterators methods                    | [itertools](https://crates.io/crates/itertools) |
+| Python                            | Definition                                         | Rust                                             |
+| --------------------------------- | -------------------------------------------------- | ------------------------------------------------ |
+| `{'foo': "bar"}`                  | Syntax to create a dict / hashmap                  | [maplit](https://crates.io/crates/maplit)        |
+| `__init__(self, value='default')` | Instance initialization (with some default values) | [derive_new](https://github.com/nrc/derive-new)  |
+| itertools `*stdlib`               | Extra iterators methods                            | [itertools](https://crates.io/crates/itertools)  |
+| `hashlib` *                       | Password Hashing                                   | [libpasta](https://github.com/libpasta/libpasta) |
 
 ## Show me The code
 
@@ -1065,29 +1066,11 @@ json.dump(obj, stdout)
 
 ---
 
-
-### Print Object for Debug/Log 
-
-**Python**
-
-```python
-daffy = Actor(
-    name='Daffy',
-    age=80,
-)
-print('{!r}'.format(daffy))
-```
-
-**Rust**
-
-```rust
-```
-
----
-
 ### Object Orientation
 
 **Python**
+
+[playground](https://repl.it/repls/SourPaltryHorseshoecrab)
 
 ```python
 class Cat:
@@ -1100,10 +1083,12 @@ class Cat:
 # ...
 
 grumy = Cat('Grumpy')
-grumy.greet('Grafield')
+grumy.greet('Garfield')  # Meow Garfield, I'm Grumpy
 ```
 
 **Rust**
+
+[playground](https://play.rust-lang.org/?gist=155c76fae5240e483858000e73e82f00&version=stable)
 
 ```rust
 struct Cat {
@@ -1111,22 +1096,70 @@ struct Cat {
 }
 
 impl Cat {
-    pub fn new(name: String) -> Cat {
-        Cat {name}
-    }
 
-    pub fn greet(&self, other:String) {
-        println!("Meow {}, I'm {}", other, self.name);
+    pub fn new<S>(name: S) -> Cat where S: Into<String> {
+        Cat { name: name.into() }
     }
+    
+    pub fn greet<S: Into<String>>(&self, other:S) {
+        println!("Meow {}, I'm {}", other.into(), self.name);
+    }     
+    
 }
 
 fn main() {
-    let grumpy = Cat::new(String::from("Grumpy"));
-    grumpy.greet(String::from("Garfield"))
+    let grumpy = Cat::new("Grumpy");
+    grumpy.greet("Garfield");  // Meow Garfield, I'm Grumpy
 }
 ```
 
+> NOTE: In Rust, it is best to avoid `stringly types APIs` so in the above example it would be better if we do `let garfield = Cat::new("Garfield")` and then make `greet` to accept an instance of `Cat` as `other` argument. If you are interested [watch this](https://www.youtube.com/watch?v=0zOg8_B71gE).
+
+
 ---
+
+### Print Object for Debug/Log 
+
+Print formatted object debug information
+
+**Python**
+
+```python
+
+class Actor:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __repr__(self):
+      return str(self.__dict__)
+
+daffy = Actor(
+    name='Daffy',
+    age=80,
+)
+
+print('{!r}'.format(daffy))  # {'name': 'Daffy', 'age': 80}
+```
+
+**Rust**
+
+```rust
+#[derive(Debug)]
+struct Actor {
+    name: String,
+    age: i32
+}
+
+fn main() {
+    let daffy = Actor {name: "Daffy".into(), age: 80};
+    println!("{:#?}", daffy);   // Actor {name: "Daffy", age: 80 }
+}
+
+```
+
+---
+
 
 ### Template for new examples
 
@@ -1134,11 +1167,15 @@ Explanation comes here.
 
 **Python**
 
+[playground](https://repl.it/repls/uniquelinkhere)
+
 ```python
 # python code goes here
 ```
 
 **Rust**
+
+[playground](https://play.rust-lang.org/?gist=uniquehashhere&version=stable)
 
 ```rust
 // rust code goes here
@@ -1155,3 +1192,8 @@ First published in [BrunoRocha.org](http://brunorocha.org/python/py2rs-from-pyth
 With contributions by:
 
 - Send a PR and include your name and links
+
+
+---
+
+![toasting-at-cargo-hall](https://user-images.githubusercontent.com/458654/33390506-35c4d43c-d51d-11e7-9591-f21c6b0770f6.png)

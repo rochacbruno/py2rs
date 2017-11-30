@@ -109,6 +109,30 @@ fn read_file() {
 }
 
 
+struct Cat {
+    name: String
+}
+
+impl Cat {
+
+    pub fn new<S>(name: S) -> Cat where S: Into<String> {
+        Cat { name: name.into() }
+    }
+    
+    pub fn greet<S: Into<String>>(&self, other:S) {
+        println!("Meow {}, I'm {}", other.into(), self.name);
+    }     
+    
+}
+
+
+#[derive(Debug)]
+struct Actor {
+    name: String,
+    age: i32
+}
+
+
 fn main() {
     println!("Hello, world!");
     types_and_declarations();
@@ -117,4 +141,11 @@ fn main() {
     dict_map();
     maplit_crate();
     read_file();
+
+    let grumpy = Cat::new("Grumpy");
+    grumpy.greet("Garfield");
+
+
+    let daffy = Actor {name: "Daffy".into(), age: 80};
+    println!("{:#?}", daffy);
 }
