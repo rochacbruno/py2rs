@@ -34,7 +34,7 @@ Ok... [watch it later...](https://www.youtube.com/watch?v=8R2zvE615dM) let's lea
 ## TOC
 
 - [Getting Started with Rust](https://github.com/rochacbruno/py2rs#getting-started-with-rust)
-- [Where to exercice](https://github.com/rochacbruno/py2rs#exercices)
+- [Where to exercise](https://github.com/rochacbruno/py2rs#exercises)
 - [Where to be informed on news and updates](https://github.com/rochacbruno/py2rs#getting-updated)
 - [Interacting with Rustacean Communities](https://github.com/rochacbruno/py2rs#interact-with-other-rustaceans)
 - [Additional learning Resources](https://github.com/rochacbruno/py2rs#additional-learning-resources)
