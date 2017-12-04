@@ -670,8 +670,8 @@ colors.symmetric_difference(flag_colors)  # {'black', 'blue', 'green'}
 # intersection
 colors.intersection(flag_colors)  # {'red'}
 
-# unioin
-colors.intersection(flag_colors)  # {'black', 'blue', 'green', 'red'}
+# union
+colors.union(flag_colors)  # {'black', 'blue', 'green', 'red'}
 
 ```
 
