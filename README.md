@@ -34,7 +34,7 @@ Ok... [watch it later...](https://www.youtube.com/watch?v=8R2zvE615dM) let's lea
 ## TOC
 
 - [Getting Started with Rust](https://github.com/rochacbruno/py2rs#getting-started-with-rust)
-- [Where to exercice](https://github.com/rochacbruno/py2rs#exercices)
+- [Where to exercise](https://github.com/rochacbruno/py2rs#exercises)
 - [Where to be informed on news and updates](https://github.com/rochacbruno/py2rs#getting-updated)
 - [Interacting with Rustacean Communities](https://github.com/rochacbruno/py2rs#interact-with-other-rustaceans)
 - [Additional learning Resources](https://github.com/rochacbruno/py2rs#additional-learning-resources)
@@ -462,7 +462,7 @@ def add(a: int, b: int) -> int:
 **Rust**
 
 ```rust
-// Adds a to b
+/// Adds a to b
 fn add(a: i32, b: i32) -> i32 {
   a + b
 }
@@ -917,6 +917,12 @@ thr.start()
 **Rust**
 
 ```rust
+use std::thread;
+
+thread::spawn(|| {
+        add(5,5);
+    });
+
 ```
 
 ---
@@ -943,6 +949,26 @@ val = queue.get()
 **Rust**
 
 ```rust
+use std::thread;
+use std::sync::mpsc;
+
+fn main() {
+    let (tx, rx) = mpsc::channel();
+
+    let sender = thread::spawn(move || {
+        let val = String::from("hi");
+        tx.send(val.clone()).unwrap();
+        println!("Sent {}", val);
+    });
+
+    let receiver = thread::spawn(move || {
+        let received = rx.recv().unwrap();
+        println!("Received: {}", received);
+    });
+
+    sender.join();
+    receiver.join();
+}
 ```
 
 ---
