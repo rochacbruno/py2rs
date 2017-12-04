@@ -917,6 +917,12 @@ thr.start()
 **Rust**
 
 ```rust
+use std::thread;
+
+thread::spawn(|| {
+        add(5,5);
+    });
+
 ```
 
 ---
@@ -943,6 +949,26 @@ val = queue.get()
 **Rust**
 
 ```rust
+use std::thread;
+use std::sync::mpsc;
+
+fn main() {
+    let (tx, rx) = mpsc::channel();
+
+    let sender = thread::spawn(move || {
+        let val = String::from("hi");
+        tx.send(val.clone()).unwrap();
+        println!("Sent {}", val);
+    });
+
+    let receiver = thread::spawn(move || {
+        let received = rx.recv().unwrap();
+        println!("Received: {}", received);
+    });
+
+    sender.join();
+    receiver.join();
+}
 ```
 
 ---
