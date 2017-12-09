@@ -851,7 +851,7 @@ Read a text file and iterate its lines printing the content, properly close the 
 ```python
 from pathlib import Path
 
-with open(Path("/tmp/song.txt")) as fp:
+with Path("/tmp/song.txt").open() as fp:
     #  Iterate over lines
     for line in fp:
         print(line.strip())
