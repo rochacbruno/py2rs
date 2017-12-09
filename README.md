@@ -379,6 +379,12 @@ $ python my_python_program.py
 $ cargo run
 ```
 
+In Rust, there is a `--release` flag that allows for more compile time optimization to be done, but it will take longer to compile
+
+```bash
+$ cargo run --release
+```
+
 ---
 
 ### Hello World
@@ -901,6 +907,20 @@ except ValueError:
 **Rust**
 
 ```rust
+fn div(a: f64, b: f64) -> Result<f64, &'static str> {
+    if b == 0 {
+        Err("b can't be 0")
+    } else {
+        Ok(a / b)
+    }
+}
+
+fn main() {
+    match div(1, 0) {
+        Ok(_) => {},
+        Err(_) => println!("OK"),
+    };
+}
 ```
 
 ---
