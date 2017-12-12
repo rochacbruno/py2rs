@@ -106,6 +106,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "rhardouin",
+      "name": "Romain Hardouin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/20056?v=4",
+      "profile": "https://github.com/rhardouin",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ]
 }
