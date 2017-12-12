@@ -76,6 +76,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "mseri",
+      "name": "Marcello Seri",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4040623?v=4",
+      "profile": "http://mseri.me",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ]
 }
