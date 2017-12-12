@@ -126,6 +126,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "luizirber",
+      "name": "Luiz Irber",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6642?v=4",
+      "profile": "http://luizirber.org",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ]
 }
