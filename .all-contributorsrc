@@ -56,6 +56,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "jschmid1",
+      "name": "Joshua Schmid",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6840312?v=4",
+      "profile": "https://github.com/jschmid1",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ]
 }
