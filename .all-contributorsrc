@@ -1,0 +1,21 @@
+{
+  "projectName": "py2rs",
+  "projectOwner": "rochacbruno",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "rochacbruno",
+      "name": "Bruno Rocha",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/458654?v=4",
+      "profile": "http://brunorocha.org",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ]
+}

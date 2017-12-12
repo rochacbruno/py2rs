@@ -1,4 +1,5 @@
 # py2rs
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 ## From Python into Rust 
 
 ```rust
@@ -1309,3 +1310,15 @@ Send a Pull Request or Suggestion as a new issue.
 ---
 
 ![toasting-at-cargo-hall](https://user-images.githubusercontent.com/458654/33390506-35c4d43c-d51d-11e7-9591-f21c6b0770f6.png)
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars2.githubusercontent.com/u/458654?v=4" width="100px;"/><br /><sub>Bruno Rocha</sub>](http://brunorocha.org)<br />[💻](https://github.com/rochacbruno/py2rs/commits?author=rochacbruno "Code") [📖](https://github.com/rochacbruno/py2rs/commits?author=rochacbruno "Documentation") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section --><!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
