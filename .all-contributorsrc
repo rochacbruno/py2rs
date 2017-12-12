@@ -96,6 +96,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "pickfire",
+      "name": "Ivan Tham",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/4687791?v=4",
+      "profile": "http://pickfire.tk",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ]
 }
