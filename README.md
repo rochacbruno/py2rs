@@ -1,5 +1,5 @@
 # py2rs
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 ## From Python into Rust 
 
 ```rust
@@ -1314,8 +1314,8 @@ Send a Pull Request or Suggestion as a new issue.
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars2.githubusercontent.com/u/458654?v=4" width="100px;"/><br /><sub>Bruno Rocha</sub>](http://brunorocha.org)<br />[💻](https://github.com/rochacbruno/py2rs/commits?author=rochacbruno "Code") [📖](https://github.com/rochacbruno/py2rs/commits?author=rochacbruno "Documentation") | [<img src="https://avatars1.githubusercontent.com/u/15098580?v=4" width="100px;"/><br /><sub>Shing Tak Lam</sub>](http://shingtaklam1324.github.io)<br />[💻](https://github.com/rochacbruno/py2rs/commits?author=shingtaklam1324 "Code") [📖](https://github.com/rochacbruno/py2rs/commits?author=shingtaklam1324 "Documentation") |
-| :---: | :---: |
+| [<img src="https://avatars2.githubusercontent.com/u/458654?v=4" width="100px;"/><br /><sub>Bruno Rocha</sub>](http://brunorocha.org)<br />[💻](https://github.com/rochacbruno/py2rs/commits?author=rochacbruno "Code") [📖](https://github.com/rochacbruno/py2rs/commits?author=rochacbruno "Documentation") | [<img src="https://avatars1.githubusercontent.com/u/15098580?v=4" width="100px;"/><br /><sub>Shing Tak Lam</sub>](http://shingtaklam1324.github.io)<br />[💻](https://github.com/rochacbruno/py2rs/commits?author=shingtaklam1324 "Code") [📖](https://github.com/rochacbruno/py2rs/commits?author=shingtaklam1324 "Documentation") | [<img src="https://avatars3.githubusercontent.com/u/8337409?v=4" width="100px;"/><br /><sub>Deri Herdianto</sub>](https://twitter.com/deikatsuo)<br />[💻](https://github.com/rochacbruno/py2rs/commits?author=deikatsuo "Code") [📖](https://github.com/rochacbruno/py2rs/commits?author=deikatsuo "Documentation") |
+| :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
