@@ -1098,6 +1098,24 @@ print(reply['origin'])
 **Rust**
 
 ```rust
+extern crate reqwest;
+use std::io::Read;
+
+fn main() {
+    let url = "https://httpbin.org/ip";
+
+    let mut resp = match reqwest::get(url) {
+        Ok(response) => response,
+        Err(e) => panic!("error: could not perform get request {}", e),
+    };
+
+    assert!(resp.status().is_success());
+
+    let mut content = String::new();
+    resp.read_to_string(&mut content).expect("valid UTF-8");
+
+    println!("The response content is: {}", content);
+}
 ```
 
 ---
@@ -1119,6 +1137,35 @@ json.dump(obj, stdout)
 **Rust**
 
 ```rust
+extern crate serde;
+extern crate serde_json;
+
+#[macro_use]
+extern crate serde_derive;
+
+#[derive(Serialize, Deserialize)]
+struct Person {
+    name: String,
+    age: u8,
+}
+
+fn main() {
+    // Decode/Deserialize
+    let data = r#"{"name": "bugs", "age": 76}"#;
+
+    let p: Person = match serde_json::from_str(data) {
+        Ok(person) => person,
+        Err(e) => panic!("error: could not deserialize: {}", e),
+    };
+
+    // Do things just like with any other Rust data structure.
+    println!("{} was born {} years ago.", p.name, p.age);
+
+    // Encode/Serialize
+    let serialized = serde_json::to_string(&p).unwrap();
+    println!("The serialized value is: {}", serialized);
+}
+
 ```
 
 
