@@ -66,6 +66,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "spejss",
+      "name": "Mikołaj Wawrzyniak",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6236892?v=4",
+      "profile": "http://spejss.com/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ]
 }
