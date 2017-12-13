@@ -749,7 +749,7 @@ while counter < 10:
 while True:
     print("loop Forever!")
 
-# infinite ehile loop with break
+# infinite while loop with break
 counter = 0
 while True:
     print(counter)
