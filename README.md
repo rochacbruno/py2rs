@@ -134,6 +134,10 @@ https://www.rust-lang.org/en-US/community.html
         * FB Groups (Rustaceans Indonesia) : https://fb.com/groups/RustaceansID
         * FB Groups (Rust ID)              : https://fb.com/groups/rustindo
         * Telegram (Rust Indonesia)        : https://t.me/rustindonesia
+- Russia
+    * General
+        * FB Groups (RustyCrate)           : https://facebook.com/rustycrate/
+        * Telegram (pro Rust)              : https://t.me/proRust
         
 - Add your country/city here, send a Pull Request.
 
@@ -161,7 +165,7 @@ https://www.rust-lang.org/en-US/community.html
   (VSCode is known to have the better support by now https://marketplace.visualstudio.com/items?itemName=kalitaalexey.vscode-rust)
 - Rust packages are called `Crates` and are installed by `Cargo` explore them at http://crates.io
 - In Rust there is no **Class** but **Structs**, **Enums**, **Traits**, **functions** and **macros!**
-- Rust compiler was first writen in **OCaml** then rewritten in Rust! (Rust is writen Rust!!!)
+- Rust compiler was first written in **OCaml** then rewritten in Rust! (Rust is written Rust!!!)
 - Rust type system is strongly inspired by **Haskell**
 - Rust **functional** style is inspired by **Erlang**
 - Rust type inference is mainly inspired by **ML** and also by **Python** and **Ruby**
