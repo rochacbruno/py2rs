@@ -73,7 +73,7 @@ decided to start learning it. Here are some steps for you to follow:
       > https://doc.rust-lang.org/book/   
         * Official Book  
         * Free to read online  
-        * Available as papaerback or e-book (buy at Amazon)
+        * Available as paperback or e-book (buy at Amazon)
 5) Read some real examples
     * **Rust Cookbook**  
      https://rust-lang-nursery.github.io/rust-cookbook/
@@ -143,6 +143,7 @@ https://www.rust-lang.org/en-US/community.html
 
 ## Additional learning resources
 
+- Learning Rust https://learning-rust.github.io/
 - Rust Learning https://github.com/ctjhoa/rust-learning
 - Rust Guidelines (WIP) https://aturon.github.io/
 - Rust Design Patterns and Idioms https://github.com/rust-unofficial/patterns/
