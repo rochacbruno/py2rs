@@ -169,7 +169,7 @@ https://www.rust-lang.org/en-US/community.html
 - Rust compiler was first written in **OCaml** then rewritten in Rust! (Rust is written Rust!!!)
 - Rust type system is strongly inspired by **Haskell**
 - Rust **functional** style is inspired by **Erlang**
-- Rust type inference is mainly inspired by **ML** and also by **Python** and **Ruby**
+- Rust type inference is mainly inspired by **ML** and also by **Haskell**
 - The main **syntax** style is inspired by **C** and **C++**
 - There is no automated **Garbage Collector** so Rust frees memory based on Resource Aquisition RAII (a.k.a Ownership)
 - Rust has **Generic Types**!!!
