@@ -502,6 +502,24 @@ for i, name in enumerate(names):
     print('{} at {}'.format(name, i))
 ```
 
+
+The equivalent for python's range/xrange step parameter.  I later discovered .step_by().
+
+python:
+```
+for i in range(0,10,2):
+   print i # 0, 2, 4, 6, 8
+```
+
+rust:
+```
+for i in (0..10).step_by(2) {
+    println('{}', i);  // 0, 2, 4, 6, 8
+}
+```
+
+
+
 **Rust**
 
 ```rust
