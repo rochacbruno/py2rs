@@ -1,5 +1,5 @@
 # py2rs
-[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors)
+
 ## From Python into Rust 
 
 ```rust
@@ -11,6 +11,12 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 
 ![image_2017-11-28_08-03-59](https://user-images.githubusercontent.com/458654/33350327-50e76baa-d485-11e7-8a6e-b3dd0c337046.png)
 
+
+## Top Contributors
+
+[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/0)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/0)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/1)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/1)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/2)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/2)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/3)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/3)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/4)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/4)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/5)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/5)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/6)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/6)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/7)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/7)
+
+Add yourself, send a PR!
 
 ### Monty Python - Season 3 - Episode 49
 
