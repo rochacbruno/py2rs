@@ -539,7 +539,7 @@ for i in range(0,10,2):
 rust:
 ```rust
 for i in (0..10).step_by(2) {
-    println('{}', i);  // 0, 2, 4, 6, 8
+    println!("{}", i);  // 0, 2, 4, 6, 8
 }
 ```
 
