@@ -135,6 +135,9 @@ https://www.rust-lang.org/en-US/community.html
         * Telegram: https://t.me/rustlangbr
     * Rust BH
         * https://t.me/rustbh
+    * Rust in POA
+        * https://t.me/rustinpoa
+        * https://www.meetup.com/Rust-in-POA/
 - Indonesia
     * General
         * FB Groups (Rustaceans Indonesia) : https://fb.com/groups/RustaceansID
