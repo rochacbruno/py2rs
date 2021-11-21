@@ -938,7 +938,7 @@ except ValueError:
 **Rust**
 
 ```rust
-fn div(a: f64, b: f64) -> Result<f64, &'static str> {
+fn div(a: i32, b: i32) -> Result<i32, &'static str> {
     if b == 0 {
         Err("b can't be 0")
     } else {
