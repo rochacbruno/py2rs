@@ -102,6 +102,10 @@ Time to put your new knowledge in action solving some exercises.
 
 2) **Rust Playground**  
    Run Live Rust Code in the browser with https://play.rust-lang.org/
+3) **Rustlings**
+   Small exercises to get you used to reading and writing Rust code.
+   Clone the repo and follow the guide.
+   This is a great way to get used to dialogue with the compiler.
 
 ## Getting updated
 
