@@ -223,7 +223,7 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | ---------------------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------- |
 | [PEP8](https://www.python.org/dev/peps/pep-0008/)                            | Guidelines and conventions         | [RustAPI Guidelines](https://rust-lang-nursery.github.io/api-guidelines/) |
 | [PEPS](https://www.python.org/dev/peps/)                                     | Enhancement Proposals / RFC        | [Rust RFCs](https://github.com/rust-lang/rfcs)                            |
-| [PSF](https://www.python.org/psf/)                                           | Organization / Foundation          | [Mozilla Research](https://research.mozilla.org/)                         |
+| [PSF](https://www.python.org/psf/)                                           | Organization / Foundation          | [Rust Foundation](https://foundation.rust-lang.org/)                         |
 | [PyCon](https://www.pycon.org/)                                              | Main Conference                    | [RustConf](http://rustconf.com/)                                          |
 | [Guido Van Rossum](https://twitter.com/gvanrossum)                           | Creator                            | [Graydon Hoare](https://twitter.com/graydon_pub)                          |
 | 1989                                                                         | First appeared                     | 2010                                                                      |
@@ -253,7 +253,7 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | [pyenv](https://github.com/pyenv/pyenv-installer)                                                     | Install and manage versions of language | [rustup](https://www.rustup.rs/)                                                          |
 | [pydoc](https://docs.python.org/library/pydoc.html) and [sphinx](https://pypi.python.org/pypi/sphinx) | Generate documentation from code        | [rustdoc](https://doc.rust-lang.org/stable/rustdoc/) and [Cargo](http://doc.crates.io/)   |
 | [python](http://python.org)                                                                           | Interpreter / Compiler                  | [rustc](https://doc.rust-lang.org/1.1.0/rustc/) and [Cargo](http://doc.crates.io/)        |
-| [ipython](https://pypi.python.org/pypi/ipython)                                                       | REPL                                    | [rusti](https://github.com/murarth/rusti)                                                 |
+| [ipython](https://pypi.python.org/pypi/ipython)                                                       | REPL                                    | [evcxr](https://github.com/google/evcxr)                                                  |
 | [ipdb](https://pypi.python.org/pypi/ipdb)                                                             | Debugger                                | [rust-gdb](https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb)                |
 
 ## Libraries and Frameworks
