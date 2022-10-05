@@ -307,7 +307,7 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | [boto](https://pypi.python.org/pypi/boto)                                                         | AWS clients                      | [rusoto](https://github.com/rusoto/rusoto)                                                                        |
 | [AstroPy](https://pypi.python.org/pypi/astropy)                                                   | Astronomy                        | [astro-rust](https://github.com/saurvs/astro-rust)                                                                |
 | [Numpy](https://pypi.python.org/pypi/numpy)                                                       | Numeric                          | [Numeric](https://crates.io/crates/numeric)                                                                       |
- 
+| [Pandas](https://pypi.org/project/pandas/)                                                        | Dataframes                       | [Polars](https://www.pola.rs/)                                                                                    | 
 
 ## Applications
 
@@ -493,7 +493,7 @@ fn add(a: i32, b: i32) -> i32 {
 
 ### List/Slice
 
-Creating a list, adding new elements, gettings its length, slicing by index, itarating using for loop and iterating with enumerator.
+Creating a list, adding new elements, gettings its length, slicing by index, iterating using for loop and iterating with enumerator.
 
 **Python**
 
