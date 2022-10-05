@@ -103,6 +103,9 @@ Time to put your new knowledge in action solving some exercises.
 2) **Rust Playground**  
    Run Live Rust Code in the browser with https://play.rust-lang.org/
 
+3) **rustlings**
+   Interactive rust exercises: https://github.com/rust-lang/rustlings 
+
 ## Getting updated
 
 Now I assume you are addicted to **Rust** and you want to be updated about everything 
