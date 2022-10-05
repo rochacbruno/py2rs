@@ -193,6 +193,7 @@ https://www.rust-lang.org/en-US/community.html
   (There is no record of the official reason about being a crab, the reasonable history is that it was inspired by the **Rusty Crab** 
    a common species of crab and also a name of a famous restaurant.)
 - To compliment your fellow Rustaceans don't say **~~cheers!~~**. Say **safe!** (**safe!** is also said when toasting with champagne at Rust conferences)
+- Rust is to become a second programming language for the Linux kernel (see [here](https://en.wikipedia.org/wiki/Rust_for_Linux))
 
 > **More facts? and curiosities** send a question here or send a Pull Request adding an interest fact to this list.
 
@@ -246,7 +247,7 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | [pip](https://pypi.python.org/pypi/pip)                                                               | Library installation                    | [Cargo](http://doc.crates.io/)                                                            |
 | [setuptools](https://pypi.python.org/pypi/setuptools) and [poetry](https://python-poetry.org/)        | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
 | [pbr](https://docs.openstack.org/pbr/latest/)                                                         | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
-| [pipenv](https://pypi.python.org/pypi/pipenv)                                                         | Dependency manager                      | [Cargo](http://doc.crates.io/)                                                            |
+| [pipenv](https://pypi.python.org/pypi/pipenv) and [poetry](https://python-poetry.org/)                | Dependency manager                      | [Cargo](http://doc.crates.io/)                                                            |
 | [twine](https://pypi.python.org/pypi/twine)                                                           | Package uploader                        | [Cargo](http://doc.crates.io/) and [Semantic](https://github.com/semantic-rs/semantic-rs) |
 | `venv` *                                                                                              | Isolated environments                   | [Cargo](http://doc.crates.io/)                                                            |
 | [pyinstaller](https://github.com/pyinstaller/pyinstaller)                                             | Generate standalone executables         | [Cargo](http://doc.crates.io/)                                                            |
@@ -255,6 +256,7 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | [python](http://python.org)                                                                           | Interpreter / Compiler                  | [rustc](https://doc.rust-lang.org/1.1.0/rustc/) and [Cargo](http://doc.crates.io/)        |
 | [ipython](https://pypi.python.org/pypi/ipython)                                                       | REPL                                    | [rusti](https://github.com/murarth/rusti)                                                 |
 | [ipdb](https://pypi.python.org/pypi/ipdb)                                                             | Debugger                                | [rust-gdb](https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb)                |
+| [Extending Python with C or C++](https://docs.python.org/3/extending/extending.html)                  | Foreign language interface              | [PyO3](https://pyo3.rs/v0.17.2/)
 
 ## Libraries and Frameworks
 
@@ -306,7 +308,7 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | [celery](https://pypi.python.org/pypi/celery)                                                     | Distributed computation          | [Antimony](https://github.com/antimonyproject/antimony)                                                           |
 | [boto](https://pypi.python.org/pypi/boto)                                                         | AWS clients                      | [rusoto](https://github.com/rusoto/rusoto)                                                                        |
 | [AstroPy](https://pypi.python.org/pypi/astropy)                                                   | Astronomy                        | [astro-rust](https://github.com/saurvs/astro-rust)                                                                |
-| [Numpy](https://pypi.python.org/pypi/numpy)                                                       | Numeric                          | [Numeric](https://crates.io/crates/numeric)                                                                       |
+| [Numpy](https://pypi.python.org/pypi/numpy)                                                       | Numeric                          | [ndarray](https://crates.io/crates/ndarray)                                                                       |
  
 
 ## Applications
