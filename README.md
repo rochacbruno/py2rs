@@ -65,7 +65,7 @@ decided to start learning it. Here are some steps for you to follow:
 2) Watch some **screencasts** to get basics of **Ownership &Borrowing** concept  
    http://intorust.com/
 3) Follow this set of runnable examples to understand how everything fit together  
-   https://rustbyexample.com
+   https://doc.rust-lang.org/stable/rust-by-example/
 4) Now it is time to read your first book, you can pick:  
     * **Rust Essentials**  
       > A good introduction to Rust language in a more `superficial` approach which results
