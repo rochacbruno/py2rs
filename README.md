@@ -107,6 +107,9 @@ Time to put your new knowledge in action solving some exercises.
    Clone the repo and follow the guide.
    This is a great way to get used to dialogue with the compiler.
 
+3) **rustlings**  
+   Interactive rust exercises: https://github.com/rust-lang/rustlings 
+
 ## Getting updated
 
 Now I assume you are addicted to **Rust** and you want to be updated about everything 
