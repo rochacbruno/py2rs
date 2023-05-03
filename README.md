@@ -11,13 +11,6 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 
 ![image_2017-11-28_08-03-59](https://user-images.githubusercontent.com/458654/33350327-50e76baa-d485-11e7-8a6e-b3dd0c337046.png)
 
-
-## Top Contributors
-
-[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/0)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/0)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/1)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/1)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/2)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/2)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/3)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/3)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/4)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/4)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/5)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/5)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/6)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/6)[![](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/images/7)](https://sourcerer.io/fame/rochacbruno/rochacbruno/py2rs/links/7)
-
-Add yourself, send a PR!
-
 ### Monty Python - Season 3 - Episode 49
 
 [The sketch](http://montypython.50webs.com/scripts/Series_3/49.htm)
@@ -61,9 +54,9 @@ Assuming you already know what is [**Rust**](http://rust-lang.org) and already
 decided to start learning it. Here are some steps for you to follow:
 
 1) Take a tour of **Rust Syntax** and **Coding Style**  
-   https://learnxinyminutes.com/docs/rust/
+   https://learnxinyminutes.com/docs/rust/ and **Tour if Rust** https://tourofrust.com/ 
 2) Watch some **screencasts** to get basics of **Ownership &Borrowing** concept  
-   http://intorust.com/
+   http://intorust.com/ or if you understand Portuguese watch [Aprenda Rust](https://bit.ly/aprendarust)
 3) Follow this set of runnable examples to understand how everything fit together  
    https://doc.rust-lang.org/stable/rust-by-example/
 4) Now it is time to read your first book, you can pick:  
@@ -102,12 +95,11 @@ Time to put your new knowledge in action solving some exercises.
 
 2) **Rust Playground**  
    Run Live Rust Code in the browser with https://play.rust-lang.org/
+
 3) **Rustlings**
    Small exercises to get you used to reading and writing Rust code.
    Clone the repo and follow the guide.
    This is a great way to get used to dialogue with the compiler.
-
-3) **rustlings**  
    Interactive rust exercises: https://github.com/rust-lang/rustlings 
 
 ## Getting updated
@@ -190,7 +182,6 @@ https://www.rust-lang.org/en-US/community.html
 - There is no automated **Garbage Collector** so Rust frees memory based on Resource Aquisition RAII (a.k.a Ownership)
 - Rust has **Generic Types**!!!
 - As **Rust** is **close to bare metal** you can ship a program without the inclusion of **Rust's runtime** which makes easy to distribute programs (no need of dependencies and virtuelenvs management)
-- There are **Python** code in Rust! Rust build is [bootstrapped by Python](https://github.com/rust-lang/rust/blob/master/src/bootstrap/bootstrap.py)
 - Graydon Hoare (creator of Rust) is now working at **Apple** developing the **Swift** language
 - Rust is the developers **most loved language** according to **Stack Overflow Survey**
 - Rust is the most [**energy efficient**](https://sites.google.com/view/energy-efficiency-languages/results) language! and that is very important for environment, data center companies and maybe it can help saving your laptop and phone battery in near future. 
@@ -201,6 +192,7 @@ https://www.rust-lang.org/en-US/community.html
    a common species of crab and also a name of a famous restaurant.)
 - To compliment your fellow Rustaceans don't say **~~cheers!~~**. Say **safe!** (**safe!** is also said when toasting with champagne at Rust conferences)
 - Rust is to become a second programming language for the Linux kernel (see [here](https://en.wikipedia.org/wiki/Rust_for_Linux))
+- Rust is the language choosen by Microsoft to rewrite parts of Windows Kernel
 
 > **More facts? and curiosities** send a question here or send a Pull Request adding an interest fact to this list.
 
