@@ -65,7 +65,7 @@ decided to start learning it. Here are some steps for you to follow:
 2) Watch some **screencasts** to get basics of **Ownership &Borrowing** concept  
    http://intorust.com/
 3) Follow this set of runnable examples to understand how everything fit together  
-   https://rustbyexample.com
+   https://doc.rust-lang.org/stable/rust-by-example/
 4) Now it is time to read your first book, you can pick:  
     * **Rust Essentials**  
       > A good introduction to Rust language in a more `superficial` approach which results
@@ -102,6 +102,10 @@ Time to put your new knowledge in action solving some exercises.
 
 2) **Rust Playground**  
    Run Live Rust Code in the browser with https://play.rust-lang.org/
+3) **Rustlings**
+   Small exercises to get you used to reading and writing Rust code.
+   Clone the repo and follow the guide.
+   This is a great way to get used to dialogue with the compiler.
 
 ## Getting updated
 
@@ -308,8 +312,8 @@ A quick reference guide for the **Pythonista** in process of becoming a **Rustac
 | [celery](https://pypi.python.org/pypi/celery)                                                     | Distributed computation          | [Antimony](https://github.com/antimonyproject/antimony)                                                           |
 | [boto](https://pypi.python.org/pypi/boto)                                                         | AWS clients                      | [rusoto](https://github.com/rusoto/rusoto)                                                                        |
 | [AstroPy](https://pypi.python.org/pypi/astropy)                                                   | Astronomy                        | [astro-rust](https://github.com/saurvs/astro-rust)                                                                |
-| [Numpy](https://pypi.python.org/pypi/numpy)                                                       | Numeric                          | [ndarray](https://crates.io/crates/ndarray)                                                                       |
- 
+| [Numpy](https://pypi.python.org/pypi/numpy)                                                       | Numeric                          | [Numeric](https://crates.io/crates/numeric)                                                                       |
+| [Pandas](https://pypi.org/project/pandas/)                                                        | Dataframes                       | [Polars](https://www.pola.rs/)                                                                                    | 
 
 ## Applications
 
@@ -495,7 +499,7 @@ fn add(a: i32, b: i32) -> i32 {
 
 ### List/Slice
 
-Creating a list, adding new elements, gettings its length, slicing by index, itarating using for loop and iterating with enumerator.
+Creating a list, adding new elements, gettings its length, slicing by index, iterating using for loop and iterating with enumerator.
 
 **Python**
 
