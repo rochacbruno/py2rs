@@ -1,0 +1,21 @@
+
+## Environment Tools
+
+| Python                                                                                                | Definition                              | Rust                                                                                      |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `requirements.txt`                                                                                    | Official dependency tracker file        | `Cargo.toml`                                                                              |
+| `setup.py`                                                                                            | Official installator / distributor file | `Cargo.toml`                                                                              |
+| [PyPI](https://pypi.org/)                                                                             | Library repository                      | [Crates.io](http://crates.io)                                                             |
+| [pip](https://pypi.python.org/pypi/pip)                                                               | Library installation                    | [Cargo](http://doc.crates.io/)                                                            |
+| [setuptools](https://pypi.python.org/pypi/setuptools) and [poetry](https://python-poetry.org/)        | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
+| [pbr](https://docs.openstack.org/pbr/latest/)                                                         | Library distribution                    | [Cargo](http://doc.crates.io/)                                                            |
+| [pipenv](https://pypi.python.org/pypi/pipenv) and [poetry](https://python-poetry.org/)                | Dependency manager                      | [Cargo](http://doc.crates.io/)                                                            |
+| [twine](https://pypi.python.org/pypi/twine)                                                           | Package uploader                        | [Cargo](http://doc.crates.io/) and [Semantic](https://github.com/semantic-rs/semantic-rs) |
+| `venv` *                                                                                              | Isolated environments                   | [Cargo](http://doc.crates.io/)                                                            |
+| [pyinstaller](https://github.com/pyinstaller/pyinstaller)                                             | Generate standalone executables         | [Cargo](http://doc.crates.io/)                                                            |
+| [pyenv](https://github.com/pyenv/pyenv-installer)                                                     | Install and manage versions of language | [rustup](https://www.rustup.rs/)                                                          |
+| [pydoc](https://docs.python.org/library/pydoc.html) and [sphinx](https://pypi.python.org/pypi/sphinx) | Generate documentation from code        | [rustdoc](https://doc.rust-lang.org/stable/rustdoc/) and [Cargo](http://doc.crates.io/)   |
+| [python](http://python.org)                                                                           | Interpreter / Compiler                  | [rustc](https://doc.rust-lang.org/1.1.0/rustc/) and [Cargo](http://doc.crates.io/)        |
+| [ipython](https://pypi.python.org/pypi/ipython)                                                       | REPL                                    | [iRust](https://github.com/sigmaSd/IRust)                                                 |
+| [ipdb](https://pypi.python.org/pypi/ipdb)                                                             | Debugger                                | [rust-gdb](https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb)                |
+| [Extending Python with C or C++](https://docs.python.org/3/extending/extending.html)                  | Foreign language interface              | [PyO3](https://pyo3.rs/v0.17.2/)

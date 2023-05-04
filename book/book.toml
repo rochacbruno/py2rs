@@ -1,0 +1,31 @@
+[book]
+authors = ["Bruno Rocha"]
+language = "en"
+multilingual = false
+source = "src"
+title = "py2rs"
+
+[output.html]
+git-repository-url = "https://github.com/rochacbruno/py2rs"
+edit-url-template = "https://github.com/rochacbruno/py2rs/edit/main/book/{path}"
+cname = ""
+additional-css = ["theme/css/style.css", "theme/css/mdbook-admonish.css"]
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 2
+
+[preprocessor]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "2.0.0" # do not edit: managed by `mdbook-admonish install`
+
+[output.html.fold]
+enable = true    # whether or not to enable section folding
+level = 0         # the depth to start folding
