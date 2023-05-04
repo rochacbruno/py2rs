@@ -4,12 +4,12 @@
   in metal theory **rust** is the chemical layer closest to bare metal.  
   (also [Wikipedia](https://en.wikipedia.org/wiki/Rust_(programming_language)) says that the name was *possibly* inspired by the name of a Fungi)
 - The Rust `trifecta` is 1) **Memory Safe**, 2) **Fast** 3) **Concurrent**
-- Rust can be used for web development http://www.arewewebyet.org/
-- Rust can be used for Gaming Development http://arewegameyet.com/
-- Rust can be used for Machine Learning http://www.arewelearningyet.com/ 
-- Lots of IDEs and Editors supports Rust https://areweideyet.com/  
-  (VSCode is known to have the better support by now https://marketplace.visualstudio.com/items?itemName=kalitaalexey.vscode-rust)
-- Rust packages are called `Crates` and are installed by `Cargo` explore them at http://crates.io
+- [Rust can be used for web development](http://www.arewewebyet.org/)
+- [Rust can be used for Gaming Development](http://arewegameyet.com/)
+- [Rust can be used for Machine Learning](http://www.arewelearningyet.com/)
+- [Lots of IDEs and Editors supports Rust](https://areweideyet.com/)
+  ([VSCode](https://marketplace.visualstudio.com/items?itemName=kalitaalexey.vscode-rust) is known to have the better support by now)
+- Rust packages are called `Crates` and are installed by `Cargo` explore them at [http://crates.io](http://crates.io)
 - In Rust there is no **Class** but **Structs**, **Enums**, **Traits**, **functions** and **macros!**
 - Rust compiler was first written in **OCaml** then rewritten in Rust! (Rust is written in Rust!!!)
 - Rust type system is strongly inspired by **Haskell**
@@ -22,9 +22,9 @@
 - Graydon Hoare (creator of Rust) is now working at **Apple** developing the **Swift** language
 - Rust is the developers **most loved language** according to **Stack Overflow Survey**
 - Rust is the most [**energy efficient**](https://sites.google.com/view/energy-efficiency-languages/results) language! and that is very important for environment, data center companies and maybe it can help saving your laptop and phone battery in near future. 
-- There is an Operating System written in **Rust** - https://www.redox-os.org/
+- There is an Operating System written in **Rust** - [Redox](https://www.redox-os.org/)
 - Mozilla released the fastest version of Firefox (**quantum**) having many parts written on **Rust**
-- The Rust mascot (unofficial) is called **Ferris** and it is a **crab** http://www.rustacean.net/  
+- The [Rust mascot (unofficial)](http://www.rustacean.net/) is called **Ferris** and it is a **crab**
   (There is no record of the official reason about being a crab, the reasonable history is that it was inspired by the **Rusty Crab** 
    a common species of crab and also a name of a famous restaurant.)
 - To compliment your fellow Rustaceans don't say **~~cheers!~~**. Say **safe!** (**safe!** is also said when toasting with champagne at Rust conferences)

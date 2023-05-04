@@ -2,7 +2,7 @@
 
 From **Python** to **Rust** by examples  
 
-> You can  copy-paste and run the **Rust** examples in https://play.rust-lang.org/ and **Python** in https://repl.it/languages/python3
+> You can  copy-paste and run the **Rust** examples in [https://play.rust-lang.org/](https://play.rust-lang.org/) and **Python** in [https://repl.it/languages/python3](https://repl.it/languages/python3)
 
 - [Creating a new project](./subchapters/creating-a-new-project.md)
     - [Installing new libraries/crates](./subchapters/installing-new-libraries.md)
