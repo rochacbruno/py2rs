@@ -4,11 +4,11 @@ Created by [Bruno Rocha](http://about.me/rochacbruno) [@rochacbruno](http://gith
 
 First published in [BrunoRocha.org](http://brunorocha.org/python/py2rs-from-python-to-rust-reference-guide.html)
 
+Mdbook deploy and formatting by [Rapha-Borges](https://github.com/Rapha-Borges)
+
 Send a Pull Request or Suggestion as a new issue.
 
 ---
-
-![toasting-at-cargo-hall](https://user-images.githubusercontent.com/458654/33390506-35c4d43c-d51d-11e7-9591-f21c6b0770f6.png)
 
 ## Contributors
 
