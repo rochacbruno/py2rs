@@ -20,4 +20,6 @@ Created by [Bruno Rocha](http://about.me/rochacbruno) [@rochacbruno](http://gith
 
 First published in [BrunoRocha.org](http://brunorocha.org/python/py2rs-from-python-to-rust-reference-guide.html)
 
+Mdbook deploy and formatting by [Rapha-Borges](https://github.com/Rapha-Borges) 
+
 Send a Pull Request or Suggestion as a new issue.
