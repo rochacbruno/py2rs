@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build Book
+        uses: docker://raphaelborges/mdbook:1.0.2
+        with:
+          args: /github/workspace/book
+                     
+      - name: Give execute permission
+        run: chmod +x ./.github/workflows/copy.sh
+
+      - name: Run the shell script
+        run: sh ./.github/workflows/copy.sh
