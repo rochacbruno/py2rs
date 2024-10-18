@@ -24,4 +24,5 @@ From **Python** to **Rust** by examples
     - [Encode and Decode JSON](./subchapters/encode-and-decode-json.md)
     - [Object Orientation](./subchapters/object-orientation.md)
     - [Print Object for Debug/Log](./subchapters/print-object-for-debug-log.md)
+    - [Operator Overloading](./subchapters/operator-overloading.md)
     - [Template for new examples](./subchapters/template-for-new-examples.md)
