@@ -1,0 +1,168 @@
+{
+  "projectName": "py2rs",
+  "projectOwner": "rochacbruno",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "rochacbruno",
+      "name": "Bruno Rocha",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/458654?v=4",
+      "profile": "http://brunorocha.org",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "shingtaklam1324",
+      "name": "Shing Tak Lam",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/15098580?v=4",
+      "profile": "http://shingtaklam1324.github.io",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "deikatsuo",
+      "name": "Deri Herdianto",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/8337409?v=4",
+      "profile": "https://twitter.com/deikatsuo",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "tilacog",
+      "name": "Tiago Guimarães",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1634529?v=4",
+      "profile": "https://github.com/tilacog",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "imbolc",
+      "name": "Imblc",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/747996?v=4",
+      "profile": "https://github.com/imbolc",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "jschmid1",
+      "name": "Joshua Schmid",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6840312?v=4",
+      "profile": "https://github.com/jschmid1",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "spejss",
+      "name": "Mikołaj Wawrzyniak",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6236892?v=4",
+      "profile": "http://spejss.com/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "mseri",
+      "name": "Marcello Seri",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4040623?v=4",
+      "profile": "http://mseri.me",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "Twentysix26",
+      "name": "Twentysix",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6267772?v=4",
+      "profile": "https://github.com/Twentysix26",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "pickfire",
+      "name": "Ivan Tham",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/4687791?v=4",
+      "profile": "http://pickfire.tk",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "rhardouin",
+      "name": "Romain Hardouin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/20056?v=4",
+      "profile": "https://github.com/rhardouin",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "lu-zero",
+      "name": "Luca Barbato",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/239012?v=4",
+      "profile": "https://github.com/lu-zero",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "luizirber",
+      "name": "Luiz Irber",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6642?v=4",
+      "profile": "http://luizirber.org",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "bobogei81123",
+      "name": "bobogei81123",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/7190293?v=4",
+      "profile": "https://github.com/bobogei81123",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "diogobaeder",
+      "name": "Diogo Baeder",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/207168?v=4",
+      "profile": "http://diogobaeder.com.br",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "svenstaro",
+      "name": "Sven-Hendrik Haase",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1664?v=4",
+      "profile": "http://pseudoform.org",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ]
+}

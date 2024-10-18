@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>py2rs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/style.css">
+        <link rel="stylesheet" href="../theme/css/mdbook-admonish.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">Intro</a></li><li class="spacer"></li><li class="chapter-item "><a href="../chapter-1/index.html"><strong aria-hidden="true">1.</strong> Getting Started with Rust</a></li><li class="chapter-item "><a href="../chapter-2/index.html"><strong aria-hidden="true">2.</strong> Where to exercise</a></li><li class="chapter-item "><a href="../chapter-3/index.html"><strong aria-hidden="true">3.</strong> Where to be informed on news and updates</a></li><li class="chapter-item "><a href="../chapter-4/index.html"><strong aria-hidden="true">4.</strong> Interacting with Rustacean Communities</a></li><li class="chapter-item "><a href="../chapter-5/index.html"><strong aria-hidden="true">5.</strong> Additional learning Resources</a></li><li class="chapter-item "><a href="../chapter-6/index.html"><strong aria-hidden="true">6.</strong> Curious Facts</a></li><li class="chapter-item "><a href="../chapter-7/index.html"><strong aria-hidden="true">7.</strong> py2rs: Glossary of terms</a></li><li class="chapter-item "><a href="../chapter-8/index.html"><strong aria-hidden="true">8.</strong> py2rs: General fact comparison</a></li><li class="chapter-item "><a href="../chapter-9/index.html"><strong aria-hidden="true">9.</strong> py2rs: Environment Tools</a></li><li class="chapter-item expanded "><a href="../chapter-10/index.html" class="active"><strong aria-hidden="true">10.</strong> py2rs: Libraries and Frameworks</a></li><li class="chapter-item "><a href="../chapter-11/index.html"><strong aria-hidden="true">11.</strong> py2rs: Applications</a></li><li class="chapter-item "><a href="../chapter-12/index.html"><strong aria-hidden="true">12.</strong> py2rs: Useful Crates</a></li><li class="chapter-item "><a href="../chapter-13/index.html"><strong aria-hidden="true">13.</strong> py2rs: Code comparison Python X Rust implementations</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../chapter-13/subchapters/creating-a-new-project.html"><strong aria-hidden="true">13.1.</strong> Creating a new project</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/installing-new-libraries.html"><strong aria-hidden="true">13.2.</strong> Installing new libraries/crates</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/hello-world.html"><strong aria-hidden="true">13.3.</strong> Hello World</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/types-and-declarations.html"><strong aria-hidden="true">13.4.</strong> Types and Declarations</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/define-a-function.html"><strong aria-hidden="true">13.5.</strong> Define a function</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/list-slice.html"><strong aria-hidden="true">13.6.</strong> List/Slice</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/dict-map.html"><strong aria-hidden="true">13.7.</strong> Dict/Map</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/set-hashset.html"><strong aria-hidden="true">13.8.</strong> Set/HashSet</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/while-and-for-loops.html"><strong aria-hidden="true">13.9.</strong> While and For loops</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/files.html"><strong aria-hidden="true">13.10.</strong> Files</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/exceptions-return-error.html"><strong aria-hidden="true">13.11.</strong> Exceptions/Return Error</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/concurrency.html"><strong aria-hidden="true">13.12.</strong> Concurrency</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/communicating-between-threads.html"><strong aria-hidden="true">13.13.</strong> Communicating between threads</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/sorting.html"><strong aria-hidden="true">13.14.</strong> Sorting</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/web-app-with-flask-rocket.html"><strong aria-hidden="true">13.15.</strong> Web app with Flask / Rocket</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/http-request-with-error-handling.html"><strong aria-hidden="true">13.16.</strong> HTTP Request with error handling</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/multithreaded-http-crawler.html"><strong aria-hidden="true">13.17.</strong> Multithreaded HTTP Crawler</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/encode-and-decode-json.html"><strong aria-hidden="true">13.18.</strong> Encode and Decode JSON</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/object-orientation.html"><strong aria-hidden="true">13.19.</strong> Object Orientation</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/print-object-for-debug-log.html"><strong aria-hidden="true">13.20.</strong> Print Object for Debug/Log</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/operator-overloading.html"><strong aria-hidden="true">13.21.</strong> Operator Overloading</a></li><li class="chapter-item "><a href="../chapter-13/subchapters/template-for-new-examples.html"><strong aria-hidden="true">13.22.</strong> Template for new examples</a></li></ol></li><li class="chapter-item "><a href="../chapter-14/index.html"><strong aria-hidden="true">14.</strong> Credits</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">py2rs</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/rochacbruno/py2rs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/rochacbruno/py2rs/edit/main/book/src/chapter-10/README.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <h2 id="libraries-and-frameworks"><a class="header" href="#libraries-and-frameworks">Libraries and Frameworks</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Python</th><th>Definition</th><th>Rust</th></tr></thead><tbody>
+<tr><td><code>urllib</code> *</td><td>HTTP calls</td><td><a href="https://crates.io/crates/hyper">hyper</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/requests">requests</a></td><td>Simplified HTTP calls</td><td><a href="https://github.com/seanmonstar/reqwest">reqwest</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/json">json</a></td><td>JSON parsing loading and dumping</td><td><a href="https://github.com/serde-rs/serde">serde</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pyyaml">pyYAML</a></td><td>YAML parsing loading and dumping</td><td><a href="https://github.com/serde-rs/serde">serde</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/lxml">lxml</a></td><td>XML parsing loading and dumping</td><td><a href="https://github.com/Florob/RustyXML">RustyXML</a></td></tr>
+<tr><td><code>csv</code> *</td><td>CSV parsing</td><td><a href="https://github.com/BurntSushi/rust-csv">rust-csv</a></td></tr>
+<tr><td><code>datetime</code> *  &amp; <a href="https://pypi.python.org/pypi/dateutils">Dateutils</a></td><td>Date &amp; time</td><td><a href="https://github.com/chronotope/chrono">Chrono</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/click">click</a> and <a href="https://pypi.python.org/pypi/argparse">argparse</a></td><td>CLI Framework</td><td><a href="https://github.com/kbknapp/clap-rs">clap</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/docopt">docopt</a></td><td>CLI Framework</td><td><a href="https://github.com/docopt/docopt.rs">docopt</a></td></tr>
+<tr><td><code>re</code> *</td><td>Regular Expressions</td><td><a href="https://github.com/rust-lang/regex">regex</a></td></tr>
+<tr><td><code>subprocess</code> *</td><td>Run external commands</td><td><a href="https://crates.io/crates/subprocess">subprocess</a></td></tr>
+<tr><td><code>multiprocessing</code> *</td><td>Multiprocessing</td><td><a href="https://crates.io/crates/rayon">Rayon</a></td></tr>
+<tr><td><code>logging</code> *</td><td>Logging</td><td><a href="https://github.com/rust-lang-nursery/log">log</a></td></tr>
+<tr><td><code>Pathlib</code> *</td><td>Path manipulation</td><td><a href="https://doc.rust-lang.org/std/fs/">fs</a> and <a href="https://github.com/webdesus/fs_extra">fs_extra</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/cryptography">cryptography</a></td><td>Crytography</td><td><a href="https://github.com/DaGenix/rust-crypto">crypto</a></td></tr>
+<tr><td><code>pickle</code> *</td><td>Object serialization</td><td><a href="https://github.com/ron-rs/ron">RON</a></td></tr>
+<tr><td><code>heapq</code> *</td><td>Heap queue</td><td><code>BinaryHeap</code> *</td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/bottle">bottle</a></td><td>Minimal web framework</td><td><a href="https://github.com/iron/iron">Iron</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/flask">flask</a></td><td>Web framework</td><td><a href="https://github.com/SergioBenitez/Rocket">Rocket</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/django">django</a></td><td>Full stack web framework</td><td><strong>DO NOT EXIST YET</strong></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/sqlalchemy">SQL Alchemy</a></td><td>Relational database ORM</td><td><a href="https://github.com/diesel-rs/diesel">Diesel</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pymongo">Pymongo</a></td><td>MongoDB driver</td><td><a href="https://crates.io/keywords/mongodb">mongodb</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/jinja2">Jinja 2</a></td><td>Template engine</td><td><a href="https://github.com/Keats/tera">Tera</a></td></tr>
+<tr><td><a href="http://www.pygtk.org/">pygtk</a></td><td>GTk desktop development</td><td><a href="https://github.com/gtk-rs/gtk">gtk</a></td></tr>
+<tr><td><a href="http://www.pyside.org/">pyside</a></td><td>QT desktop development</td><td><a href="https://github.com/rust-qt">rust-qt</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pygame">pygame</a></td><td>2D UI library / gaming</td><td><a href="http://ggez.rs/">ggez</a> &amp; <a href="https://github.com/PistonDevelopers/conrod/">Conrod</a> &amp; <a href="http://www.piston.rs/">Piston</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/unittest2">unitest2</a></td><td>Test framework</td><td><a href="">Builtin</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/nose">nose</a></td><td>Test runner</td><td><a href="http://doc.crates.io/">Cargo</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pytest">pytest</a></td><td>Testing framework and runner</td><td><a href="https://github.com/AlKass/polish">Polish</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/flake8">Flake8</a></td><td>Linter</td><td><a href="https://github.com/rust-lang-nursery/rust-clippy">Clippy</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/autopep8">autopep8</a> and <a href="https://pypi.org/project/black/">black</a></td><td>Auto formatter</td><td><a href="">rustfmt</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/twisted">twisted</a></td><td>Network application framework</td><td><a href="https://github.com/libpnet/libpnet">libpnet</a></td></tr>
+<tr><td><code>AsyncIO</code> *</td><td>Async application framework</td><td><a href="https://github.com/tokio-rs/tokio">Tokio</a> and <a href="https://github.com/alexcrichton/futures-rs">futures</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pillow">Pillow</a></td><td>Image manipulation</td><td><a href="https://github.com/PistonDevelopers/image">Image</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/beautifulsoup4">Beautiful Soup</a></td><td>HTML parser</td><td><a href="https://github.com/servo/html5ever">html5ever</a></td></tr>
+<tr><td><a href="http://hypothesis.works/">Hypothesis</a></td><td>Data driven test framework</td><td><a href="https://github.com/BurntSushi/quickcheck">Quickcheck</a> and <a href="https://github.com/altsysrq/proptest">proptest</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/mock">mock</a></td><td>Test mocking</td><td><a href="https://crates.io/crates/mockers">Mockers</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/biopython">bioPython</a></td><td>Bioinformathics libraries</td><td><a href="https://github.com/rust-bio">Rust Bio</a></td></tr>
+<tr><td><a href="http://github.com/rochacbruno/dynaconf">Dynaconf</a></td><td>Config management</td><td><a href="https://github.com/mehcode/config-rs">Config</a></td></tr>
+<tr><td><code>itertools</code> *</td><td>Data structure iteration</td><td><a href="https://github.com/bluss/rust-itertools">Rust Itertools</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/geopython">Geopython</a></td><td>Geo spatial data</td><td><a href="https://github.com/georust">Geo Rust</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/scikit_learn">ScikitLearn</a></td><td>Machine learning</td><td><a href="https://github.com/AtheMathmo/rusty-machine">rusty-machine</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/mistune">mistune</a></td><td>Markdown / Common Mark Parser</td><td><a href="https://github.com/google/pulldown-cmark">cmark</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/celery">celery</a></td><td>Distributed computation</td><td><a href="https://github.com/antimonyproject/antimony">Antimony</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/boto">boto</a></td><td>AWS clients</td><td><a href="https://github.com/rusoto/rusoto">rusoto</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/astropy">AstroPy</a></td><td>Astronomy</td><td><a href="https://github.com/saurvs/astro-rust">astro-rust</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/numpy">Numpy</a></td><td>Numeric</td><td><a href="https://crates.io/crates/numeric">Numeric</a></td></tr>
+<tr><td><a href="https://pypi.org/project/pandas/">Pandas</a></td><td>Dataframes</td><td><a href="https://www.pola.rs/">Polars</a></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter-9/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../chapter-11/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter-9/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../chapter-11/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
