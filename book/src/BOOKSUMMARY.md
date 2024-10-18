@@ -32,6 +32,7 @@
     - [Encode and Decode JSON](./chapter-13/subchapters/encode-and-decode-json.md)
     - [Object Orientation](./chapter-13/subchapters/object-orientation.md)
     - [Print Object for Debug/Log](./chapter-13/subchapters/print-object-for-debug-log.md)
+    - [Operator Overloading](./chapter-13/subchapters/operator-overloading.md)
     - [Template for new examples](./chapter-13/subchapters/template-for-new-examples.md)
 
 - [Credits](./chapter-14/README.md)
