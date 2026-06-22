@@ -1,0 +1,1476 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>py2rs</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/css/style.css">
+        <link rel="stylesheet" href="theme/css/mdbook-admonish.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">Intro</a></li><li class="spacer"></li><li class="chapter-item "><a href="chapter-1/index.html"><strong aria-hidden="true">1.</strong> Getting Started with Rust</a></li><li class="chapter-item "><a href="chapter-2/index.html"><strong aria-hidden="true">2.</strong> Where to exercise</a></li><li class="chapter-item "><a href="chapter-3/index.html"><strong aria-hidden="true">3.</strong> Where to be informed on news and updates</a></li><li class="chapter-item "><a href="chapter-4/index.html"><strong aria-hidden="true">4.</strong> Interacting with Rustacean Communities</a></li><li class="chapter-item "><a href="chapter-5/index.html"><strong aria-hidden="true">5.</strong> Additional learning Resources</a></li><li class="chapter-item "><a href="chapter-6/index.html"><strong aria-hidden="true">6.</strong> Curious Facts</a></li><li class="chapter-item "><a href="chapter-7/index.html"><strong aria-hidden="true">7.</strong> py2rs: Glossary of terms</a></li><li class="chapter-item "><a href="chapter-8/index.html"><strong aria-hidden="true">8.</strong> py2rs: General fact comparison</a></li><li class="chapter-item "><a href="chapter-9/index.html"><strong aria-hidden="true">9.</strong> py2rs: Environment Tools</a></li><li class="chapter-item "><a href="chapter-10/index.html"><strong aria-hidden="true">10.</strong> py2rs: Libraries and Frameworks</a></li><li class="chapter-item "><a href="chapter-11/index.html"><strong aria-hidden="true">11.</strong> py2rs: Applications</a></li><li class="chapter-item "><a href="chapter-12/index.html"><strong aria-hidden="true">12.</strong> py2rs: Useful Crates</a></li><li class="chapter-item "><a href="chapter-13/index.html"><strong aria-hidden="true">13.</strong> py2rs: Code comparison Python X Rust implementations</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="chapter-13/subchapters/creating-a-new-project.html"><strong aria-hidden="true">13.1.</strong> Creating a new project</a></li><li class="chapter-item "><a href="chapter-13/subchapters/installing-new-libraries.html"><strong aria-hidden="true">13.2.</strong> Installing new libraries/crates</a></li><li class="chapter-item "><a href="chapter-13/subchapters/hello-world.html"><strong aria-hidden="true">13.3.</strong> Hello World</a></li><li class="chapter-item "><a href="chapter-13/subchapters/types-and-declarations.html"><strong aria-hidden="true">13.4.</strong> Types and Declarations</a></li><li class="chapter-item "><a href="chapter-13/subchapters/define-a-function.html"><strong aria-hidden="true">13.5.</strong> Define a function</a></li><li class="chapter-item "><a href="chapter-13/subchapters/list-slice.html"><strong aria-hidden="true">13.6.</strong> List/Slice</a></li><li class="chapter-item "><a href="chapter-13/subchapters/dict-map.html"><strong aria-hidden="true">13.7.</strong> Dict/Map</a></li><li class="chapter-item "><a href="chapter-13/subchapters/set-hashset.html"><strong aria-hidden="true">13.8.</strong> Set/HashSet</a></li><li class="chapter-item "><a href="chapter-13/subchapters/while-and-for-loops.html"><strong aria-hidden="true">13.9.</strong> While and For loops</a></li><li class="chapter-item "><a href="chapter-13/subchapters/files.html"><strong aria-hidden="true">13.10.</strong> Files</a></li><li class="chapter-item "><a href="chapter-13/subchapters/exceptions-return-error.html"><strong aria-hidden="true">13.11.</strong> Exceptions/Return Error</a></li><li class="chapter-item "><a href="chapter-13/subchapters/concurrency.html"><strong aria-hidden="true">13.12.</strong> Concurrency</a></li><li class="chapter-item "><a href="chapter-13/subchapters/communicating-between-threads.html"><strong aria-hidden="true">13.13.</strong> Communicating between threads</a></li><li class="chapter-item "><a href="chapter-13/subchapters/sorting.html"><strong aria-hidden="true">13.14.</strong> Sorting</a></li><li class="chapter-item "><a href="chapter-13/subchapters/web-app-with-flask-rocket.html"><strong aria-hidden="true">13.15.</strong> Web app with Flask / Rocket</a></li><li class="chapter-item "><a href="chapter-13/subchapters/http-request-with-error-handling.html"><strong aria-hidden="true">13.16.</strong> HTTP Request with error handling</a></li><li class="chapter-item "><a href="chapter-13/subchapters/multithreaded-http-crawler.html"><strong aria-hidden="true">13.17.</strong> Multithreaded HTTP Crawler</a></li><li class="chapter-item "><a href="chapter-13/subchapters/encode-and-decode-json.html"><strong aria-hidden="true">13.18.</strong> Encode and Decode JSON</a></li><li class="chapter-item "><a href="chapter-13/subchapters/object-orientation.html"><strong aria-hidden="true">13.19.</strong> Object Orientation</a></li><li class="chapter-item "><a href="chapter-13/subchapters/print-object-for-debug-log.html"><strong aria-hidden="true">13.20.</strong> Print Object for Debug/Log</a></li><li class="chapter-item "><a href="chapter-13/subchapters/operator-overloading.html"><strong aria-hidden="true">13.21.</strong> Operator Overloading</a></li><li class="chapter-item "><a href="chapter-13/subchapters/template-for-new-examples.html"><strong aria-hidden="true">13.22.</strong> Template for new examples</a></li></ol></li><li class="chapter-item "><a href="chapter-14/index.html"><strong aria-hidden="true">14.</strong> Credits</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">py2rs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/rochacbruno/py2rs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <h1 id="py2rs"><a class="header" href="#py2rs">py2rs</a></h1>
+<h2 id="from-python-into-rust"><a class="header" href="#from-python-into-rust">From Python into Rust</a></h2>
+<pre><code>let x = Rust::from(&quot;Python&quot;);
+</code></pre>
+<p>A quick reference guide for the <strong>Pythonista</strong> in process of becoming a <strong>Rustacean</strong>. </p>
+<p><img src="https://user-images.githubusercontent.com/458654/33350327-50e76baa-d485-11e7-8a6e-b3dd0c337046.png" alt="image_2017-11-28_08-03-59" /></p>
+<h3 id="monty-python---season-3---episode-49"><a class="header" href="#monty-python---season-3---episode-49">Monty Python - Season 3 - Episode 49</a></h3>
+<p><a href="http://montypython.50webs.com/scripts/Series_3/49.htm">The sketch</a></p>
+<pre><code>Mrs. Jalin: George.
+Mr. Jalin: Yes, Gladys.
+Mrs. Jalin: There's a man at the door with a moustache.
+Mr. Jalin: Tell him I've already got one. (Mrs. Jalin hits him hard with a newspaper) 
+          All right, all right. What's he want then?
+Mrs. Jalin: He says do we want a documentary on crustaceans.
+Mr. Jalin: Crustaceans!
+Mrs. Jalin: Yes.
+Mr. Jalin: What's he mean, crustaceans?
+Mrs. Jalin: CRUSTACEANS!! GASTROPODS! LAMELLIBRANCHS! CEPHALOPODS!
+...
+</code></pre>
+<p>Ok... <a href="https://web.archive.org/web/20140806053203/https://www.youtube.com/watch?v=8R2zvE615dM">watch it later...</a> let's learn some Rust now...</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="getting-started-with-rust"><a class="header" href="#getting-started-with-rust">Getting Started with Rust</a></h2>
+<p>Assuming you already know what is <a href="http://rust-lang.org"><strong>Rust</strong></a> and already 
+decided to start learning it. Here are some steps for you to follow:</p>
+<ol>
+<li>Take a tour of <a href="https://learnxinyminutes.com/docs/rust/"><strong>Rust Syntax</strong> and <strong>Coding Style</strong></a> and <a href="https://tourofrust.com/"><strong>Tour if Rust</strong></a></li>
+<li>Watch some <strong>screencasts</strong> to get basics of <strong>Ownership &amp;Borrowing</strong> concept<br />
+<a href="http://intorust.com/">http://intorust.com/</a> or if you understand Portuguese watch <a href="https://bit.ly/aprendarust">Aprenda Rust</a></li>
+<li>Follow this set of runnable examples to understand how everything fit together<br />
+<a href="https://doc.rust-lang.org/stable/rust-by-example/">https://doc.rust-lang.org/stable/rust-by-example/</a></li>
+<li>Now it is time to read your first book, you can pick:
+<ul>
+<li>
+<p><strong>Rust Essentials</strong></p>
+<blockquote>
+<p>A good introduction to Rust language in a more <code>superficial</code> approach which results
+in a very pleasant and easy reading, recommended even for those who are not experienced
+with low level systems languages.</p>
+</blockquote>
+<ul>
+<li>Paparback and e-book available on Packt Publisher<br />
+<a href="https://www.packtpub.com/application-development/rust-essentials-second-edition">https://www.packtpub.com/application-development/rust-essentials-second-edition</a></li>
+</ul>
+</li>
+<li>
+<p><strong>TRPL</strong> (The Rust Programming language Book)</p>
+<blockquote>
+<p><a href="https://doc.rust-lang.org/book/">A complete Guide to Rust Language</a></p>
+</blockquote>
+<ul>
+<li>Official Book</li>
+<li>Free to read online</li>
+<li>Available as paperback or e-book (buy at Amazon)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Read some real examples
+<ul>
+<li><a href="https://rust-lang-nursery.github.io/rust-cookbook/"><strong>Rust Cookbook</strong></a>
+This Rust Cookbook is a collection of simple examples that demonstrate good 
+practices to accomplish common programming tasks, using the crates of the Rust ecosystem.</li>
+<li><a href="https://github.com/brson/rust-anthology/blob/master/master-list.md"><strong>Anthology</strong></a></li>
+</ul>
+</li>
+<li>Patterns and Good Practices
+<ul>
+<li><a href="https://github.com/rust-unofficial/patterns"><strong>Rust Patterns</strong></a></li>
+<li><a href="https://rust-lang-nursery.github.io/api-guidelines/"><strong>API Guidelines</strong></a></li>
+</ul>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="exercises"><a class="header" href="#exercises">Exercises</a></h2>
+<p>Time to put your new knowledge in action solving some exercises.</p>
+<ol>
+<li>
+<p><strong>Exercism.io</strong><br />
+Register a new account on exercism.io (using github auth)<br />
+Install exercism command line client on your computer<br />
+Solve some exercises:  <a href="https://www.exercism.io/languages/rust/">https://www.exercism.io/languages/rust/</a></p>
+</li>
+<li>
+<p><strong>Rust Playground</strong><br />
+Run Live Rust Code in the browser with <a href="https://play.rust-lang.org/">https://play.rust-lang.org/</a></p>
+</li>
+<li>
+<p><strong>Rustlings</strong>
+Small exercises to get you used to reading and writing Rust code.
+Clone the repo and follow the guide.
+This is a great way to get used to dialogue with the compiler.
+Interactive rust exercises: <a href="https://github.com/rust-lang/rustlings">https://github.com/rust-lang/rustlings</a></p>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="getting-updated"><a class="header" href="#getting-updated">Getting updated</a></h2>
+<p>Now I assume you are addicted to <strong>Rust</strong> and you want to be updated about everything 
+around it, here are some good links to follow.</p>
+<ol>
+<li>
+<p>This Week in Rust Newsletter<br />
+<a href="https://this-week-in-rust.org/">https://this-week-in-rust.org/</a></p>
+<p><a href="https://twitter.com/thisweekinrust">https://twitter.com/thisweekinrust</a></p>
+</li>
+<li>
+<p>Awesome Rust Newsletter<br />
+<a href="https://rust.libhunt.com/">https://rust.libhunt.com/</a></p>
+</li>
+<li>
+<p>Reddit<br />
+<a href="http://reddit.com/r/rust">http://reddit.com/r/rust</a>   (serious sub-reddit)<br />
+<a href="http://reddit.com/r/rustjerk">http://reddit.com/r/rustjerk</a> (almost memes only)</p>
+</li>
+<li>
+<p>Official Twitter<br />
+<a href="https://twitter.com/rustlang">https://twitter.com/rustlang</a></p>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="interact-with-other-rustaceans"><a class="header" href="#interact-with-other-rustaceans">Interact with other Rustaceans</a></h2>
+<blockquote>
+<p>Don't be afraid, the Rustaceans are a very receptive species and are cozy with the Pythonistas.</p>
+</blockquote>
+<h3 id="main-community-links"><a class="header" href="#main-community-links">Main Community links</a></h3>
+<p><a href="https://www.rust-lang.org/en-US/community.html">https://www.rust-lang.org/en-US/community.html</a></p>
+<h3 id="local-communities"><a class="header" href="#local-communities">Local Communities</a></h3>
+<ul>
+<li>
+<p>Brazil</p>
+<ul>
+<li>General
+<ul>
+<li><a href="http://bit.ly/canalrustbr">Youtube</a></li>
+<li><a href="https://t.me/rustlangbr">Telegram</a></li>
+</ul>
+</li>
+<li>Rust BH
+<ul>
+<li><a href="https://t.me/rustbh">https://t.me/rustbh</a></li>
+</ul>
+</li>
+<li>Rust in POA
+<ul>
+<li><a href="https://t.me/rustinpoa">https://t.me/rustinpoa</a></li>
+<li><a href="https://www.meetup.com/Rust-in-POA/">https://www.meetup.com/Rust-in-POA/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Indonesia</p>
+<ul>
+<li>General
+<ul>
+<li><a href="https://fb.com/groups/RustaceansID">FB Groups (Rustaceans Indonesia)</a></li>
+<li><a href="https://fb.com/groups/rustindo">FB Groups (Rust ID)</a></li>
+<li><a href="https://t.me/rustindonesia">Telegram (Rust Indonesia)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Russia</p>
+<ul>
+<li>General
+<ul>
+<li><a href="https://facebook.com/rustycrate/">FB Groups (RustyCrate)</a></li>
+<li><a href="https://t.me/proRust">Telegram (pro Rust)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Add your country/city here, send a Pull Request.</p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="additional-learning-resources"><a class="header" href="#additional-learning-resources">Additional learning resources</a></h2>
+<ul>
+<li><a href="https://learning-rust.github.io/">Learning Rust</a></li>
+<li><a href="https://github.com/ctjhoa/rust-learning">Rust Learning</a></li>
+<li><a href="https://aturon.github.io/">Rust Guidelines (WIP)</a></li>
+<li><a href="https://github.com/rust-unofficial/patterns/">Rust Design Patterns and Idioms</a></li>
+<li><a href="https://github.com/mre/idiomatic-rust">Idiomatic Rust</a></li>
+<li><a href="https://mmstick.github.io/gtkrs-tutorials/">GTK Rust Tutorial</a></li>
+<li><a href="http://hermanradtke.com/2015/06/22/effectively-using-iterators-in-rust.html">Effective use of iterators</a></li>
+<li><a href="https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust/">Red Hat Developers: Speed up Your Python with Rust</a></li>
+<li><a href="https://jvns.ca/blog/2017/11/27/rust-ref/">What's a reference in Rust? (The best article to understand <code>'lifetimes</code> and <code>&amp;</code>)</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="facts"><a class="header" href="#facts">Facts</a></h2>
+<ul>
+<li>The language is named <strong>Rust</strong> because <strong>&quot;rust is as close to the bare metal as you can get&quot;.</strong>,<br />
+in metal theory <strong>rust</strong> is the chemical layer closest to bare metal.<br />
+(also <a href="https://en.wikipedia.org/wiki/Rust_(programming_language)">Wikipedia</a> says that the name was <em>possibly</em> inspired by the name of a Fungi)</li>
+<li>The Rust <code>trifecta</code> is 1) <strong>Memory Safe</strong>, 2) <strong>Fast</strong> 3) <strong>Concurrent</strong></li>
+<li><a href="http://www.arewewebyet.org/">Rust can be used for web development</a></li>
+<li><a href="http://arewegameyet.com/">Rust can be used for Gaming Development</a></li>
+<li><a href="http://www.arewelearningyet.com/">Rust can be used for Machine Learning</a></li>
+<li><a href="https://areweideyet.com/">Lots of IDEs and Editors supports Rust</a>
+(<a href="https://marketplace.visualstudio.com/items?itemName=kalitaalexey.vscode-rust">VSCode</a> is known to have the better support by now)</li>
+<li>Rust packages are called <code>Crates</code> and are installed by <code>Cargo</code> explore them at <a href="http://crates.io">http://crates.io</a></li>
+<li>In Rust there is no <strong>Class</strong> but <strong>Structs</strong>, <strong>Enums</strong>, <strong>Traits</strong>, <strong>functions</strong> and <strong>macros!</strong></li>
+<li>Rust compiler was first written in <strong>OCaml</strong> then rewritten in Rust! (Rust is written in Rust!!!)</li>
+<li>Rust type system is strongly inspired by <strong>Haskell</strong></li>
+<li>Rust <strong>functional</strong> style is inspired by <strong>Erlang</strong></li>
+<li>Rust type inference is mainly inspired by <strong>ML</strong> and also by <strong>Haskell</strong></li>
+<li>The main <strong>syntax</strong> style is inspired by <strong>C</strong> and <strong>C++</strong></li>
+<li>There is no automated <strong>Garbage Collector</strong> so Rust frees memory based on Resource Aquisition RAII (a.k.a Ownership)</li>
+<li>Rust has <strong>Generic Types</strong>!!!</li>
+<li>As <strong>Rust</strong> is <strong>close to bare metal</strong> you can ship a program without the inclusion of <strong>Rust's runtime</strong> which makes easy to distribute programs (no need of dependencies and virtuelenvs management)</li>
+<li>Graydon Hoare (creator of Rust) is now working at <strong>Apple</strong> developing the <strong>Swift</strong> language</li>
+<li>Rust is the developers <strong>most loved language</strong> according to <strong>Stack Overflow Survey</strong></li>
+<li>Rust is the most <a href="https://sites.google.com/view/energy-efficiency-languages/results"><strong>energy efficient</strong></a> language! and that is very important for environment, data center companies and maybe it can help saving your laptop and phone battery in near future. </li>
+<li>There is an Operating System written in <strong>Rust</strong> - <a href="https://www.redox-os.org/">Redox</a></li>
+<li>Mozilla released the fastest version of Firefox (<strong>quantum</strong>) having many parts written on <strong>Rust</strong></li>
+<li>The <a href="http://www.rustacean.net/">Rust mascot (unofficial)</a> is called <strong>Ferris</strong> and it is a <strong>crab</strong>
+(There is no record of the official reason about being a crab, the reasonable history is that it was inspired by the <strong>Rusty Crab</strong> 
+a common species of crab and also a name of a famous restaurant.)</li>
+<li>To compliment your fellow Rustaceans don't say <strong><del>cheers!</del></strong>. Say <strong>safe!</strong> (<strong>safe!</strong> is also said when toasting with champagne at Rust conferences)</li>
+<li>Rust is to become a second programming language for the Linux kernel (see <a href="https://en.wikipedia.org/wiki/Rust_for_Linux">here</a>)</li>
+<li>Rust is the language choosen by Microsoft to rewrite parts of Windows Kernel</li>
+</ul>
+<blockquote>
+<p><strong>More facts? and curiosities</strong> send a question here or send a Pull Request adding an interest fact to this list.</p>
+</blockquote>
+<p><img src="http://www.rustacean.net/more-crabby-things/animated-ferris.gif" alt="ferris" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="glossary-of-terms"><a class="header" href="#glossary-of-terms">Glossary of terms</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>crate</td><td>A rust distributable <strong>package</strong></td></tr>
+<tr><td>ferris</td><td>The unofficial Crab Mascot</td></tr>
+<tr><td>Rustacean</td><td>The Rust programmer or evangelist or enthusiastic</td></tr>
+<tr><td>nightly</td><td>The unstable toolchain of the Rust compiler</td></tr>
+<tr><td>impl</td><td>Implementation</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="general"><a class="header" href="#general">General</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Python</th><th>Definition</th><th>Rust</th></tr></thead><tbody>
+<tr><td><a href="https://www.python.org/dev/peps/pep-0008/">PEP8</a></td><td>Guidelines and conventions</td><td><a href="https://rust-lang-nursery.github.io/api-guidelines/">RustAPI Guidelines</a></td></tr>
+<tr><td><a href="https://www.python.org/dev/peps/">PEPS</a></td><td>Enhancement Proposals / RFC</td><td><a href="https://github.com/rust-lang/rfcs">Rust RFCs</a></td></tr>
+<tr><td><a href="https://www.python.org/psf/">PSF</a></td><td>Organization / Foundation</td><td>[Rust Foundation](https://foundation.rust-lang.org/</td></tr>
+<tr><td><a href="https://www.pycon.org/">PyCon</a></td><td>Main Conference</td><td><a href="http://rustconf.com/">RustConf</a></td></tr>
+<tr><td><a href="https://twitter.com/gvanrossum">Guido Van Rossum</a></td><td>Creator</td><td><a href="https://twitter.com/graydon_pub">Graydon Hoare</a></td></tr>
+<tr><td>1989</td><td>First appeared</td><td>2010</td></tr>
+<tr><td>1991</td><td>First Release</td><td>2012</td></tr>
+<tr><td><a href="https://docs.python.org/3/license.html">PSF</a></td><td>License</td><td>Apache 2.0 and MIT</td></tr>
+<tr><td>C</td><td>Implemented in</td><td>Rust</td></tr>
+<tr><td>.py, .pyw, .pyc</td><td>File Extensions</td><td>.rs, .rlib</td></tr>
+<tr><td>http://github.com/python/cpython</td><td>Repository</td><td>https://github.com/rust-lang/rust</td></tr>
+<tr><td><a href="chapter-8/">Pyladies</a>, <a href="chapter-8/">AfroPython</a></td><td>Diversity and Inclusion initiative</td><td><a href="https://rustbridge.github.io/">RustBridge</a></td></tr>
+<tr><td><a href="https://groups.google.com/forum/#!forum/comp.lang.python">comp.lang.Python</a></td><td>Official Users Forum</td><td><a href="https://users.rust-lang.org">users.rust-lang.org</a></td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="environment-tools"><a class="header" href="#environment-tools">Environment Tools</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Python</th><th>Definition</th><th>Rust</th></tr></thead><tbody>
+<tr><td><code>requirements.txt</code></td><td>Official dependency tracker file</td><td><code>Cargo.toml</code></td></tr>
+<tr><td><code>setup.py</code></td><td>Official installator / distributor file</td><td><code>Cargo.toml</code></td></tr>
+<tr><td><a href="https://pypi.org/">PyPI</a></td><td>Library repository</td><td><a href="http://crates.io">Crates.io</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pip">pip</a></td><td>Library installation</td><td><a href="http://doc.crates.io/">Cargo</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/setuptools">setuptools</a> and <a href="https://python-poetry.org/">poetry</a></td><td>Library distribution</td><td><a href="http://doc.crates.io/">Cargo</a></td></tr>
+<tr><td><a href="https://docs.openstack.org/pbr/latest/">pbr</a></td><td>Library distribution</td><td><a href="http://doc.crates.io/">Cargo</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pipenv">pipenv</a> and <a href="https://python-poetry.org/">poetry</a></td><td>Dependency manager</td><td><a href="http://doc.crates.io/">Cargo</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/twine">twine</a></td><td>Package uploader</td><td><a href="http://doc.crates.io/">Cargo</a> and <a href="https://github.com/semantic-rs/semantic-rs">Semantic</a></td></tr>
+<tr><td><code>venv</code> *</td><td>Isolated environments</td><td><a href="http://doc.crates.io/">Cargo</a></td></tr>
+<tr><td><a href="https://github.com/pyinstaller/pyinstaller">pyinstaller</a></td><td>Generate standalone executables</td><td><a href="http://doc.crates.io/">Cargo</a></td></tr>
+<tr><td><a href="https://github.com/pyenv/pyenv-installer">pyenv</a></td><td>Install and manage versions of language</td><td><a href="https://www.rustup.rs/">rustup</a></td></tr>
+<tr><td><a href="https://docs.python.org/library/pydoc.html">pydoc</a> and <a href="https://pypi.python.org/pypi/sphinx">sphinx</a></td><td>Generate documentation from code</td><td><a href="https://doc.rust-lang.org/stable/rustdoc/">rustdoc</a> and <a href="http://doc.crates.io/">Cargo</a></td></tr>
+<tr><td><a href="http://python.org">python</a></td><td>Interpreter / Compiler</td><td><a href="https://doc.rust-lang.org/1.1.0/rustc/">rustc</a> and <a href="http://doc.crates.io/">Cargo</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/ipython">ipython</a></td><td>REPL</td><td><a href="https://github.com/sigmaSd/IRust">iRust</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/ipdb">ipdb</a></td><td>Debugger</td><td><a href="https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb">rust-gdb</a></td></tr>
+<tr><td><a href="https://docs.python.org/3/extending/extending.html">Extending Python with C or C++</a></td><td>Foreign language interface</td><td><a href="https://pyo3.rs/v0.17.2/">PyO3</a></td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="libraries-and-frameworks"><a class="header" href="#libraries-and-frameworks">Libraries and Frameworks</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Python</th><th>Definition</th><th>Rust</th></tr></thead><tbody>
+<tr><td><code>urllib</code> *</td><td>HTTP calls</td><td><a href="https://crates.io/crates/hyper">hyper</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/requests">requests</a></td><td>Simplified HTTP calls</td><td><a href="https://github.com/seanmonstar/reqwest">reqwest</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/json">json</a></td><td>JSON parsing loading and dumping</td><td><a href="https://github.com/serde-rs/serde">serde</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pyyaml">pyYAML</a></td><td>YAML parsing loading and dumping</td><td><a href="https://github.com/serde-rs/serde">serde</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/lxml">lxml</a></td><td>XML parsing loading and dumping</td><td><a href="https://github.com/Florob/RustyXML">RustyXML</a></td></tr>
+<tr><td><code>csv</code> *</td><td>CSV parsing</td><td><a href="https://github.com/BurntSushi/rust-csv">rust-csv</a></td></tr>
+<tr><td><code>datetime</code> *  &amp; <a href="https://pypi.python.org/pypi/dateutils">Dateutils</a></td><td>Date &amp; time</td><td><a href="https://github.com/chronotope/chrono">Chrono</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/click">click</a> and <a href="https://pypi.python.org/pypi/argparse">argparse</a></td><td>CLI Framework</td><td><a href="https://github.com/kbknapp/clap-rs">clap</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/docopt">docopt</a></td><td>CLI Framework</td><td><a href="https://github.com/docopt/docopt.rs">docopt</a></td></tr>
+<tr><td><code>re</code> *</td><td>Regular Expressions</td><td><a href="https://github.com/rust-lang/regex">regex</a></td></tr>
+<tr><td><code>subprocess</code> *</td><td>Run external commands</td><td><a href="https://crates.io/crates/subprocess">subprocess</a></td></tr>
+<tr><td><code>multiprocessing</code> *</td><td>Multiprocessing</td><td><a href="https://crates.io/crates/rayon">Rayon</a></td></tr>
+<tr><td><code>logging</code> *</td><td>Logging</td><td><a href="https://github.com/rust-lang-nursery/log">log</a></td></tr>
+<tr><td><code>Pathlib</code> *</td><td>Path manipulation</td><td><a href="https://doc.rust-lang.org/std/fs/">fs</a> and <a href="https://github.com/webdesus/fs_extra">fs_extra</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/cryptography">cryptography</a></td><td>Crytography</td><td><a href="https://github.com/DaGenix/rust-crypto">crypto</a></td></tr>
+<tr><td><code>pickle</code> *</td><td>Object serialization</td><td><a href="https://github.com/ron-rs/ron">RON</a></td></tr>
+<tr><td><code>heapq</code> *</td><td>Heap queue</td><td><code>BinaryHeap</code> *</td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/bottle">bottle</a></td><td>Minimal web framework</td><td><a href="https://github.com/iron/iron">Iron</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/flask">flask</a></td><td>Web framework</td><td><a href="https://github.com/SergioBenitez/Rocket">Rocket</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/django">django</a></td><td>Full stack web framework</td><td><strong>DO NOT EXIST YET</strong></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/sqlalchemy">SQL Alchemy</a></td><td>Relational database ORM</td><td><a href="https://github.com/diesel-rs/diesel">Diesel</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pymongo">Pymongo</a></td><td>MongoDB driver</td><td><a href="https://crates.io/keywords/mongodb">mongodb</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/jinja2">Jinja 2</a></td><td>Template engine</td><td><a href="https://github.com/Keats/tera">Tera</a></td></tr>
+<tr><td><a href="http://www.pygtk.org/">pygtk</a></td><td>GTk desktop development</td><td><a href="https://github.com/gtk-rs/gtk">gtk</a></td></tr>
+<tr><td><a href="http://www.pyside.org/">pyside</a></td><td>QT desktop development</td><td><a href="https://github.com/rust-qt">rust-qt</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pygame">pygame</a></td><td>2D UI library / gaming</td><td><a href="http://ggez.rs/">ggez</a> &amp; <a href="https://github.com/PistonDevelopers/conrod/">Conrod</a> &amp; <a href="http://www.piston.rs/">Piston</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/unittest2">unitest2</a></td><td>Test framework</td><td><a href="chapter-10/">Builtin</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/nose">nose</a></td><td>Test runner</td><td><a href="http://doc.crates.io/">Cargo</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pytest">pytest</a></td><td>Testing framework and runner</td><td><a href="https://github.com/AlKass/polish">Polish</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/flake8">Flake8</a></td><td>Linter</td><td><a href="https://github.com/rust-lang-nursery/rust-clippy">Clippy</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/autopep8">autopep8</a> and <a href="https://pypi.org/project/black/">black</a></td><td>Auto formatter</td><td><a href="chapter-10/">rustfmt</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/twisted">twisted</a></td><td>Network application framework</td><td><a href="https://github.com/libpnet/libpnet">libpnet</a></td></tr>
+<tr><td><code>AsyncIO</code> *</td><td>Async application framework</td><td><a href="https://github.com/tokio-rs/tokio">Tokio</a> and <a href="https://github.com/alexcrichton/futures-rs">futures</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/pillow">Pillow</a></td><td>Image manipulation</td><td><a href="https://github.com/PistonDevelopers/image">Image</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/beautifulsoup4">Beautiful Soup</a></td><td>HTML parser</td><td><a href="https://github.com/servo/html5ever">html5ever</a></td></tr>
+<tr><td><a href="http://hypothesis.works/">Hypothesis</a></td><td>Data driven test framework</td><td><a href="https://github.com/BurntSushi/quickcheck">Quickcheck</a> and <a href="https://github.com/altsysrq/proptest">proptest</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/mock">mock</a></td><td>Test mocking</td><td><a href="https://crates.io/crates/mockers">Mockers</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/biopython">bioPython</a></td><td>Bioinformathics libraries</td><td><a href="https://github.com/rust-bio">Rust Bio</a></td></tr>
+<tr><td><a href="http://github.com/rochacbruno/dynaconf">Dynaconf</a></td><td>Config management</td><td><a href="https://github.com/mehcode/config-rs">Config</a></td></tr>
+<tr><td><code>itertools</code> *</td><td>Data structure iteration</td><td><a href="https://github.com/bluss/rust-itertools">Rust Itertools</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/geopython">Geopython</a></td><td>Geo spatial data</td><td><a href="https://github.com/georust">Geo Rust</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/scikit_learn">ScikitLearn</a></td><td>Machine learning</td><td><a href="https://github.com/AtheMathmo/rusty-machine">rusty-machine</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/mistune">mistune</a></td><td>Markdown / Common Mark Parser</td><td><a href="https://github.com/google/pulldown-cmark">cmark</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/celery">celery</a></td><td>Distributed computation</td><td><a href="https://github.com/antimonyproject/antimony">Antimony</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/boto">boto</a></td><td>AWS clients</td><td><a href="https://github.com/rusoto/rusoto">rusoto</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/astropy">AstroPy</a></td><td>Astronomy</td><td><a href="https://github.com/saurvs/astro-rust">astro-rust</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/numpy">Numpy</a></td><td>Numeric</td><td><a href="https://crates.io/crates/numeric">Numeric</a></td></tr>
+<tr><td><a href="https://pypi.org/project/pandas/">Pandas</a></td><td>Dataframes</td><td><a href="https://www.pola.rs/">Polars</a></td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="applications"><a class="header" href="#applications">Applications</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Python</th><th>Definition</th><th>Rust</th></tr></thead><tbody>
+<tr><td><a href="https://pypi.python.org/pypi/pelican">Pelican</a></td><td>Static Site generator</td><td><a href="https://github.com/cobalt-org/cobalt.rs">Cobalt</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/ansible">ansible</a></td><td>Infra Orchestration</td><td><a href="https://crates.io/crates/realize">realize</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/mkdocs">mkdocs</a></td><td>Generate documentation and e-books from Markdown</td><td><a href="https://crates.io/crates/mdbook">mdBook</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/locust">locust</a></td><td>HTTP load test</td><td><a href="https://github.com/fcsonline/drill">drill</a></td></tr>
+<tr><td><a href="https://pypi.python.org/pypi/nameko">Nameko</a></td><td>Microservices Framework</td><td><a href="https://github.com/fractalide/fractalide">fractalide</a></td></tr>
+<tr><td><a href="http://quokkaproject.org">Quokka CMS</a></td><td>CMS</td><td><a href="https://github.com/irony-rust/nickel-cms">Nickel CMS</a></td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="useful-crates"><a class="header" href="#useful-crates">Useful crates</a></h2>
+<p>Add Pythonic features to Rust</p>
+<div class="table-wrapper"><table><thead><tr><th>Python</th><th>Definition</th><th>Rust</th></tr></thead><tbody>
+<tr><td><code>{'foo': &quot;bar&quot;}</code></td><td>Syntax to create a dict / hashmap</td><td><a href="https://crates.io/crates/maplit">maplit</a></td></tr>
+<tr><td><code>__init__(self, value='default')</code></td><td>Instance initialization (with some default values)</td><td><a href="https://github.com/nrc/derive-new">derive_new</a></td></tr>
+<tr><td>itertools <code>*stdlib</code></td><td>Extra iterators methods</td><td><a href="https://crates.io/crates/itertools">itertools</a></td></tr>
+<tr><td><code>hashlib</code> *</td><td>Password Hashing</td><td><a href="https://github.com/libpasta/libpasta">libpasta</a></td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="show-me-the-code"><a class="header" href="#show-me-the-code">Show me The code</a></h2>
+<p>From <strong>Python</strong> to <strong>Rust</strong> by examples</p>
+<blockquote>
+<p>You can  copy-paste and run the <strong>Rust</strong> examples in <a href="https://play.rust-lang.org/">https://play.rust-lang.org/</a> and <strong>Python</strong> in <a href="https://repl.it/languages/python3">https://repl.it/languages/python3</a></p>
+</blockquote>
+<ul>
+<li><a href="chapter-13/./subchapters/creating-a-new-project.html">Creating a new project</a>
+<ul>
+<li><a href="chapter-13/./subchapters/installing-new-libraries.html">Installing new libraries/crates</a></li>
+<li><a href="chapter-13/./subchapters/hello-world.html">Hello World</a></li>
+<li><a href="chapter-13/./subchapters/types-and-declarations.html">Types and Declarations</a></li>
+<li><a href="chapter-13/./subchapters/define-a-function.html">Define a function</a></li>
+<li><a href="chapter-13/./subchapters/list-slice.html">List/Slice</a></li>
+<li><a href="chapter-13/./subchapters/dict-map.html">Dict/Map</a></li>
+<li><a href="chapter-13/./subchapters/set-hashset.html">Set/HashSet</a></li>
+<li><a href="chapter-13/./subchapters/while-and-for-loops.html">While and For loops</a></li>
+<li><a href="chapter-13/./subchapters/files.html">Files</a></li>
+<li><a href="chapter-13/./subchapters/exceptions-return-error.html">Exceptions/Return Error</a></li>
+<li><a href="chapter-13/./subchapters/concurrency.html">Concurrency</a></li>
+<li><a href="chapter-13/./subchapters/communicating-between-threads.html">Communicating between threads</a></li>
+<li><a href="chapter-13/./subchapters/sorting.html">Sorting</a></li>
+<li><a href="chapter-13/./subchapters/web-app-with-flask-rocket.html">Web app with Flask / Rocket</a></li>
+<li><a href="chapter-13/./subchapters/http-request-with-error-handling.html">HTTP Request with error handling</a></li>
+<li><a href="chapter-13/./subchapters/multithreaded-http-crawler.html">Multithreaded HTTP Crawler</a></li>
+<li><a href="chapter-13/./subchapters/encode-and-decode-json.html">Encode and Decode JSON</a></li>
+<li><a href="chapter-13/./subchapters/object-orientation.html">Object Orientation</a></li>
+<li><a href="chapter-13/./subchapters/print-object-for-debug-log.html">Print Object for Debug/Log</a></li>
+<li><a href="chapter-13/./subchapters/operator-overloading.html">Operator Overloading</a></li>
+<li><a href="chapter-13/./subchapters/template-for-new-examples.html">Template for new examples</a></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="creating-a-new-project"><a class="header" href="#creating-a-new-project">Creating a new project</a></h3>
+<p>Create a new project with basic files, entry points, module initializer, dependency and installation artifacts.</p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">$ mkdir {pyproject,pyproject/src}
+$ touch {pyproject/src/{__init__.py,__main__.py,program.py},pyproject/{requirements.txt,setup.py}} 
+$ echo &quot;-e .&quot; &gt;&gt; pyproject/requirements.txt
+$ echo &quot;from setuptools import setup&quot; &gt;&gt; pyproject/setup.py
+$ echo &quot;setup(author=..., name=...)&quot; &gt;&gt; pyproject/setup.py
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>$ cargo new my-rust-program
+<span class="boring">}</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="installing-new-librariescrates"><a class="header" href="#installing-new-librariescrates">Installing new libraries/crates</a></h3>
+<p><strong>Python</strong></p>
+<pre><code class="language-bash">$ pip install foo 
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><code class="language-bash">$ cargo install foo
+</code></pre>
+<hr />
+<h1 id="running--compiling"><a class="header" href="#running--compiling">running--compiling</a></h1>
+<p><strong>Python</strong></p>
+<pre><code class="language-bash">$ python my_python_program.py 
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><code class="language-bash">$ cargo run
+</code></pre>
+<p>In Rust, there is a <code>--release</code> flag that allows for more compile time optimization to be done, but it will take longer to compile</p>
+<pre><code class="language-bash">$ cargo run --release
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="hello-world"><a class="header" href="#hello-world">Hello World</a></h3>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">if __name__ == &quot;__main__&quot;:
+    print(&quot;Hello, World&quot;)
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">fn main() {
+  println!(&quot;Hello, World&quot;);
+}</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="types-and-declarations"><a class="header" href="#types-and-declarations">Types and Declarations</a></h3>
+<p>Create new objects, values on basic primitive types and also data structures.</p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">age = 80
+name = 'daffy'
+weight = 62.3
+loons = ['bugs', 'daffy', 'taz']
+ages = {  # Ages for 2017
+    'daffy': 80,
+    'bugs': 79,
+    'taz': 63,
+}
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">use std::collections::HashMap;
+
+fn main() {
+    let age = 80;
+    let name = &quot;daffy&quot;;
+    let weight = 62.3;
+    let mut loons = vec![&quot;bugs&quot;, &quot;daffy&quot;, &quot;taz&quot;];
+
+    let mut ages = HashMap::new();  // Ages for 2017
+    ages.insert(&quot;daffy&quot;, 80);
+    ages.insert(&quot;bugs&quot;, 79);
+    ages.insert(&quot;taz&quot;, 63);
+}
+</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="define-a-function"><a class="header" href="#define-a-function">Define a function</a></h3>
+<p>Defining a function that takes 2 integer arguments and returns its sum.</p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">def add(a, b):
+    &quot;&quot;&quot;Adds a to b&quot;&quot;&quot;
+    return a + b
+</code></pre>
+<p><strong>Python with typing annotations</strong></p>
+<p>It looks more similar to Rust.</p>
+<pre><code class="language-python">def add(a: int, b: int) -&gt; int:
+    &quot;&quot;&quot;Adds a to b&quot;&quot;&quot;
+    return a + b
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>/// Adds a to b
+fn add(a: i32, b: i32) -&gt; i32 {
+  a + b
+}
+<span class="boring">}</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="listslice"><a class="header" href="#listslice">List/Slice</a></h3>
+<p>Creating a list, adding new elements, gettings its length, slicing by index, iterating using for loop and iterating with enumerator.</p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">names = ['bugs', 'taz', 'tweety']
+print(names[0])  # bugs
+names.append('elmer')
+print(len(names))  # 4
+print(names[2:])  # ['tweety', 'elmer']
+
+for name in names:
+    print(name)
+
+for i, name in enumerate(names):
+    print('{} at {}'.format(name, i))
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">fn main() {
+    let mut names = vec![&quot;bugs&quot;, &quot;taz&quot;, &quot;tweety&quot;];
+    println!(&quot;{}&quot;, names[0]);  // bugs
+    names.push(&quot;elmer&quot;);
+    println!(&quot;{}&quot;, names.len());  // 4
+    println!(&quot;{:?}&quot;, &amp;names[2..]);  // [&quot;tweety&quot;, &quot;elmer&quot;]
+
+    for name in &amp;names {
+        println!(&quot;{}&quot;, name);
+    }
+
+    for (i, name) in names.iter().enumerate() {
+        println!(&quot;{} at {}&quot;, i, name);
+    }
+}</code></pre></pre>
+<p><strong>.step_by()</strong> is the equivalent for python's range/xrange step parameter.</p>
+<p>python:</p>
+<pre><code class="language-py">for i in range(0,10,2):
+   print(i) # 0, 2, 4, 6, 8
+</code></pre>
+<p>rust:</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>for i in (0..10).step_by(2) {
+    println!(&quot;{}&quot;, i);  // 0, 2, 4, 6, 8
+}
+<span class="boring">}</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="dictmap"><a class="header" href="#dictmap">Dict/Map</a></h3>
+<p>Create new dictionaries (hash maps), adding new keys and values, changing values, getting by key, checking if a key is containing, etc.</p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">
+# Creating a new dict and populating it
+ages = {}
+ages['daffy'] = 80
+ages['bugs'] = 79
+ages['taz'] = 63
+
+# or doing the same using a for loop
+ages = {}
+for name, age in [(&quot;daffy&quot;, 80), (&quot;bugs&quot;, 79), (&quot;taz&quot;, 63)]:
+    ages[name] = age
+
+# or initializing from a list
+ages = dict([(&quot;daffy&quot;, 80), (&quot;bugs&quot;, 79), (&quot;taz&quot;, 63)])
+
+# or passing key values on creation
+ages = {  # Ages for 2017
+    'daffy': 80,
+    'bugs': 79,
+    'taz': 63,
+}
+
+ages['elmer'] = 80
+print(ages['bugs'])  # 79
+print('bugs' in ages)  # True
+
+del ages['taz']
+
+for name in ages:  # Keys
+    print(name)
+
+for name, age in ages.items():  # Keys &amp; values
+    print('{} is {} years old'.format(name, age))
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">use std::iter::FromIterator;
+use std::collections::HashMap;
+
+fn main() {
+
+    // Creating a new HashMap and populating it
+    let mut ages = HashMap::new();  // Ages for 2017
+    ages.insert(&quot;daffy&quot;, 80);
+    ages.insert(&quot;bugs&quot;, 79);
+    ages.insert(&quot;taz&quot;, 63);
+
+    // or doing the same using a loop
+    let mut ages = HashMap::new();
+    for &amp;(name, age) in [(&quot;daffy&quot;, 80), (&quot;bugs&quot;, 79), (&quot;taz&quot;, 63)].iter() {
+        // For non-Copy data, remove &amp; and use iter().clone()
+        ages.insert(name, age);
+    }
+
+    // or initializing from Array
+    let mut ages: HashMap&lt;&amp;str, i32&gt; =  // Ages for 2017
+        [(&quot;daffy&quot;, 80), 
+         (&quot;bugs&quot;, 79), 
+         (&quot;taz&quot;, 63)]
+        .iter().cloned().collect();
+
+    // or initializing from Vec (Iterator)
+    let mut ages: HashMap&lt;&amp;str, i32&gt; =  // Ages for 2017
+        HashMap::from_iter(
+            vec![
+               (&quot;daffy&quot;, 80),
+               (&quot;bugs&quot;, 79),
+               (&quot;taz&quot;, 63)
+            ]
+        );
+
+    ages.insert(&quot;elmer&quot;, 80);
+    println!(&quot;{}&quot;, ages[&quot;bugs&quot;]);  // 79
+    println!(&quot;{}&quot;, ages.contains_key(&quot;bugs&quot;)); // true
+    ages.remove(&quot;taz&quot;);
+
+
+    for name in ages.keys() {  // Keys
+      println!(&quot;{}&quot;, name);
+    }
+
+    for (name, age) in &amp;ages {  // Keys &amp; values
+      println!(&quot;{} is {} years old&quot;, name, age);
+    }
+
+}</code></pre></pre>
+<h4 id="pythonic-alternative-to-dictmap-in-rust"><a class="header" href="#pythonic-alternative-to-dictmap-in-rust">Pythonic alternative to dict/map in Rust</a></h4>
+<p>You can use the <a href="https://crates.io/crates/maplit">maplit</a> crate to load <code>hashmap!</code> macro to have an efficient sugared (a.k.a Pythonic) syntax!</p>
+<pre><code class="language-toml"># Cargo.toml
+[dependencies]
+maplit = &quot;*&quot;
+</code></pre>
+<p>then</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[macro_use] extern crate maplit;
+
+let map = hashmap!{
+    &quot;daffy&quot; =&gt; 80,
+    &quot;bugs&quot; =&gt; 79,
+    &quot;taz&quot; =&gt; 63,
+};
+<span class="boring">}</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="set--hashset"><a class="header" href="#set--hashset">set / HashSet</a></h3>
+<p>Create a <code>set</code> (a hash of unique keys), add new keys and compute <code>intersection</code>, <code>difference</code> and <code>union</code></p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">
+# creating and populating
+colors = set()
+colors.add(&quot;red&quot;)
+colors.add(&quot;green&quot;)
+colors.add(&quot;blue&quot;)
+colors.add(&quot;blue&quot;)
+
+# using literal syntax
+colors = {'red', 'green', 'blue', 'blue'}
+
+# from an iterator
+colors = set(['red', 'green', 'blue', 'blue'])
+
+
+# deduplication
+print(colors)  # {&quot;blue&quot;, &quot;green&quot;, &quot;red&quot;}
+
+# operations
+colors = {'red', 'green', 'blue', 'blue'}
+flag_colors = {&quot;red&quot;, &quot;black&quot;}
+
+# difference
+colors.difference(flag_colors)  # {'blue', 'green'}
+
+# symmetric difference
+colors.symmetric_difference(flag_colors)  # {'black', 'blue', 'green'}
+
+# intersection
+colors.intersection(flag_colors)  # {'red'}
+
+# union
+colors.union(flag_colors)  # {'black', 'blue', 'green', 'red'}
+
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">use std::collections::HashSet;
+use std::iter::FromIterator;
+
+fn main() {
+
+    // creating and populating - type inference
+    let mut colors = HashSet::new();
+    colors.insert(&quot;red&quot;);
+    colors.insert(&quot;green&quot;);
+    colors.insert(&quot;blue&quot;);
+    colors.insert(&quot;blue&quot;);
+
+    // from an iterator - explicit type
+    let mut colors: HashSet&lt;&amp;str&gt; = HashSet::from_iter(vec![&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;, &quot;blue&quot;]);
+
+    // deduplication
+    println!(&quot;{:?}&quot;, colors); // {&quot;blue&quot;, &quot;green&quot;, &quot;red&quot;}
+
+    // Operations
+    let mut colors: HashSet&lt;&amp;str&gt; = HashSet::from_iter(vec![&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;, &quot;blue&quot;]);
+    let mut flag_colors: HashSet&lt;&amp;str&gt; = HashSet::from_iter(vec![&quot;red&quot;, &quot;black&quot;]);
+
+    // difference
+    colors.difference(&amp;flag_colors); // [&quot;green&quot;, &quot;blue&quot;]
+
+    // symmetric difference
+    colors.symmetric_difference(&amp;flag_colors); // [&quot;blue&quot;, &quot;green&quot;, &quot;black&quot;]
+
+    // intersection
+    colors.intersection(&amp;flag_colors); // [&quot;red&quot;]
+
+    // union
+    colors.union(&amp;flag_colors); // [&quot;red&quot;, &quot;blue&quot;, &quot;green&quot;, &quot;black&quot;]
+}</code></pre></pre>
+<p>or syntax sugared using <a href="https://crates.io/crates/maplit">maplit</a> crate</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[macro_use] extern crate maplit;
+
+let colors = hashset!{&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;, &quot;blue&quot;};
+<span class="boring">}</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="while-and-for-loops"><a class="header" href="#while-and-for-loops">while and for loops</a></h3>
+<p>Looping until a condition is met or over an iterable object.</p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python"># While loop
+
+counter = 0
+while counter &lt; 10:
+    print(counter)
+    counter += 1
+
+# infinite while loop
+while True:
+    print(&quot;loop Forever!&quot;)
+
+# infinite while loop with break
+counter = 0
+while True:
+    print(counter)
+    counter += 1
+    if counter &gt;= 10:
+        break
+
+
+# while loop with continue
+counter = 0
+while True:
+    counter += 1
+    if counter == 5:
+        continue
+    print(counter)
+    if counter &gt;= 10:
+        break
+
+# For loop over a list
+for color in [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]:
+    print(color)
+
+# Enumerating indexes
+for  i, color in enumerate([&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]):
+    print(f&quot;{color} at index {i}&quot;)
+
+# For in a range
+for number in range(0, 100):
+    print(number)  # from 0 to 99
+
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">fn main() {
+
+    // While loop
+    let mut counter = 0;
+    while counter &lt; 10 {
+        println!(&quot;{}&quot;, counter);
+        counter += 1;
+    }
+
+    // infinite while loop
+    loop {
+        println!(&quot;Loop forever!&quot;);
+    }
+
+    // infinite while loop with break
+    let mut counter = 0;
+    loop {
+        println!(&quot;{}&quot;, counter);
+        counter += 1;
+        if counter &gt;= 10 { break; }
+    }
+
+    // infinite while loop with continue
+    let mut counter = 0;
+    loop {
+        counter += 1;
+        if counter == 5 { continue; }
+        println!(&quot;{}&quot;, counter);
+        if counter &gt;= 10 { break; }
+    }
+
+    // for loop over a list
+    for color in [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;].iter() {
+        println!(&quot;{}&quot;, color);
+    }
+
+    // Enumerating indexes
+    for (i, color) in [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;].iter().enumerate() {
+        println!(&quot;{} at index {}&quot;, color, i);
+    }
+
+    // for in a range
+    for number in 0..100 {
+        println!(&quot;{}&quot;, number);  // from 0 to 99
+    }
+}</code></pre></pre>
+<h4 id="loop-labels"><a class="header" href="#loop-labels">Loop Labels</a></h4>
+<p><strong>Rust</strong> has a looping feature which is not present on Python: <strong>Loop labels</strong></p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>'outer: for x in 0..10 {
+    'inner: for y in 0..10 {
+        if x % 2 == 0 { continue 'outer; } // continues the loop over x
+        if y % 2 == 0 { continue 'inner; } // continues the loop over y
+        println!(&quot;x: {}, y: {}&quot;, x, y);
+    }
+}
+<span class="boring">}</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="files"><a class="header" href="#files">Files</a></h3>
+<p>Read a text file and iterate its lines printing the content, properly close the file at the end.</p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">from pathlib import Path
+
+with Path(&quot;/tmp/song.txt&quot;).open() as fp:
+    #  Iterate over lines
+    for line in fp:
+        print(line.strip())
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">use std::io::{BufReader, BufRead};
+use std::fs::File;
+use std::path::Path;
+
+
+fn main () {
+    let fp = File::open(Path::new(&quot;/tmp/song.txt&quot;)).unwrap();
+    let file = BufReader::new(&amp;fp);
+    for line in file.lines() {
+        //  Iterate over lines
+        println!(&quot;{}&quot;, line.unwrap());
+    }
+}
+</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="exceptionsreturn-error"><a class="header" href="#exceptionsreturn-error">Exceptions/Return Error</a></h3>
+<p>Expecting for exceptions and identifying errors.</p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">def div(a, b):
+    if b == 0:
+        raise ValueError(&quot;b can't be 0&quot;)
+    return a / b
+
+# ...
+
+try:
+    div(1, 0)
+except ValueError:
+    print('An error occurred!')
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">fn div(a: i32, b: i32) -&gt; Result&lt;i32, &amp;'static str&gt; {
+    if b == 0 {
+        Err(&quot;b can't be 0&quot;)
+    } else {
+        Ok(a / b)
+    }
+}
+
+fn main() {
+    match div(1, 0) {
+        Ok(_) =&gt; {},
+        Err(_) =&gt; println!(&quot;An error occurred!&quot;),
+    };
+}</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="concurrency"><a class="header" href="#concurrency">Concurrency</a></h3>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">thr = Thread(target=add, args=(1, 2), daemon=True)
+thr.start()
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>use std::thread;
+
+thread::spawn(|| {
+        add(5,5);
+    });
+
+<span class="boring">}</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="communicating-between-threads"><a class="header" href="#communicating-between-threads">Communicating between threads</a></h3>
+<p>Managing data context between threads.</p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">from queue import Queue
+queue = Queue()
+# ...
+# Send message from a thread
+queue.put(353)
+
+
+# ...
+# Get message to a thread
+val = queue.get()
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">use std::thread;
+use std::sync::mpsc;
+
+fn main() {
+    let (tx, rx) = mpsc::channel();
+
+    let sender = thread::spawn(move || {
+        let val = String::from(&quot;hi&quot;);
+        tx.send(val.clone()).unwrap();
+        println!(&quot;Sent {}&quot;, val);
+    });
+
+    let receiver = thread::spawn(move || {
+        let received = rx.recv().unwrap();
+        println!(&quot;Received: {}&quot;, received);
+    });
+
+    sender.join();
+    receiver.join();
+}</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="sorting"><a class="header" href="#sorting">Sorting</a></h3>
+<p>Sorting lists, reversing and using a key.</p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">names = ['taz', 'bugs', 'daffy']
+
+# Lexicographical order
+names.sort()
+
+# Reversed lexicographical order
+names.sort(reverse=True)
+
+# Sort by length
+names.sort(key=len)
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">fn main() {
+    let mut names = [&quot;taz&quot;, &quot;bugs&quot;, &quot;daffy&quot;];
+
+    // Lexicographical order
+    names.sort();
+
+    // Reversed lexicographical order
+    names.sort_by(|a, b| b.cmp(a));
+
+    // Sort by length
+    names.sort_by_key(|a| a.len());
+}</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="web-app-with-flask--rocket"><a class="header" href="#web-app-with-flask--rocket">Web app with Flask / Rocket</a></h3>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def index():
+    return 'Hello Python'
+
+
+if __name__ == '__main__':
+    app.run(port=8080)
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">#![feature(plugin)]
+#![plugin(rocket_codegen)]
+
+extern crate rocket;
+
+#[get(&quot;/&quot;)]
+fn index() -&gt; &amp;'static str {
+    &quot;Hello Rust&quot;
+}
+
+fn main() {
+    rocket::ignite().mount(&quot;/&quot;, routes![index]).launch();
+}</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="http-request-with-error-handling"><a class="header" href="#http-request-with-error-handling">HTTP Request with error handling</a></h3>
+<p><strong>Python</strong></p>
+<p>Using <a href="http://pypi.org/project/requests"><strong>requests</strong></a></p>
+<pre><code class="language-python">import requests
+
+url = 'https://httpbin.org/ip'
+
+try:
+    resp = requests.get(url)
+except HTTPError as err:
+    msg = f&quot;error: cannot get {url} - {err}&quot;
+    raise SystemExit(msg)
+
+assert resp.status_code == 200
+
+print(f&quot;The response content is: {resp.content}&quot;)
+
+</code></pre>
+<p><strong>Rust</strong></p>
+<p>using <a href="https://crates.io/crates/reqwest"><strong>reqwest</strong></a></p>
+<pre><pre class="playground"><code class="language-rust">extern crate reqwest;
+use std::io::Read;
+
+fn main() {
+    let url = &quot;https://httpbin.org/ip&quot;;
+
+    let mut resp = match reqwest::get(url) {
+        Ok(response) =&gt; response,
+        Err(e) =&gt; panic!(&quot;error: could not perform get request {}&quot;, e),
+    };
+
+    assert!(resp.status().is_success());
+
+    let mut content = String::new();
+    resp.read_to_string(&amp;mut content).expect(&quot;valid UTF-8&quot;);
+
+    println!(&quot;The response content is: {}&quot;, content);
+}</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="multithreaded-http-crawler"><a class="header" href="#multithreaded-http-crawler">Multithreaded HTTP Crawler</a></h3>
+<p><strong>Python</strong></p>
+<p>Using <a href="http://pypi.org/project/requests"><strong>requests</strong></a></p>
+<pre><code class="language-python">from concurrent.futures import ThreadPoolExecutor
+import requests
+
+
+URLS = (
+    &quot;https://httpbin.org/html&quot;,
+    &quot;https://httpbin.org/links/10/0&quot;,
+    &quot;https://httpbin.org/robots.txt&quot;,
+    &quot;https://httpbin.org/user-agent&quot;,
+    &quot;https://httpbin.org/links/10/0&quot;,
+    &quot;https://httpbin.org/robots.txt&quot;,
+    &quot;https://httpbin.org/xml&quot;,
+    &quot;https://httpbin.org/redirect/1&quot;,
+    &quot;https://httpbin.org/redirect/2&quot;,
+    &quot;https://httpbin.org/cookies&quot;,
+    &quot;https://httpbin.org/basic-auth/user/passwd&quot;,
+    &quot;https://httpbin.org/gzip&quot;,
+)
+
+
+def crawl_worker(url):
+    try:
+        print(f&quot;Response of url: {url} is {requests.get(url).status_code}&quot;)
+    except Exception:
+        print(&quot;Failed to get url.&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    with ThreadPoolExecutor() as executor:
+        executor.map(crawl_worker, URLS)
+</code></pre>
+<p><strong>Rust</strong></p>
+<p>using <a href="https://crates.io/crates/reqwest"><strong>reqwest</strong></a></p>
+<pre><pre class="playground"><code class="language-rust">extern crate reqwest;
+use std::thread;
+
+
+fn crawl_worker(url: &amp;str) {
+    let parsed_url = reqwest::Url::parse(url).expect(&quot;Bad url format.&quot;);
+    let response = reqwest::get(parsed_url).expect(&quot;Failed to get url.&quot;);
+    println!(&quot;Response of url: {} is {:?}&quot;, url, response.status().to_string());
+}
+
+
+fn main() {
+    let urls = vec![
+        &quot;https://httpbin.org/html&quot;,
+        &quot;https://httpbin.org/links/10/0&quot;,
+        &quot;https://httpbin.org/robots.txt&quot;,
+        &quot;https://httpbin.org/user-agent&quot;,
+        &quot;https://httpbin.org/links/10/0&quot;,
+        &quot;https://httpbin.org/robots.txt&quot;,
+        &quot;https://httpbin.org/xml&quot;,
+        &quot;https://httpbin.org/redirect/1&quot;,
+        &quot;https://httpbin.org/redirect/2&quot;,
+        &quot;https://httpbin.org/cookies&quot;,
+        &quot;https://httpbin.org/basic-auth/user/passwd&quot;,
+        &quot;https://httpbin.org/gzip&quot;,
+    ];
+    let mut queue = vec![];
+
+    for url in urls {
+        queue.push(thread::spawn(move || {
+            crawl_worker(url);
+        }));
+    }
+
+    for job in queue {
+        let _ = job.join();
+    }
+}</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="encode-and-decode-json"><a class="header" href="#encode-and-decode-json">Encode and Decode JSON</a></h3>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">import json
+
+# Decode/Deserialize
+data = '''{
+    &quot;name&quot;: &quot;bugs&quot;,
+    &quot;age&quot;: 76
+}'''
+
+person = json.loads(data)
+
+# Do things like with any other Python data structure
+print(f&quot;{person['name']} was born {person['age']} years ago&quot;)
+
+# Encode/Serialize
+serialized = json.dumps(obj)
+print(f&quot;The serialized value is: {serialized}&quot;)
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">extern crate serde;
+extern crate serde_json;
+
+#[macro_use]
+extern crate serde_derive;
+
+#[derive(Serialize, Deserialize)]
+struct Person {
+    name: String,
+    age: u8,
+}
+
+fn main() {
+    // Decode/Deserialize
+    let data = r#&quot;{&quot;name&quot;: &quot;bugs&quot;, &quot;age&quot;: 76}&quot;#;
+
+    let p: Person = match serde_json::from_str(data) {
+        Ok(person) =&gt; person,
+        Err(e) =&gt; panic!(&quot;error: could not deserialize: {}&quot;, e),
+    };
+
+    // Do things just like with any other Rust data structure.
+    println!(&quot;{} was born {} years ago.&quot;, p.name, p.age);
+
+    // Encode/Serialize
+    let serialized = serde_json::to_string(&amp;p).unwrap();
+    println!(&quot;The serialized value is: {}&quot;, serialized);
+}
+</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="object-orientation"><a class="header" href="#object-orientation">Object Orientation</a></h3>
+<p><strong>Python</strong></p>
+<p><a href="https://repl.it/repls/SourPaltryHorseshoecrab">playground</a></p>
+<pre><code class="language-python">class Cat:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self, other):
+        print(&quot;Meow {}, I'm {}&quot;.format(other, self.name))
+
+# ...
+
+grumy = Cat('Grumpy')
+grumy.greet('Garfield')  # Meow Garfield, I'm Grumpy
+</code></pre>
+<p><strong>Rust</strong></p>
+<p><a href="https://play.rust-lang.org/?gist=155c76fae5240e483858000e73e82f00&amp;version=stable">playground</a></p>
+<pre><pre class="playground"><code class="language-rust">struct Cat {
+    name: String
+}
+
+impl Cat {
+
+    pub fn new&lt;S&gt;(name: S) -&gt; Cat where S: Into&lt;String&gt; {
+        Cat { name: name.into() }
+    }
+    
+    pub fn greet&lt;S: Into&lt;String&gt;&gt;(&amp;self, other:S) {
+        println!(&quot;Meow {}, I'm {}&quot;, other.into(), self.name);
+    }     
+    
+}
+
+fn main() {
+    let grumpy = Cat::new(&quot;Grumpy&quot;);
+    grumpy.greet(&quot;Garfield&quot;);  // Meow Garfield, I'm Grumpy
+}</code></pre></pre>
+<blockquote>
+<p>NOTE: In Rust, it is best to avoid <code>stringly types APIs</code> so in the above example it would be better if we do <code>let garfield = Cat::new(&quot;Garfield&quot;)</code> and then make <code>greet</code> to accept an instance of <code>Cat</code> as <code>other</code> argument. If you are interested <a href="https://www.youtube.com/watch?v=0zOg8_B71gE">watch this</a>.</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="print-object-for-debuglog"><a class="header" href="#print-object-for-debuglog">Print Object for Debug/Log</a></h3>
+<p>Print formatted object debug information</p>
+<p><strong>Python</strong></p>
+<pre><code class="language-python">
+class Actor:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __repr__(self):
+      return str(self.__dict__)
+
+daffy = Actor(
+    name='Daffy',
+    age=80,
+)
+
+print('{!r}'.format(daffy))  # {'name': 'Daffy', 'age': 80}
+</code></pre>
+<p><strong>Rust</strong></p>
+<pre><pre class="playground"><code class="language-rust">#[derive(Debug)]
+struct Actor {
+    name: String,
+    age: i32
+}
+
+fn main() {
+    let daffy = Actor {name: &quot;Daffy&quot;.into(), age: 80};
+    println!(&quot;{:#?}&quot;, daffy);   // Actor {name: &quot;Daffy&quot;, age: 80 }
+}
+</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="operator-overloading"><a class="header" href="#operator-overloading">Operator overloading</a></h3>
+<p>Python and Rust allows the overload of the behavior of operators such as <code>+, -, /, *, %</code></p>
+<p>In both examples the operator <code>+</code> (add) is being overloaded to implement the Rock, Paper, Scissors game.</p>
+<p>Python implementation uses its Protocol Oriented Programming, by looking for the <code>__add__</code> method, which is part of the structural <strong>Summable</strong> protocol.</p>
+<p>Rust does the same, but using trait implementation, in this case we implement <code>ops::Add&lt;T&gt; for T</code></p>
+<p>Both are, despite the syntax differences, very similar on the concept.</p>
+<p><strong>Python</strong></p>
+<p><a href="chapter-13/subchapters/%5Bhttps://repl.it/repls/uniquelinkhere%5D(https://trinket.io/python3/9d63ebc8f966?runOption=run)">playground</a></p>
+<pre><code class="language-python">from enum import Enum
+from typing import Self
+
+
+class Object(Enum):
+    Rock = 1
+    Paper = 2
+    Scissors = 3
+
+    def __add__(self, other: Self) -&gt; Self:
+        match self:
+            case Object.Rock if other is Object.Scissors:
+                return self
+            case Object.Scissors if other is Object.Paper:
+                return self
+            case Object.Paper if other is Object.Rock:
+                return self
+            case _:
+                return other
+
+
+if __name__ == &quot;__main__&quot;:
+    assert Object.Rock + Object.Scissors is Object.Rock
+    assert Object.Scissors + Object.Paper is Object.Scissors
+    assert Object.Paper + Object.Rock is Object.Paper
+    assert Object.Rock + Object.Rock is Object.Rock
+    assert Object.Paper + Object.Paper is Object.Paper
+    assert Object.Scissors + Object.Scissors is Object.Scissors
+
+</code></pre>
+<p><strong>Rust</strong></p>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2021&amp;gist=b19b1411126d3963e74fcd1deff67d1b">playground</a></p>
+<pre><pre class="playground"><code class="language-rust">use std::ops;
+
+#[derive(Debug, PartialEq)]
+enum Object {
+    Rock,
+    Paper,
+    Scissors,
+}
+
+impl ops::Add&lt;Object&gt; for Object {
+    type Output = Object;
+    fn add(self, other: Object) -&gt; Object {
+        match self {
+            Object::Rock if other == Object::Scissors =&gt; self,
+            Object::Scissors if other == Object::Paper =&gt; self,
+            Object::Paper if other == Object::Rock =&gt; self,
+            _ =&gt; other,
+        }
+    }
+}
+
+fn main() {
+   assert_eq!(Object::Rock + Object::Scissors, Object::Rock);
+   assert_eq!(Object::Scissors + Object::Paper, Object::Scissors);
+   assert_eq!(Object::Paper + Object::Rock, Object::Paper);
+   assert_eq!(Object::Rock + Object::Rock, Object::Rock);
+   assert_eq!(Object::Scissors + Object::Scissors, Object::Scissors);
+   assert_eq!(Object::Paper + Object::Paper, Object::Paper);
+}
+</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="template-for-new-examples"><a class="header" href="#template-for-new-examples">Template for new examples</a></h3>
+<p>Explanation comes here.</p>
+<p><strong>Python</strong></p>
+<p><a href="https://repl.it/repls/uniquelinkhere">playground</a></p>
+<pre><code class="language-python"># python code goes here
+</code></pre>
+<p><strong>Rust</strong></p>
+<p><a href="https://play.rust-lang.org/?gist=uniquehashhere&amp;version=stable">playground</a></p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>// rust code goes here
+<span class="boring">}</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="credits"><a class="header" href="#credits">Credits</a></h2>
+<p>Created by <a href="http://about.me/rochacbruno">Bruno Rocha</a> <a href="http://github.com/rochacbruno">@rochacbruno</a> inspired by <a href="https://www.353.solutions/py2go/index.html">https://www.353.solutions/py2go/index.html</a></p>
+<p>First published in <a href="http://brunorocha.org/python/py2rs-from-python-to-rust-reference-guide.html">BrunoRocha.org</a></p>
+<p>Mdbook deploy and formatting by <a href="https://github.com/Rapha-Borges">Rapha-Borges</a></p>
+<p>Send a Pull Request or Suggestion as a new issue.</p>
+<hr />
+<h2 id="contributors"><a class="header" href="#contributors">Contributors</a></h2>
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center"><a href="http://brunorocha.org"><img src="https://avatars2.githubusercontent.com/u/458654?v=4" width="100px;"/><br /><sub>Bruno Rocha</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=rochacbruno" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=rochacbruno" title="Documentation">📖</a></th><th style="text-align: center"><a href="http://shingtaklam1324.github.io"><img src="https://avatars1.githubusercontent.com/u/15098580?v=4" width="100px;"/><br /><sub>Shing Tak Lam</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=shingtaklam1324" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=shingtaklam1324" title="Documentation">📖</a></th><th style="text-align: center"><a href="https://twitter.com/deikatsuo"><img src="https://avatars3.githubusercontent.com/u/8337409?v=4" width="100px;"/><br /><sub>Deri Herdianto</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=deikatsuo" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=deikatsuo" title="Documentation">📖</a></th><th style="text-align: center"><a href="https://github.com/tilacog"><img src="https://avatars2.githubusercontent.com/u/1634529?v=4" width="100px;"/><br /><sub>Tiago Guimarães</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=tilacog" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=tilacog" title="Documentation">📖</a></th><th style="text-align: center"><a href="https://github.com/imbolc"><img src="https://avatars0.githubusercontent.com/u/747996?v=4" width="100px;"/><br /><sub>Imblc</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=imbolc" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=imbolc" title="Documentation">📖</a></th><th style="text-align: center"><a href="https://github.com/jschmid1"><img src="https://avatars0.githubusercontent.com/u/6840312?v=4" width="100px;"/><br /><sub>Joshua Schmid</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=jschmid1" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=jschmid1" title="Documentation">📖</a></th><th style="text-align: center"><a href="http://spejss.com/"><img src="https://avatars0.githubusercontent.com/u/6236892?v=4" width="100px;"/><br /><sub>Mikołaj Wawrzyniak</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=spejss" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=spejss" title="Documentation">📖</a></th></tr></thead><tbody>
+<tr><td style="text-align: center"><a href="http://mseri.me"><img src="https://avatars0.githubusercontent.com/u/4040623?v=4" width="100px;"/><br /><sub>Marcello Seri</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=mseri" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=mseri" title="Documentation">📖</a></td><td style="text-align: center"><a href="https://github.com/Twentysix26"><img src="https://avatars0.githubusercontent.com/u/6267772?v=4" width="100px;"/><br /><sub>Twentysix</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=Twentysix26" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=Twentysix26" title="Documentation">📖</a></td><td style="text-align: center"><a href="http://pickfire.tk"><img src="https://avatars1.githubusercontent.com/u/4687791?v=4" width="100px;"/><br /><sub>Ivan Tham</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=pickfire" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=pickfire" title="Documentation">📖</a></td><td style="text-align: center"><a href="https://github.com/rhardouin"><img src="https://avatars3.githubusercontent.com/u/20056?v=4" width="100px;"/><br /><sub>Romain Hardouin</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=rhardouin" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=rhardouin" title="Documentation">📖</a></td><td style="text-align: center"><a href="https://github.com/lu-zero"><img src="https://avatars1.githubusercontent.com/u/239012?v=4" width="100px;"/><br /><sub>Luca Barbato</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=lu-zero" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=lu-zero" title="Documentation">📖</a></td><td style="text-align: center"><a href="http://luizirber.org"><img src="https://avatars2.githubusercontent.com/u/6642?v=4" width="100px;"/><br /><sub>Luiz Irber</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=luizirber" title="Code">💻</a> <a href="https://github.com/rochacbruno/py2rs/commits?author=luizirber" title="Documentation">📖</a></td><td style="text-align: center"><a href="https://github.com/bobogei81123"><img src="https://avatars0.githubusercontent.com/u/7190293?v=4" width="100px;"/><br /><sub>bobogei81123</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=bobogei81123" title="Documentation">📖</a></td></tr>
+<tr><td style="text-align: center"><a href="http://diogobaeder.com.br"><img src="https://avatars3.githubusercontent.com/u/207168?v=4" width="100px;"/><br /><sub>Diogo Baeder</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=diogobaeder" title="Documentation">📖</a></td><td style="text-align: center"><a href="http://pseudoform.org"><img src="https://avatars0.githubusercontent.com/u/1664?v=4" width="100px;"/><br /><sub>Sven-Hendrik Haase</sub></a><br /><a href="https://github.com/rochacbruno/py2rs/commits?author=svenstaro" title="Documentation">📖</a></td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center"></td></tr>
+</tbody></table>
+</div><!-- ALL-CONTRIBUTORS-LIST:END -->
+<p>Thanks goes to these wonderful people (<a href="https://github.com/kentcdodds/all-contributors#emoji-key">emoji key</a>):</p>
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section --><!-- ALL-CONTRIBUTORS-LIST:END -->
+<p>This project follows the <a href="https://github.com/kentcdodds/all-contributors">all-contributors</a> specification. Contributions of any kind welcome!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </body>
+</html>

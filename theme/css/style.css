@@ -1,0 +1,114 @@
+h4 {
+    font-size: 17px;
+}
+h5 {
+    font-size: 16px;
+}
+
+#sidebar .sidebar-scrollbox {
+  font-size: 18px;
+}
+#sidebar .sidebar-scrollbox .chapter-item a {
+    margin-bottom: 10px;
+}
+#sidebar .sidebar-scrollbox .chapter-item.affix a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#sidebar .sidebar-scrollbox .chapter-item a strong {
+    display: none;
+    margin-bottom: 10px;
+}
+
+#sidebar .sidebar-scrollbox .part-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.font-17::before {
+    font-size: 17px;
+}
+
+details {
+    /* margin: 1rem auto; */
+    /* width: 35em; */
+    /* max-width: calc(100% - 2rem); */
+    padding: 0 1rem;
+    position: relative;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #263238;
+    transition: background-color 0.15s;
+  }
+  details > :last-child {
+    margin-bottom: 1rem;
+  }
+  details::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    opacity: 0.15;
+    box-shadow: 0 0.25em 0.5em #263238;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    z-index: -1;
+  }
+  details[open] {
+    background-color: #FFF;
+  }
+  details[open]::before {
+    opacity: 0.6;
+  }
+  
+  summary.summary {
+    padding: 1rem 2em 1rem 0;
+    display: block;
+    position: relative;
+    font-size: 1.33em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #FFF;
+    margin-inline: 0;
+    padding-block: 40;
+    padding-inline: 0;
+  }
+  summary.summary::before, summary.summary::after {
+    width: 0.75em;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: "";
+    background-color: currentColor;
+    text-align: right;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease-in-out;
+    inset-inline-start: 33.3em;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+  summary.summary::after {
+    transform: translateY(-50%) rotate(90deg);
+  }
+  [open] summary.summary::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  summary.summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  code {
+    padding: 0.2em;
+    border-radius: 3px;
+    background-color: #E0E0E0;
+  }
+  pre > code {
+    display: block;
+    padding: 1em;
+    margin: 0;
+  }
