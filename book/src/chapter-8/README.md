@@ -3,7 +3,7 @@
 | ---------------------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------- |
 | [PEP8](https://www.python.org/dev/peps/pep-0008/)                            | Guidelines and conventions         | [RustAPI Guidelines](https://rust-lang-nursery.github.io/api-guidelines/) |
 | [PEPS](https://www.python.org/dev/peps/)                                     | Enhancement Proposals / RFC        | [Rust RFCs](https://github.com/rust-lang/rfcs)                            |
-| [PSF](https://www.python.org/psf/)                                           | Organization / Foundation          | [Rust Foundation](https://foundation.rust-lang.org/                       |
+| [PSF](https://www.python.org/psf/)                                           | Organization / Foundation          | [Rust Foundation](https://foundation.rust-lang.org/)                      |
 | [PyCon](https://www.pycon.org/)                                              | Main Conference                    | [RustConf](http://rustconf.com/)                                          |
 | [Guido Van Rossum](https://twitter.com/gvanrossum)                           | Creator                            | [Graydon Hoare](https://twitter.com/graydon_pub)                          |
 | 1989                                                                         | First appeared                     | 2010                                                                      |
