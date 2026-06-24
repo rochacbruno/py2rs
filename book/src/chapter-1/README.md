@@ -3,7 +3,7 @@
 Assuming you already know what is [**Rust**](http://rust-lang.org) and already 
 decided to start learning it. Here are some steps for you to follow:
 
-1) Take a tour of [**Rust Syntax** and **Coding Style**](https://learnxinyminutes.com/docs/rust/) and [**Tour if Rust**](https://tourofrust.com/)
+1) Take a tour of [**Rust Syntax** and **Coding Style**](https://learnxinyminutes.com/docs/rust/) and [**Tour of Rust**](https://tourofrust.com/)
 2) Watch some **screencasts** to get basics of **Ownership &Borrowing** concept  
    [http://intorust.com/](http://intorust.com/) or if you understand Portuguese watch [Aprenda Rust](https://bit.ly/aprendarust)
 3) Follow this set of runnable examples to understand how everything fit together  
