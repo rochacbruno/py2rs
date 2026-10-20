@@ -12,7 +12,7 @@ Both are, despite the syntax differences, very similar on the concept.
 
 **Python**
 
-[playground]([https://repl.it/repls/uniquelinkhere](https://trinket.io/python3/9d63ebc8f966?runOption=run))
+[playground](https://coddy.tech/playground/python#code=nVFNT8MwDP0rVk6bOiYNbpXKjTOIXSNZIU1ZYEmqJJs0If47-WgH_RIC9xK7fs_v2R_kTMrdhnBTC1KSxhoFQp8USNUa6-EhvKlOZX9ppX7tf-zFsaE6fvzInIPHlzfB_Sr2r0uqIcSz4e9QwS5nT6wVNqS3Od1z6ZyxLlTuIkus1aIBRFbXiCsX-Ddg_EHYMg1bw819enTsMRTz_ABuWIzBmROdpG2SIZvMBbKXuu0VjKAxrPAnqxPxMu_VwQx3Mvtf4rypGdbo5M-kuIxI_PmIMm5eMyUQoaqAEkTFpEakpMOHI4tw959LLaarGGidA15bi5HdyV3m0Lm3GJ52uPXf1Y5QS0pHs8YyF4dNHc6s59sk1eTzCw)
 
 ```python
 from enum import Enum
